@@ -1,0 +1,149 @@
+/* 
+    Start General Button Styling
+*/
+
+.button {
+    font-weight: 500;
+    border: 1px solid #262626;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    font-size: 18px;
+    color: #FFFFFF;
+}
+
+/* 
+    End General Button Styling
+*/
+
+/* ============================================================= */
+
+/* 
+   Start Button Colors
+*/
+
+.primary {
+    background-color: #703BF7;
+    border: none;
+}
+
+.primary:hover {
+    background-color: rgba(106, 80, 224, 0.909);
+}
+
+.secondary {
+    background-color: #141414;
+}
+
+.secondary:hover {
+    background-color: #262626;
+}
+
+.dark {
+    background-color: #1A1A1A;
+}
+
+.dark:hover {
+    background-color: #262626;
+}
+
+/* 
+   End Button Colors
+*/
+
+/* ============================================================= */
+
+/* 
+   Start Button Sizes
+*/
+
+.small {
+    padding: 18px 24px;
+}
+
+.medium {
+    padding: 18px 46px;
+}
+
+.large {
+    padding: 18px 54.5px;
+}
+
+.fullWidth {
+    width: 100%;
+}
+
+/* 
+   End Button Sizes
+*/
+
+/* ============================================================= */
+
+@media screen and (max-width: 1440px) and (min-width: 993px) {
+
+    /* 
+        Start General Button Styling
+    */
+
+    .button {
+        font-size: 14px;
+    }
+
+    /* 
+        End General Button Styling
+    */
+
+    /* ============================================================= */
+
+    /* 
+        Start Button Sizes
+    */
+
+    .small {
+        padding: 14px 20px;
+    }
+
+    .medium {
+        padding: 14px 34px;
+    }
+
+    .large {
+        padding: 14px 47.67px;
+    }
+
+    /* 
+        End Button Sizes
+    */
+}
+
+/* ============================================================= */
+
+@media screen and (max-width: 992px) {
+
+    /* 
+        Start General Button Styling
+    */
+
+    .button {
+        font-size: 14px;
+    }
+
+    /* 
+        End General Button Styling
+    */
+
+    /* ============================================================= */
+
+    /* 
+        Start Button Sizes
+    */
+
+    .fullWidth {
+        padding-top: 14px;
+        padding-bottom: 14px;
+    }
+
+    /* 
+        End Button Sizes
+    */
+}
