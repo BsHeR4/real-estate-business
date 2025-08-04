@@ -5,10 +5,12 @@ import PropertyDetails from './Pages/PropertyDetails/PropertyDetails'
 import Services from './Pages/Services/Services'
 import Contact from './Pages/Contact/Contact'
 
+
 function App() {
 
   return (
     <>
+
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='AboutUs' element={<AboutUs />} />
