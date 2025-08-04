@@ -1,0 +1,34 @@
+.mk-card{
+    width: fit-content;
+    background-color: var(--grey-08);
+    border: 1px solid var(--grey-08);
+    border-radius: 12px;
+}
+
+.mk-medium-padding{
+    padding: 40px;
+}
+
+.mk-large-padding{
+    padding: 50px;
+}
+
+@media screen and (max-width: 1440px){
+    .mk-medium-padding{
+        padding: 30px;
+    }
+
+    .mk-large-padding{
+        padding: 40px;
+    }
+}
+
+@media screen and (max-width: 992px){
+    .mk-medium-padding{
+        padding: 24px;
+    }
+
+    .mk-large-padding{
+        padding: 30px;
+    }
+}
