@@ -1,0 +1,64 @@
+.zs-icon-button {
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    color: var(--color-white);
+    border: 1px solid var(--grey-15);
+    margin-right: 10px;
+}
+.zs-icon-button.dark {
+    background-color: #191919;
+}
+
+.zs-icon-button.darker {
+    background-color: var(--grey-08);
+}
+
+.zs-icon-button.disabled {
+    cursor: not-allowed;
+    background-color: var(--grey-08);
+    color: var(--grey-50);
+}
+
+.zs-icon-button.arrow {
+    width: 58px;
+    height: 58px;
+    font-size:18px ;
+}
+
+.zs-icon-button.social {
+    width: 52px;
+    height: 52px;
+    font-size: 22px;
+}
+
+
+@media screen and (max-width: 1440px) {
+    .zs-icon-button.social {
+        width: 40px;
+        height: 40px;
+        font-size: 18px;
+    }
+
+    .zs-icon-button.arrow {
+        width: 44px;
+        height: 44px;
+        font-size: 14px;
+    }
+}
+
+@media screen and  (max-width: 992px) {
+    .zs-icon-button.social {
+        width: 60px;
+        height: 60px;
+        font-size: 18px;
+    }
+
+    .zs-icon-button.arrow {
+        width: 44px;
+        height: 44px;
+        font-size: 14px;
+    }
+}
