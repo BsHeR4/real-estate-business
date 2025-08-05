@@ -2,7 +2,9 @@ import clsx from 'clsx';
 import styles from './Button.module.css';
 
 /**
- * @component A flexible and reusable button component
+ * @component Button component
+ * 
+ * @description A flexible and reusable button
  * 
  * @param {object} props - the props for the component
  * @param {React.ReactNode} props.children - to specify the title of the button
@@ -11,7 +13,7 @@ import styles from './Button.module.css';
  * @param {boolean} [props.fullWidth=false] - to specify the width of the button if it should have full width or not
  * @param {string} props.className - to specify the classes of the button to coustimize and override the default styling
  * 
- * @returns button
+ * @returns {JSX.Element} A styled <button> element
  */
 const Button = ({ children, size = 'medium', variant = 'primary', fullWidth = false, className, ...props }) => {
 
