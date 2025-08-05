@@ -1,0 +1,27 @@
+
+.MS-icon-star-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.MS-icon-star {
+    width: 45.6px;
+    height: 20px;
+}
+
+
+@media (min-width: 993px) {
+    .MS-icon-star {
+        width: 54.72px;
+        height: 24px;
+    }
+}
+
+
+@media (min-width: 1441px) {
+    .MS-icon-star {
+        width: 68.4px;
+        height: 30px;
+    }
+}
