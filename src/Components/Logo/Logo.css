@@ -1,0 +1,23 @@
+
+@media screen and ( max-width : 300px ) {
+    .logo{
+        width: 93.33px;
+        height: 28px;
+    }
+}
+
+
+
+@media ( min-width : 300px) and (max-width : 993px ){
+    .logo{
+        width: 113.33px;
+        height: 34px;
+    }
+}
+
+@media ( min-width : 993px ) and ( max-width : 1441px ) {
+    .logo{
+        width: 160px;
+        height: 48px;
+}
+}

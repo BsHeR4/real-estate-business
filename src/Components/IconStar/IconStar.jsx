@@ -1,11 +1,11 @@
 import React from 'react';
-import './IconS.css';
+import './IconStar.css';
 
 const IconStar = () => {
     return (
         <div className="MS-icon-star-container">
             <img 
-                src="./../../../public/assets/img/IconStart.svg" 
+                src="./../../../public/assets/imgs/IconStart.svg" 
                 alt="Three Stars Icon" 
                 className="MS-icon-star"
             />
