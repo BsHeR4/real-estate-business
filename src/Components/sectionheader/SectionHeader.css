@@ -1,0 +1,53 @@
+/*style for Desktop*/
+.section-header {
+    text-align: left;
+    padding: 0 162px;
+    background-color:  #141414;
+}
+
+.section-title {
+    color: #FFFFFF;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 150%;
+}
+
+.section-subtitle {
+    margin-top: 14px;
+    color: #999999;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 150%;
+}
+
+/* style for Laptop*/
+@media screen and (max-width: 1440px) and (min-width: 993px) {
+    .section-header {
+        padding: 0 88px;
+    }
+
+    .section-title {
+        font-size: 38px;
+    }
+
+    .section-subtitle {
+        margin-top: 10px;
+        font-size: 16px;
+    }
+}
+
+/* style for Mobile */
+@media screen and (max-width: 992px) and (min-width: 300px) {
+    .section-header {
+        padding: 0 16px;
+    }
+
+    .section-title {
+        font-size: 28px;
+    }
+
+    .section-subtitle {
+        margin-top: 6px;
+        font-size: 14px;
+    }
+}
