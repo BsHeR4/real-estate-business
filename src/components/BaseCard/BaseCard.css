@@ -1,7 +1,7 @@
 .mk-card{
     width: fit-content;
     background-color: var(--grey-08);
-    border: 1px solid var(--grey-08);
+    border: 1px solid var(--grey-15);
     border-radius: 12px;
 }
 
