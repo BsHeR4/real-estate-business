@@ -4,7 +4,7 @@
     align-items: start;
     width: 100%;
     background-color: #141414;
-    padding-left: 142px;
+    margin-left: -20px;
 }
 
 .MS-icon-star {
@@ -15,7 +15,7 @@
 /* style for Laptop*/
 @media screen and (max-width: 1440px) and (min-width: 993px) {
     .MS-icon-star-container {
-        padding-left: 70px;
+        margin-left: -10px;
     }
 
     .MS-icon-star {
@@ -27,7 +27,7 @@
 @media screen and (max-width: 992px) and (min-width: 300px) {
     .MS-icon-star-container {
 
-        padding-left: 8px;
+        margin-left: -8px;
     }
 
     .MS-icon-star {

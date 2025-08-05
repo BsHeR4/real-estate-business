@@ -1,7 +1,7 @@
 /*style for Desktop*/
 .section-header {
     text-align: left;
-    padding: 0 162px;
+    /* padding: 0 162px; */
     background-color:  #141414;
 }
 
@@ -22,9 +22,9 @@
 
 /* style for Laptop*/
 @media screen and (max-width: 1440px) and (min-width: 993px) {
-    .section-header {
+    /* .section-header {
         padding: 0 88px;
-    }
+    } */
 
     .section-title {
         font-size: 38px;
@@ -38,9 +38,9 @@
 
 /* style for Mobile */
 @media screen and (max-width: 992px) and (min-width: 300px) {
-    .section-header {
+    /* .section-header {
         padding: 0 16px;
-    }
+    } */
 
     .section-title {
         font-size: 28px;
