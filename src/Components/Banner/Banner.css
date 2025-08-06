@@ -6,12 +6,11 @@
 .zs-banner {
     position: relative;
     background-color: var(--gery-10);
-    min-height: 49px;
+    height: 63px;
     background-image: url("/assets/imgs/banner-bg.svg");
     background-color:var(--gery-12) ;
     background-repeat: no-repeat;
     background-size:cover;
-    padding-inline: 16px 52px;
 
     .zs-close-button {
         position: absolute;
@@ -60,13 +59,13 @@
         }
     }
 }
-@media screen and (max-width:576px){
+@media screen and (max-width:992px){
         .zs-banner{
         height: 78px;
         padding-inline: 8px 48px;
 
         .zs-banner-desc{
-            font-size: 9px;
+            font-size: 3.0769vw;
         }
     }
 }
