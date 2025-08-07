@@ -1,0 +1,32 @@
+.zs-question{
+    color: var(--color-white);
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 24px;
+}
+.zs-answer{
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--grey-60);
+    margin-bottom: 24px;
+}
+
+@media screen and (max-width:1440px){
+    .zs-question{
+        font-size: 20px;
+    }
+    .zs-answer{
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width:992px){
+    .zs-question{
+        font-size: 18px;
+    }
+    .zs-answer{
+        font-size: 14px;
+    }
+    .mk-large-padding{ 
+        padding :40px}
+}
