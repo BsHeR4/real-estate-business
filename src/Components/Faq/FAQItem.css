@@ -3,12 +3,14 @@
     font-size: 24px;
     font-weight: 600;
     margin-bottom: 24px;
+    min-height: 72px;
 }
 .zs-answer{
     font-size: 18px;
     font-weight: 500;
     color: var(--grey-60);
     margin-bottom: 24px;
+    min-height: 55px;
 }
 
 @media screen and (max-width:1440px){
@@ -23,10 +25,13 @@
 @media screen and (max-width:992px){
     .zs-question{
         font-size: 18px;
+        min-height: 0;
     }
     .zs-answer{
         font-size: 14px;
+        min-height: 0;
     }
-    .mk-large-padding{ 
-        padding :40px}
+    .fullWidth{
+        width: 100%;
+    }
 }

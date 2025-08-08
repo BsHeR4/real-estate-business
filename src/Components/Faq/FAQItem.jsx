@@ -7,7 +7,7 @@ const FAQItem = ({ question, answer }) => {
         <BaseCard padding="large">
                 <h3 className='zs-question'>{question}</h3>
                 <p className='zs-answer'>{answer}</p>
-                <Button variant='dark'>Read More</Button>
+                <Button className='fullWidth' variant='dark'>Read More</Button>
         </BaseCard>
     );
 };

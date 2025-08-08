@@ -1,18 +1,48 @@
-.faq-list {
+.zs-faq-list {
     display: flex;
-    gap: 20px;
-    margin-top: 40px;
+    gap: 30px;
+    margin-top: 80px;
+    margin-bottom: 50px;
     overflow: hidden;
 }
 
-.faq-list > * {
+/* the asterisk choose all .mk-card inside .faq-list*/
+.zs-faq-list>* {
     flex-shrink: 0;
     width: calc(33.333% - 20px);
 
 }
 
-.faq-navigation {
+.zs-faq-navigation {
     display: flex;
     justify-content: flex-end;
-    margin-top: 40px;
+    align-items: end;
+    border-top: 1px solid var(--grey-15);
+    padding-top: 20px;
+}
+
+@media screen and (max-width:1440px){
+    .zs-faq-list {
+        margin-top: 60px;
+    }
+}
+
+@media screen and (max-width:992px) {
+    .zs-faq-list {
+        margin-top: 40px;
+        margin-bottom: 30px;
+    }
+    .mk-card {
+        width: 48%;
+    }
+}
+
+@media screen and (max-width:576px) {
+    .mk-card {
+        width: 100%;
+    }
+
+    .zs-faq-navigation {
+        justify-content: space-between;
+    }
 }
