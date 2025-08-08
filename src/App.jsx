@@ -4,7 +4,8 @@ import Home from './Pages/Home/Home'
 import PropertyDetails from './Pages/PropertyDetails/PropertyDetails'
 import Services from './Pages/Services/Services'
 import Contact from './Pages/Contact/Contact'
-import IconStar from './components/Icons/Icons'
+import IconStar from './component/Icons/Icons'
+import PropertyServices from './component/PropertyServices/PropertyServices'
 function App() {
 
   return (
@@ -16,6 +17,9 @@ function App() {
         <Route path='/Services' element={<Services />} />
         <Route path='/Contact' element={<Contact />} />
       </Routes>
+
+      <IconStar/>
+      < PropertyServices/>
     </>
   )
 }
