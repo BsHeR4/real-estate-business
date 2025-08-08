@@ -1,0 +1,108 @@
+/* =================================================================== */
+/* 1. Default Styles (Applied on Large Screens / Desktop First) */
+/* =================================================================== */
+
+.statItem {
+    background-color: #1A1A1A;
+    border: 1px solid #262626;
+    width: 239.3333282470703px;
+    opacity: 1;
+    gap: 2px;
+    padding-top: 16px;
+    padding-right: 24px;
+    padding-bottom: 16px;
+    padding-left: 24px;
+    border-radius: 12px;
+    border-width: 1px;
+
+}
+
+.number {
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 40px;
+    line-height: 150%;
+    color: #FFFFFF;
+}
+
+.label {
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 18px;
+    line-height: 150%;
+    color: #999999;
+}
+
+
+/* =================================================================== */
+/* 2. Laptop & Tablet Styles (max-width: 1440px) */
+/* =================================================================== */
+@media screen and (max-width: 1440px) and (min-width: 993px) {
+    .statItem {
+        width: 192.6666717529297px;
+        opacity: 1;
+        gap: 2px;
+        padding-top: 14px;
+        padding-right: 20px;
+        padding-bottom: 14px;
+        padding-left: 20px;
+        border-radius: 10px;
+        border-width: 1px;
+
+
+    }
+
+    .number {
+        font-weight: 700;
+        font-style: Bold;
+        font-size: 30px;
+        line-height: 150%;
+
+    }
+    
+    .label {
+        font-weight: 500;
+        font-style: Medium;
+        font-size: 16px;
+        line-height: 150%;
+        
+    }
+    
+}
+
+
+/* =================================================================== */
+/* 3. Mobile Styles (max-width: 992px) */
+/* =================================================================== */
+
+@media screen and (max-width: 992px) {
+    .statItem {
+        background-color: #1A1A1A;
+        border: 1px solid #262626;
+        width: 173px;
+        opacity: 1;
+        gap: 2px;
+        border-radius: 8px;
+        border-width: 1px;
+        padding: 16px;
+    }
+
+    .number {
+        font-weight: 700;
+        font-style: Bold;
+        font-size: 24px;
+        line-height: 150%;
+        text-align: center;
+
+    }
+
+    .label {
+        font-weight: 500;
+        font-style: Medium;
+        font-size: 14px;
+        line-height: 150%;
+        text-align: center;
+
+    }
+
+}
