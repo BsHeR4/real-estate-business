@@ -8,7 +8,7 @@
     border-radius: 10px;
     cursor: pointer;
     transition: all 0.2s ease-in-out;
-    font-size: 18px;
+    font-size: 1.8rem;
     color: #FFFFFF;
 }
 
@@ -86,7 +86,7 @@
     */
 
     .button {
-        font-size: 14px;
+        font-size: 1.4rem;
     }
 
     /* 
@@ -100,15 +100,15 @@
     */
 
     .small {
-        padding: 14px 20px;
+        padding: 14px 1.0416vw;
     }
 
     .medium {
-        padding: 14px 34px;
+        padding: 14px 1.7708vw;
     }
 
     .large {
-        padding: 14px 47.67px;
+        padding: 14px 2.4828vw;
     }
 
     /* 
@@ -125,7 +125,7 @@
     */
 
     .button {
-        font-size: 14px;
+        font-size: 1.4rem;
     }
 
     /* 

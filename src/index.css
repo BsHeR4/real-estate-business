@@ -34,6 +34,7 @@
     --grey-60: #999999;
 }
 html{
+    font-size: 62.5%; /* 1rem = 10px */
     scroll-behavior: smooth;
 }
 a{
@@ -43,4 +44,13 @@ ul{
     list-style: none;
 }
 
+.px-0 {
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+}
+
+.py-16 {
+    padding-top: 16px !important;
+    padding-bottom: 16px !important;
+}
 /*End Global Modifiers*/

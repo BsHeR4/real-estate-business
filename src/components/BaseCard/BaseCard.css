@@ -6,29 +6,29 @@
 }
 
 .mk-medium-padding{
-    padding: 40px;
+    padding: 4rem;
 }
 
 .mk-large-padding{
-    padding: 50px;
+    padding: 5rem;
 }
 
 @media screen and (max-width: 1440px){
     .mk-medium-padding{
-        padding: 30px;
+        padding: 3rem;
     }
 
     .mk-large-padding{
-        padding: 40px;
+        padding: 4rem;
     }
 }
 
 @media screen and (max-width: 992px){
     .mk-medium-padding{
-        padding: 24px;
+        padding: 2.4rem;
     }
 
     .mk-large-padding{
-        padding: 30px;
+        padding: 3rem;
     }
 }
