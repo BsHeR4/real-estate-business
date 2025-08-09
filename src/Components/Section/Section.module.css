@@ -3,7 +3,7 @@
 */
 .section {
     width: 100%;
-    padding: 55px 162px;
+    padding: 55px 8.4375vw;
     background-color: var(--grey-08);
 }
 
@@ -20,7 +20,7 @@
     */
 
     .section {
-        padding: 45px 80px;
+        padding: 45px 5.5555vw;
     }
 
     /* 
