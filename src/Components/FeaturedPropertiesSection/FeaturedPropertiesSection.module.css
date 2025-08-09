@@ -1,0 +1,21 @@
+.container {
+    display: flex;
+    justify-content: space-between;
+    gap: 3rem;
+}
+
+.container>* {
+    flex: 1;
+}
+
+/* ============================================================= */
+
+@media screen and (max-width: 1440px) and (min-width: 993px) {
+    .container {
+        gap: 2rem;
+    }
+}
+
+/* ============================================================= */
+
+@media screen and (max-width: 992px) {}

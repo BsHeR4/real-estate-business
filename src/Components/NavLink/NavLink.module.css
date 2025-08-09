@@ -1,0 +1,31 @@
+.navLink {
+    color: var(--color-white);
+    font-size: 1.8rem;
+    font-weight: 500;
+    padding: 1.4rem 2.4rem;
+    border-radius: 10px;
+    transition: color 0.2s, background-color 0.2s;
+}
+
+.navLink:hover {
+    background-color: var(--grey-15);
+}
+
+.active {
+    border: 1px solid var(--grey-15);
+    background-color: var(--grey-08);
+}
+
+/* ============================================================= */
+
+@media screen and (max-width: 1440px) and (min-width: 993px) {
+
+    .navLink {
+        font-size: 1.4rem;
+        padding: 1.2rem 2rem;
+    }
+}
+
+/* ============================================================= */
+
+@media screen and (max-width: 992px) {}

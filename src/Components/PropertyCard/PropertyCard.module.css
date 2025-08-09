@@ -1,0 +1,117 @@
+.baseContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.cardImage {
+    padding-bottom: 30px;
+    width: 100%;
+}
+
+h2 {
+    padding-bottom: 6px;
+    font-size: 2.4rem;
+    font-weight: 600;
+    color: var(--color-white);
+}
+
+p {
+    padding-bottom: 30px;
+    font-size: 1.8rem;
+    font-weight: 500;
+    line-height: 150%;
+    color: var(--grey-60);
+}
+
+span {
+    font-weight: 500;
+    color: var(--color-white);
+    text-decoration: underline;
+    text-decoration-thickness: 0%;
+}
+
+.properties {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding-bottom: 30px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    gap: 2.6041vw;
+}
+
+.priceContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.priceTitle {
+    color: var(--grey-60);
+    text-decoration: none;
+    font-size: 1.8rem;
+}
+
+.price {
+    color: var(--color-white);
+    font-size: 2.4rem;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+/* ============================================================= */
+
+@media screen and (max-width: 1440px) and (min-width: 993px) {
+    .properties {
+        gap: 6px;
+    }
+
+    .priceTitle {
+        font-size: 1.4rem;
+    }
+
+    .price {
+        font-size: 2rem;
+    }
+
+    h2 {
+        padding-bottom: 4px;
+        font-size: 2rem;
+    }
+
+    p {
+        padding-bottom: 24px;
+        font-size: 1.6rem;
+    }
+}
+
+/* ============================================================= */
+
+@media screen and (max-width: 992px) {
+    .properties {
+        gap: 6px;
+    }
+
+    .priceTitle {
+        font-size: 1.4rem;
+    }
+
+    .price {
+        font-size: 1.8rem;
+    }
+
+    h2 {
+        padding-bottom: 2px;
+        font-size: 1.8rem;
+    }
+
+    p {
+        padding-bottom: 20px;
+        font-size: 1.4rem;
+    }
+}
