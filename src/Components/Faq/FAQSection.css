@@ -1,4 +1,4 @@
-.zs-faq-list {
+.zs-faq-card {
     display: flex;
     gap: 30px;
     margin-top: 80px;
@@ -7,7 +7,7 @@
 }
 
 /* the asterisk choose all .mk-card inside .faq-list*/
-.zs-faq-list>* {
+.zs-faq-card > * {
     flex-shrink: 0;
     width: calc(33.333% - 20px);
 
@@ -22,13 +22,13 @@
 }
 
 @media screen and (max-width:1440px){
-    .zs-faq-list {
+    .zs-faq-card {
         margin-top: 60px;
     }
 }
 
 @media screen and (max-width:992px) {
-    .zs-faq-list {
+    .zs-faq-card {
         margin-top: 40px;
         margin-bottom: 30px;
     }

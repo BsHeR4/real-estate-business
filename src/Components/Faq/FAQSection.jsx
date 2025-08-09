@@ -13,7 +13,7 @@ const FAQSection = () => {
                 subtitle="Find answers to common questions about Estatein's services, property listings, and the real estate process. We're here to provide clarity and assist you every step of the way."
             />
             <div className="zs-faq-container">
-                <div className="zs-faq-list">
+                <div className="zs-faq-card">
                     {faqData.map((faq, index) => (
                         <FAQItem
                             key={index}
