@@ -1,0 +1,48 @@
+.zs-faq-card {
+    display: flex;
+    gap: 30px;
+    margin-top: 80px;
+    margin-bottom: 50px;
+    overflow: hidden;
+}
+
+/* the asterisk choose all .mk-card inside .zs-faq-card*/
+.zs-faq-card > * {
+    flex-shrink: 0;
+    width: calc(33.333% - 20px);
+
+}
+
+.zs-faq-navigation {
+    display: flex;
+    justify-content: flex-end;
+    align-items: end;
+    border-top: 1px solid var(--grey-15);
+    padding-top: 20px;
+}
+
+@media screen and (max-width:1440px){
+    .zs-faq-card {
+        margin-top: 60px;
+    }
+}
+
+@media screen and (max-width:992px) {
+    .zs-faq-card {
+        margin-top: 40px;
+        margin-bottom: 30px;
+    }
+    .mk-card {
+        width: 48%;
+    }
+}
+
+@media screen and (max-width:576px) {
+    .mk-card {
+        width: 100%;
+    }
+
+    .zs-faq-navigation {
+        justify-content: space-between;
+    }
+}
