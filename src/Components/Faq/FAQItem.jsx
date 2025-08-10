@@ -4,10 +4,12 @@ import './FAQItem.css';
 
 const FAQItem = ({ question, answer }) => {
     return (
-        <BaseCard padding="large">
+        <BaseCard padding="large" className="zs-card">
+            <div className="zs-text-wrapper">
                 <h3 className='zs-question'>{question}</h3>
                 <p className='zs-answer'>{answer}</p>
-                <Button className='fullWidth' variant='dark'>Read More</Button>
+            </div>
+                <Button className='zs-card-button' variant='dark'>Read More</Button>
         </BaseCard>
     );
 };
