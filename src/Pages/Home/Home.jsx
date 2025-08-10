@@ -7,8 +7,8 @@ const HomePage = () => {
     title: "Discover Your Dream Property with Estatein",
     subtitle: "Your journey to finding the perfect property begins here. Explore our listings to find the home that matches your dreams.",
     buttons: [
-      { id: 'hero-btn-1', text: "Learn More", link: "/AboutUs", variant: "secondary" },
-      { id: 'hero-btn-2', text: "Browse Properties", link: "/PropertyDetails", variant: "primary" }
+      { id: 'hero-btn-1', text: "Learn More", link: "/AboutUs", variant: "secondary" , size : "small"  },
+      { id: 'hero-btn-2', text: "Browse Properties", link: "/PropertyDetails", variant: "primary" , size : "small" }
     ],
     stats: [
       { id: 'hero-stat-1', number: "200+", label: "Happy Customers" },

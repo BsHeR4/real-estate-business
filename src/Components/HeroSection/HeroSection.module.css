@@ -5,9 +5,7 @@
 .heroLayout {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
-    min-height: 100vh;
-    /* padding: 2rem; */
+    flex-wrap: nowrap;
     align-items: center;
     justify-content: space-between;
     box-sizing: border-box;
@@ -18,7 +16,7 @@
 }
 
 .leftColumn {
-    /* flex: 1 1 50%; */
+    flex: 1 1 50%;
     display: flex;
     flex-direction: column;
     gap: 2rem;
@@ -29,7 +27,7 @@
 }
 
 .rightColumn {
-    flex: 1 1 45%;
+    flex: 1 1 50%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -50,15 +48,33 @@
 .buttonsContainer {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
-    gap: 1rem;
-    width: 100%;
-    box-sizing: border-box;
+    gap: 20px;
+    /* width: 800px; */
 }
 
 .buttonsContainer>* {
-    /* flex: 1 1 150px; */
-    max-width: 100%;
+    /* display: flex;
+    align-items: center;
+    justify-content: center;
+    white-space: nowrap; */
+    font-weight: 500;
+    margin: 60px 0px;
+    /* 
+    font-size: 18px;
+    line-height: 150%;
+    height: 63px;
+    min-height: 63px;
+    padding-right: 0 20px;
+    font-size: 16px;
+     */
+}
+
+.buttonsContainer>*:first-child {
+    /* width: 139px; */
+}
+
+.buttonsContainer>*:nth-child(2) {
+    /* width: 191px; */
 }
 
 /* Stats */
@@ -79,17 +95,47 @@
     max-width: 100%;
 }
 
+/* =================================================================== */
+/* 2. Keep two columns between 1543px and 993px */
+/* =================================================================== */
+@media screen and (max-width: 1543px) and (min-width: 993px) {
+    .heroLayout {
+        flex-wrap: nowrap;
+    }
 
+    .buttonsContainer>* {
+        margin: 20px 0px !important;
 
+    }
+}
+
+@media screen and (max-width: 1380px) and (min-width: 993px) {
+    .rightColumn {
+        flex: 0 0 600px;
+        /* عرض ثابت للصورة */
+        max-width: 600px;
+    }
+
+    .heroImage {
+        width: 100%;
+        height: auto;
+        max-width: 600px;
+        object-fit: contain;
+    }
+
+    .leftColumn {
+        flex: 1;
+        width: 500px;
+    }
+}
 
 /* =================================================================== */
-/* 2. Mobile Styles (max-width: 992px) */
+/* 3. Mobile Styles (max-width: 992px) */
 /* =================================================================== */
 @media screen and (max-width: 992px) {
     .heroLayout {
         flex-direction: column;
-        /* padding: 2rem 1rem;
-        gap: 2rem; */
+        flex-wrap: wrap;
     }
 
     .rightColumn {
@@ -98,17 +144,20 @@
 
     .leftColumn {
         order: 2;
-        /* text-align: center;
-        align-items: center;
-        justify-content: center; */
+        align-items: start;
+        text-align: left;
+        justify-content: left;
     }
 
     .buttonsContainer {
         flex-direction: column;
+        width: 100%;
     }
 
     .buttonsContainer>* {
-        width: 100%;
+        width: 100% !important;
+        margin: 10px 0px !important;
+
     }
 
     .statsContainer {
@@ -116,19 +165,11 @@
     }
 }
 
-
 /* =================================================================== */
-/* 3. Ultra Small Devices (max-width: 360px) */
+/* 4. Ultra Small Devices (max-width: 360px) */
 /* =================================================================== */
-
 @media screen and (max-width: 360px) {
-    .heroLayout {
-        /* padding: 1rem; */
-        /* gap: 1rem; */
-    }
-
     .buttonsContainer>* {
         font-size: 14px;
-        /* padding: 0.75rem 1rem; */
     }
 }

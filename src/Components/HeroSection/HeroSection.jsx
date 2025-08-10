@@ -19,7 +19,7 @@ import SectionHeader from '../SectionHeader/SectionHeader';
  * @param {object} [props.data.image] - Optional image object.
  * @returns {JSX.Element | null} The hero component, or null if no data is provided.
  */
-const HeroSection = ({ data }) => {
+function HeroSection({ data }) {
     if (!data) {
         return null;
     }
@@ -34,8 +34,7 @@ const HeroSection = ({ data }) => {
                     subtitle={subtitle}
                     showIcon={showStar}
                     titleClassName="AS-hero-title"
-                    subtitleClassName="AS-hero-subtitle"
-                />
+                    subtitleClassName="AS-hero-subtitle" />
 
                 <div className={styles.buttonsContainer}>
                     {buttons.map((button) => (
@@ -58,6 +57,6 @@ const HeroSection = ({ data }) => {
             )}
         </div>
     );
-};
+}
 
 export default HeroSection;

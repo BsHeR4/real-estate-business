@@ -62,6 +62,7 @@ ul {
 
 .AS-hero-section {
     padding-right: 0 !important;
+    padding-top:0 !important ;
 }
 
 .AS-hero-subtitle {
@@ -72,20 +73,23 @@ ul {
     font-size: 18px !important;
     line-height: 150% !important;
     font-style: Medium;
+    padding-top: 24px;
 }
 
 @media screen and (max-width: 1440px) and (min-width: 993px) {
     .AS-hero-title {
         width: 610px !important;
         font-size: 46px !important;
+        margin-top: 20px;
     }
 
     .AS-hero-subtitle {
-        width: 610px !important;
+        width: 500px !important;
         font-size: 16px !important;
-        display: contents;
+        padding-top: 20px !important;
+        
     }
-
+    
 }
 
 
@@ -93,9 +97,15 @@ ul {
     .as-button-full-width {
         width: 100% !important;
     }
-
+    
+.AS-hero-section {
+    padding-right: 16px !important;
+    padding-top: 40px !important ;
+}
+    
     .AS-hero-title {
-        width: 358px !important;
+        /* display: contents; */
+        max-width: 358px !important;
         font-size: 28px !important;
     }
 
@@ -103,6 +113,7 @@ ul {
         width: 358px !important;
         font-size: 14px !important;
         display: contents !important;
+        padding-top: 16px;
     }
 
     .section-header {
