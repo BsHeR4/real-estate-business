@@ -1,0 +1,71 @@
+.d-flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.zs-banner {
+    position: relative;
+    background-color: var(--gery-10);
+    height: 63px;
+    background-image: url("/assets/imgs/banner-bg.svg");
+    background-color:var(--gery-12) ;
+    background-repeat: no-repeat;
+    background-size:cover;
+
+    .zs-close-button {
+        position: absolute;
+        right: 4%;
+        top: 50%;
+        transform: translateY(-50%);
+        border-radius: 50%;
+        width: 32px;
+        height: 32px;
+        font-size: 24px;
+        border: none;
+        background-color: #3030308c;
+        color: var(--color-white);
+        cursor: pointer;
+    }
+
+    .zs-banner-desc {
+        height: 100%;
+        color: var(--color-white);
+        font-size: 18px;
+        font-weight: 500;
+
+        a {
+            color: var(--color-white);
+            text-decoration: underline;
+            margin-left: 10px;
+        }
+    }
+}
+
+@media screen and (max-width:1440px){
+    .zs-banner{
+        height: 49px;
+
+        .zs-banner-desc{
+            font-size: 14px;
+
+            a{
+                margin-left: 6px;
+            }
+        }
+        .zs-close-button{
+            width: 26px;
+            height: 26px;
+            font-size: 18px;
+        }
+    }
+}
+@media screen and (max-width:992px){
+        .zs-banner{
+        height: 78px;
+        padding-inline: 8px 48px;
+
+        .zs-banner-desc{
+            font-size: 3.0769vw;
+        }
+    }
+}
