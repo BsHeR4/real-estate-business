@@ -13,6 +13,8 @@ import SectionHeader from '../SectionHeader/SectionHeader';
  * @param {object} props.data - An object containing all necessary data for the component.
  * @param {string} props.data.title - The main title text.
  * @param {string} props.data.subtitle - The subtitle text.
+ * @param {string} [props.data.titleClassName] - Optional CSS class for the title.
+ * @param {string} [props.data.subtitleClassName] - Optional CSS class for the subtitle.
  * @param {boolean} [props.data.showStar=false] - Controls the visibility of the star icon in the header.
  * @param {Array<object>} [props.data.buttons=[]] - Optional array of button objects.
  * @param {Array<object>} [props.data.stats=[]] - Optional array of statistic objects.
@@ -24,7 +26,16 @@ function HeroSection({ data }) {
         return null;
     }
 
-    const { title, subtitle, buttons = [], stats = [], image, showStar = false } = data;
+    const {
+        title,
+        subtitle,
+        titleClassName,
+        subtitleClassName,
+        buttons = [],
+        stats = [],
+        image,
+        showStar = false
+    } = data;
 
     return (
         <div className={styles.heroLayout}>
@@ -33,16 +44,20 @@ function HeroSection({ data }) {
                     title={title}
                     subtitle={subtitle}
                     showIcon={showStar}
-                    titleClassName="AS-hero-title"
-                    subtitleClassName="AS-hero-subtitle" />
+                    titleClassName={titleClassName}
+                    subtitleClassName={subtitleClassName}
+                />
 
                 <div className={styles.buttonsContainer}>
                     {buttons.map((button) => (
                         <Link to={button.link} key={button.id}>
-                            <Button variant={button.variant} size="large" className="as-button-full-width">{button.text}</Button>
+                            <Button variant={button.variant} size="large" className="as-button-full-width">
+                                {button.text}
+                            </Button>
                         </Link>
                     ))}
                 </div>
+
                 <div className={styles.statsContainer}>
                     {stats.map((stat) => (
                         <StatItem key={stat.id} number={stat.number} label={stat.label} />
