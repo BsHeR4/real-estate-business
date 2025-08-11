@@ -13,7 +13,11 @@
     padding: 5rem;
 }
 
-@media screen and (max-width: 1440px){
+@media screen and (max-width: 1440px) and (min-width: 993px){
+    .mk-card{
+        border-radius: 10px;
+    }
+
     .mk-medium-padding{
         padding: 3rem;
     }
@@ -23,7 +27,11 @@
     }
 }
 
-@media screen and (max-width: 992px){
+@media screen and (max-width: 992px) and (min-width: 300px){
+    .mk-card{
+        border-radius: 10px;
+    }
+
     .mk-medium-padding{
         padding: 2.4rem;
     }

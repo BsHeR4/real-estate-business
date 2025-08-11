@@ -1,5 +1,4 @@
 .mk-text-container{
-    max-width: 412px;
     min-height: 158px;
 }
 
@@ -13,16 +12,11 @@
 
 .mk-testimonial-description{
     font-size: 18px;
-    font-weight: 500;
     line-height: 150%;
     color: var(--color-white);
 }
 
 @media screen and (max-width: 1440px) and (min-width: 993px){
-    .mk-text-container{
-        max-width: 333.33px;
-    }
-
     .mk-testimonial-title{
         font-size: 20px;
         margin-bottom: 10px;
@@ -35,7 +29,8 @@
 
 @media screen and (max-width: 992px) and (min-width: 300px) {
     .mk-text-container{
-        max-width: 298px;
+        max-width: 455.30px;
+        min-height: 84px;
     }
 
     .mk-testimonial-title{
