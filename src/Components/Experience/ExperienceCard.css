@@ -1,0 +1,112 @@
+/* TODO: Despaghettify this nightmare*/
+.zs-card-step-wrapper {
+    border-left: 1px solid var(--purple-60);
+    padding: 16px 20px;
+    position: relative;
+}
+.zs-card-step-wrapper::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 98%;
+    height: 1px;
+    background: linear-gradient(to right,
+            rgba(123, 63, 255, 1) 0%,
+            rgba(123, 63, 255, 0.6) 18%,
+            rgba(123, 63, 255, 0.15) 45%,
+            #262626 100%)
+}
+
+.zs-Exp-card-wrapper {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.zs-card-step {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 150%;
+    color: var(--color-white);
+}
+
+.zs-exp-card-title {
+    font-size: 26px;
+    font-weight: 600;
+    line-height: 150%;
+    color: var(--color-white);
+    margin-bottom: 20px;
+}
+
+.zs-exp-card-desc {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 150%;
+    color: var(--grey-60);
+}
+
+.zs-exp-card {
+    border-radius: 12px;
+    border-left: 0;
+    border-top: 0;
+    border-top-left-radius: 0;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    position: relative;
+    overflow: hidden;
+
+}
+
+.zs-exp-card::before {
+    content: "";
+    position: absolute;
+    top: -100px;
+    left: -100px;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle at 18% 18%,
+            rgba(123, 63, 255, 0.9) 0%,
+            rgba(123, 63, 255, 0.18) 22%,
+            rgba(123, 63, 255, 0.06) 36%,
+            transparent 45%);
+    filter: blur(45px);
+}
+
+.zs-exp-card::after {
+    content: "";
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 1px;
+    height: 100%;
+    z-index: 2;
+    background: linear-gradient(to bottom,
+            rgba(123, 63, 255, 1) 0%,
+            rgba(123, 63, 255, 0.6) 18%,
+            rgba(123, 63, 255, 0.15) 45%,
+            #262626 100%)
+}
+
+@media screen and (max-width:1440px) {
+
+    .zs-card-step,
+    .zs-exp-card-desc {
+        font-size: 16px;
+    }
+
+    .zs-exp-card-title {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width:992px) {
+    .zs-exp-card-desc {
+        font-size: 14px;
+    }
+
+    .zs-exp-card-title {
+        font-size: 18px;
+    }
+}
