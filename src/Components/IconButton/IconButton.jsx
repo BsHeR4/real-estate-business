@@ -10,12 +10,13 @@ const icons = {
     'arrow-right': <FaArrowRight />
 };
 
-const IconButton = ({ icon, variant = 'dark', disabled = false, type = 'arrow' }) => {
+const IconButton = ({ icon, variant = 'dark', disabled = false, type = 'arrow', onClick }) => {
     const buttonClass = `zs-icon-button ${type} ${variant} ${disabled ? 'disabled' : ''}`
     return (
         <button
             className={buttonClass}
             disabled={disabled}
+            onClick={onClick}
             icon={icon}
         >
             {icons[icon]}
