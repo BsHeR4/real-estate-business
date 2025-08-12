@@ -5,6 +5,10 @@
     border-radius: 12px;
 }
 
+.mk-small-padding{
+    padding: 30px !important;
+}
+
 .mk-medium-padding{
     padding: 4rem;
 }
@@ -13,7 +17,11 @@
     padding: 5rem;
 }
 
-@media screen and (max-width: 1440px){
+@media screen and (max-width: 1440px) and (min-width: 993px){
+    .mk-small-padding{
+        padding: 24px !important;
+    }
+
     .mk-medium-padding{
         padding: 3rem;
     }
@@ -23,7 +31,11 @@
     }
 }
 
-@media screen and (max-width: 992px){
+@media screen and (max-width: 992px) and (min-width: 300px){
+    .mk-small-padding{
+        padding: 20px !important;
+    }
+
     .mk-medium-padding{
         padding: 2.4rem;
     }

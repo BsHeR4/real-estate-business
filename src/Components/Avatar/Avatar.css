@@ -1,0 +1,44 @@
+.mk-avatar-container{
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.mk-avatar{
+    width: 100%;
+}
+
+.mk-twitter-icon{
+    font-size: 24px !important;
+    position: absolute;
+    bottom: -28px;
+    width: 76px !important;
+    height: 52px !important;
+    background-color: var(--purple-60) !important;
+    border-radius: 43px !important;
+    margin: 0;
+}
+
+@media screen and (max-width: 1440px) and (min-width: 993px){
+    .mk-twitter-icon{
+        font-size: 20px !important;
+        width: 60px !important;
+        height: 40px !important;
+        position: absolute;
+        bottom: -20px;
+    }
+}
+
+@media screen and (max-width: 992px) and (min-width: 300px){
+    .mk-twitter-icon{
+        font-size: 20px !important;
+        width: 60px !important;
+        height: 40px !important;
+        position: absolute;
+        bottom: -20px;
+    }
+}
+

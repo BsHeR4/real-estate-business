@@ -1,0 +1,25 @@
+.mk-team-card-container{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: center;
+    gap: 30px;
+    margin-top: 80px;
+}
+
+
+@media screen and (max-width: 1440px) and (min-width: 993px){
+    .mk-team-card-container{
+        gap: 20px;
+        margin-top: 60px;
+    }
+}
+
+@media screen and (max-width: 992px) and (min-width: 300px){
+    .mk-team-card-container{
+        grid-template-columns: 1fr;
+        justify-items: center;
+        gap: 20px;
+        margin-top: 40px;
+    }
+}
