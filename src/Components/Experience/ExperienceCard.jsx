@@ -9,10 +9,8 @@ const ProcessStepCard = ({ step, title, description }) => {
                     <span className="zs-card-step">{step}</span>
                 </div>
                 <BaseCard className="zs-exp-card" padding='large'>
-                        <div className="zs-card-content">
-                            <h3 className="zs-exp-card-title">{title}</h3>
-                            <p className="zs-exp-card-desc">{description}</p>
-                        </div>
+                        <h3 className="zs-exp-card-title">{title}</h3>
+                        <p className="zs-exp-card-desc">{description}</p>
                 </BaseCard>
             </div>
         </>

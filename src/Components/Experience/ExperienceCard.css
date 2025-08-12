@@ -1,49 +1,32 @@
-/* TODO: Despaghettify this nightmare*/
-.zs-card-step-wrapper {
-    border-left: 1px solid var(--purple-60);
-    padding: 16px 20px;
-    position: relative;
-}
-.zs-card-step-wrapper::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 98%;
-    height: 1px;
-    background: linear-gradient(to right,
-            rgba(123, 63, 255, 1) 0%,
-            rgba(123, 63, 255, 0.6) 18%,
-            rgba(123, 63, 255, 0.15) 45%,
-            #262626 100%)
-}
-
 .zs-Exp-card-wrapper {
     display: flex;
     flex-direction: column;
     flex: 1;
 }
-
+.zs-card-step-wrapper {
+    border-left: 1px solid var(--purple-60);
+    padding: 16px 20px;
+    position: relative;
+}
+/*Top border Linear Gradient Effect*/
+.zs-card-step-wrapper::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 97%;
+    height: 1px;
+    background: linear-gradient(to right,
+            #7b3fff 0%,
+            #7b3fff99 25%,
+            #262626 40%,
+            #262626 100%)
+}
 .zs-card-step {
     font-size: 20px;
     font-weight: 500;
     line-height: 150%;
     color: var(--color-white);
-}
-
-.zs-exp-card-title {
-    font-size: 26px;
-    font-weight: 600;
-    line-height: 150%;
-    color: var(--color-white);
-    margin-bottom: 20px;
-}
-
-.zs-exp-card-desc {
-    font-size: 18px;
-    font-weight: 500;
-    line-height: 150%;
-    color: var(--grey-60);
 }
 
 .zs-exp-card {
@@ -56,24 +39,23 @@
     flex-grow: 1;
     position: relative;
     overflow: hidden;
-
 }
-
+/*Halo Effect*/
 .zs-exp-card::before {
     content: "";
     position: absolute;
     top: -100px;
     left: -100px;
-    width: 100%;
-    height: 100%;
-    background: radial-gradient(circle at 18% 18%,
-            rgba(123, 63, 255, 0.9) 0%,
-            rgba(123, 63, 255, 0.18) 22%,
-            rgba(123, 63, 255, 0.06) 36%,
+    width: 60%;
+    height: 60%;
+    background: radial-gradient(circle,
+            #7b3fffe6 0%,
+            #7b3fff2e 22%,
+            #7b3fff0f 36%,
             transparent 45%);
     filter: blur(45px);
 }
-
+/*left border Linear Gradient Effect*/
 .zs-exp-card::after {
     content: "";
     position: absolute;
@@ -83,19 +65,30 @@
     height: 100%;
     z-index: 2;
     background: linear-gradient(to bottom,
-            rgba(123, 63, 255, 1) 0%,
-            rgba(123, 63, 255, 0.6) 18%,
-            rgba(123, 63, 255, 0.15) 45%,
+            #7b3fff 0%,
+            #7b3fff99 25%,
+            #262626 40%,
             #262626 100%)
+}
+.zs-exp-card-title {
+    font-size: 26px;
+    font-weight: 600;
+    line-height: 150%;
+    color: var(--color-white);
+    margin-bottom: 20px;
+}
+.zs-exp-card-desc {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 150%;
+    color: var(--grey-60);
 }
 
 @media screen and (max-width:1440px) {
-
     .zs-card-step,
     .zs-exp-card-desc {
         font-size: 16px;
     }
-
     .zs-exp-card-title {
         font-size: 20px;
     }
@@ -105,7 +98,6 @@
     .zs-exp-card-desc {
         font-size: 14px;
     }
-
     .zs-exp-card-title {
         font-size: 18px;
     }

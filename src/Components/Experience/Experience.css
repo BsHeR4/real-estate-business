@@ -14,13 +14,23 @@
   }
 }
 
-@media (max-width: 992px) {
-  .zs-exp-cards-grid > *:nth-child(n + 4) {
+@media screen and (max-width: 992px) {
+  /* choose all childern from No.4 to the last one */
+  .zs-exp-cards-grid > *:nth-child(n + 5) {
+    display: none;
+  }
+    .zs-exp-cards-grid {
+        grid-template-columns: repeat(2, 1fr);
+        margin-top: 40px; 
+        gap:30px;
+    }
+}
+
+@media screen and (max-width: 576px){
+    .zs-exp-cards-grid > *:nth-child(n + 4) {
     display: none;
   }
     .zs-exp-cards-grid {
         grid-template-columns: 1fr;
-        margin-top: 40px; 
-        gap:30px;
     }
 }
