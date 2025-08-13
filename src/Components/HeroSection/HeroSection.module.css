@@ -32,7 +32,7 @@
     border-radius: 0.5rem;
 }
 
-/* Buttons & Stats remain largely the same */
+
 .buttonsContainer {
     display: flex;
     flex-direction: row;
@@ -71,9 +71,7 @@
 
     .leftColumn {
         order: 2;
-        /* النص ثانيًا */
         padding-right: 0;
-        /* إزالة المسافة الجانبية */
         margin-top: 2rem;
     }
 

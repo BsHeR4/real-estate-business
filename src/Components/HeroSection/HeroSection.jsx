@@ -51,7 +51,7 @@ function HeroSection({ data }) {
                 <div className={styles.buttonsContainer}>
                     {buttons.map((button) => (
                         <Link to={button.link} key={button.id}>
-                            <Button variant={button.variant} size="large" className="as-button-full-width">
+                            <Button variant={button.variant} size="small" className="as-button-full-width">
                                 {button.text}
                             </Button>
                         </Link>
