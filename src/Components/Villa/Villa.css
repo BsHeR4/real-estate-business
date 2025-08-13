@@ -1,0 +1,46 @@
+/*Header*/
+.zs-villa-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.zs-villa-info {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+
+    .zs-villa-name {
+        font-size: 30px;
+        font-weight: 600;
+        color: var(--color-white);
+        line-height: 150%;
+    }
+}
+
+.zs-villa-location {
+    display: flex;
+    padding: 10px;
+    margin-left: 20px;
+
+    .zs-villa-location-icon {
+        margin-right: 6px;
+    }
+}
+
+.zs-villa-cost {
+    .zs-villa-price-word {
+        color: var(--grey-60);
+        font-size: 18px;
+        line-height: 150%;
+        font-weight: 500;
+    }
+
+    .zs-villa-price {
+        font-size: 24px;
+        color: var(--color-white);
+        font-weight: 600;
+    }
+}
+
+/*End Villa Header*/
