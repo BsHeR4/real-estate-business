@@ -1,0 +1,65 @@
+.ms-section {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  padding: 10px;
+  background-color: #fcfcfc;
+  border: 1px solid #e5e5e5;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+
+@media (min-width: 1024px) {
+  .ms-section {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (min-width: 1536px) {
+  .ms-section {
+    gap: 20px;
+    padding: 20px;
+    border-radius: 12px;
+  }
+}
+
+.ms-card-style {
+  padding: 20px 14px;
+  background-color: #f9f9f9;
+  border: 1px solid #e5e5e5;
+}
+
+@media (min-width: 768px) {
+  .ms-card-style {
+    padding: 30px 16px;
+  }
+}
+
+@media (min-width: 1536px) {
+  .ms-card-style {
+    padding: 40px 20px;
+  }
+}
+
+.ms-title-style {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.ms-title-size {
+  font-size: 14px;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .ms-title-size {
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 1536px) {
+  .ms-title-size {
+    font-size: 20px;
+  }
+}
