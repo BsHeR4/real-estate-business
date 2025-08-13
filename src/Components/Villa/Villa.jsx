@@ -10,6 +10,8 @@ import BaseCard from './../BaseCard/BaseCard.jsx'
 
 const VillaPage = () => {
     return (
+        //TODO: redesign header section coz it sucks :|
+        //TODO: Fix image positioning on smaller screens
         <Section>
             <div className="zs-villa-wrapper">
                 <div className="zs-villa-header">
@@ -25,6 +27,9 @@ const VillaPage = () => {
                         <p className='zs-villa-price'>$1,250,000</p>
                     </div>
                 </div>
+                <BaseCard className='zs-img-mansion'>
+                <img className='' src="assets\imgs\Property\mansion.png" alt="Mansion" />
+                </BaseCard>
             </div>
         </Section>
     );

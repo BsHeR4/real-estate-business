@@ -4,7 +4,6 @@
     align-items: center;
     margin-bottom: 50px;
 }
-
 .zs-villa-info {
     display: flex;
     align-items: center;
@@ -17,7 +16,6 @@
         line-height: 150%;
     }
 }
-
 .zs-villa-location {
     display: flex;
     padding: 10px;
@@ -27,7 +25,9 @@
         margin-right: 6px;
     }
 }
-
+.zs-villa-location:hover {
+    background-color: inherit !important;
+}
 .zs-villa-cost {
     .zs-villa-price-word {
         color: var(--grey-60);
@@ -42,5 +42,47 @@
         font-weight: 600;
     }
 }
-
 /*End Villa Header*/
+.zs-img-mansion {
+    width: 100%;
+}
+.zs-img-mansion img {
+    width: 100%;
+    height: 100%;
+}
+
+@media screen and (max-width: 1440px){
+    .zs-villa-name {
+        font-size: 24px !important;
+    }
+    .zs-villa-location,
+    .zs-villa-price-word{
+        font-size: 14px !important;
+    }
+    .zs-villa-price{
+        font-size: 20px !important;
+    }
+}
+@media screen and (max-width: 992px) {
+    .zs-img-mansion {
+        aspect-ratio: 1 / 1;
+    }
+    .zs-villa-name {
+        font-size: 20px !important;
+        margin-bottom: 10px;
+    }
+    .zs-villa-price{
+        font-size: 18px !important;
+    }
+.zs-villa-info{
+    flex-direction: column;
+    align-items: baseline;
+}
+.zs-villa-cost{
+    display: flex;
+
+}
+.zs-villa-header {
+    align-items: end;
+}
+}
