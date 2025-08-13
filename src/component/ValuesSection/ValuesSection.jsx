@@ -7,22 +7,22 @@ import "./ValuesSection.css";
 function ValuesSection() {
     const values = [
         {
-            icon: "icons/trust.svg",
+            icon: "/public/assets/img/Icon Container.svg",
             title: "Trust",
             description: "Trust is the cornerstone of every successful real estate transaction."
         },
         {
-            icon: "icons/excellence.svg",
+            icon: "/public/assets/img/Icon Container(1).svg",
             title: "Excellence",
             description: "We set the bar high for ourselves. From the properties we list to the services we provide."
         },
         {
-            icon: "icons/client-centric.svg",
+            icon: "/public/assets/img/Icon Container(2).svg",
             title: "Client-Centric",
             description: "Your dreams and needs are at the center of our universe. We listen, understand."
         },
         {
-            icon: "icons/commitment.svg",
+            icon: "/public/assets/img/Icon Container(3).svg",
             title: "Our Commitment",
             description: "We are dedicated to providing you with the highest level of service, professionalism, and support."
         }

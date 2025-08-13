@@ -7,8 +7,8 @@ import Contact from "./Pages/Contact/Contact";
 
 // الأقسام الإضافية
 import IconStar from "./component/Icons/Icons";
-import SiteFeaturesSection from "./components/SiteFeaturesSection/SiteFeaturesSection";
-import ValuesSection from "./components/ValuesSection/ValuesSection";
+import SiteFeaturesSection from "./component/SiteFeaturesSection/SiteFeaturesSection";
+import ValuesSection from "./component/ValuesSection/ValuesSection";
 
 function App() {
   const featuresData = [
