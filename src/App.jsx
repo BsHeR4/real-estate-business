@@ -4,8 +4,11 @@ import Home from "./Pages/Home/Home";
 import PropertyDetails from "./Pages/PropertyDetails/PropertyDetails";
 import Services from "./Pages/Services/Services";
 import Contact from "./Pages/Contact/Contact";
+
+// الأقسام الإضافية
 import IconStar from "./component/Icons/Icons";
 import SiteFeaturesSection from "./components/SiteFeaturesSection/SiteFeaturesSection";
+import ValuesSection from "./components/ValuesSection/ValuesSection";
 
 function App() {
   const featuresData = [
@@ -45,9 +48,14 @@ function App() {
         <Route path="/Contact" element={<Contact />} />
       </Routes>
 
+      
       <IconStar />
 
+      
       <SiteFeaturesSection data={featuresData} />
+
+      
+      <ValuesSection />
     </>
   );
 }

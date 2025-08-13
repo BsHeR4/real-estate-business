@@ -1,0 +1,33 @@
+
+.ms-values-section {
+    background-color: #141414;
+}
+
+.ms-values-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.ms-values-left {
+    flex: 1 1 35%;
+}
+
+.ms-values-right {
+    flex: 1 1 60%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: #0f0f0f;
+    padding: 0;
+    border-radius: 8px;
+}
+
+
+@media screen and (max-width: 992px) {
+    .ms-values-container {
+        flex-direction: column;
+    }
+    .ms-values-right {
+        grid-template-columns: 1fr;
+    }
+}
