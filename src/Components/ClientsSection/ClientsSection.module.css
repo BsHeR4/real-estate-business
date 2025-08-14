@@ -4,3 +4,29 @@
     justify-content: space-between;
     width: 100%;
 }
+
+.navigation {
+    display: flex;
+    justify-content: flex-end;
+    align-items: end;
+    border-top: 1px solid var(--grey-15);
+    padding-top: 20px;
+    margin-top: 5rem;
+}
+
+
+@media screen and (max-width: 1440px) and (min-width: 993px) {
+
+    .navigation {
+        padding-top: 1.6rem;
+        margin-top: 4rem;
+    }
+}
+
+@media screen and (max-width: 992px) {
+
+    .navigation {
+        padding-top: 1.6rem;
+        margin-top: 3rem;
+    }
+}

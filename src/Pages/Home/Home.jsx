@@ -5,9 +5,7 @@ import FeaturedPropertiesSection from '../../components/FeaturedPropertiesSectio
 import TestimonialsSection from '../../components/TestimonialsSection/TestimonialsSection';
 import TestimonialCard from '../../components/TestimonialCard/TestimonialCard';
 import FAQSection from '../../components/Faq/FAQSection';
-import Footer from '../../components/Footer/Footer';
 import SiteFeaturesSection from '../../Components/SiteFeaturesSection/SiteFeaturesSection';
-import CTASection from '../../components/CTASection/CTASection';
 
 const HomePage = () => {
   const heroDataForHomePage = {
@@ -111,11 +109,6 @@ const HomePage = () => {
       </TestimonialsSection>
 
       <FAQSection />
-      
-      <CTASection />
-
-      <Footer />
-
 
     </div >
   );

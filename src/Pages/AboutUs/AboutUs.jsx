@@ -1,6 +1,10 @@
 import React from 'react';
 import Section from '../../components/Section/Section';
+import ValuesSection from '../../components/ValuesSection/ValuesSection';
 import HeroSection from '../../components/HeroSection/HeroSection';
+import Experience from '../../components/Experience/Experience';
+import TeamSection from '../../components/TeamSection/TeamSection';
+import ClientsSection from '../../components/ClientsSection/ClientsSection';
 
 const AboutUsPage = () => {
   const heroDataForAboutUsPage = {
@@ -28,6 +32,15 @@ const AboutUsPage = () => {
       <Section className="AU-hero-section">
         <HeroSection data={heroDataForAboutUsPage} />
       </Section>
+
+      <ValuesSection />
+
+      <Experience />
+
+      <TeamSection title={'Meet the Estatein Team'} subtitle={'At Estatein, our success is driven by the dedication and expertise of our team. Get to know the people behind our mission to make your real estate dreams a reality.'}>
+      </TeamSection>
+
+      <ClientsSection />
     </div>
   );
 };
