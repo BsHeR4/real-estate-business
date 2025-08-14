@@ -1,0 +1,45 @@
+.container>div {
+    display: flex;
+    gap: 0.6rem;
+    padding-bottom: 0.8rem;
+
+    span {
+        padding-bottom: 0rem;
+    }
+}
+
+.leftBorder {
+    padding-left: 3rem;
+    border-left: 1px solid var(--grey-15);
+}
+
+@media screen and (max-width: 1440px) and (min-width: 993px) {
+
+
+    .leftBorder {
+        padding-left: 2rem;
+        border-left: 1px solid var(--grey-15);
+    }
+
+    .container>div {
+        span {
+            font-size: 1.4rem;
+        }
+    }
+
+}
+
+@media screen and (max-width: 992px) {
+
+    .leftBorder {
+        padding-left: 1.6rem;
+        border-left: 1px solid var(--grey-15);
+    }
+
+    .container>div {
+        span {
+            font-size: 1.2rem;
+        }
+    }
+
+}
