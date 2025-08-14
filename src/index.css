@@ -130,6 +130,10 @@ ul {
 
 }
 
+.p-0 {
+    padding: 0px !important;
+}
+
 .px-0 {
     padding-left: 0px !important;
     padding-right: 0px !important;
@@ -140,3 +144,7 @@ ul {
     padding-bottom: 16px !important;
 }
 /*End Global Modifiers*/
+
+.sectionShadow {
+    box-shadow: 0px 0px 0px 10px #191919 !important;
+}

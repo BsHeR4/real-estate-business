@@ -1,11 +1,12 @@
 import React from 'react';
-import Section from '../../components/Section/Section';
+import Section from '../../Components/Section/Section';
 import HeroSection from '../../components/HeroSection/HeroSection';
 import FeaturedPropertiesSection from '../../components/FeaturedPropertiesSection/FeaturedPropertiesSection';
 import TestimonialsSection from '../../components/TestimonialsSection/TestimonialsSection';
 import TestimonialCard from '../../components/TestimonialCard/TestimonialCard';
 import FAQSection from '../../components/Faq/FAQSection';
 import Footer from '../../components/Footer/Footer';
+import SiteFeaturesSection from '../../Components/SiteFeaturesSection/SiteFeaturesSection';
 
 const HomePage = () => {
   const heroDataForHomePage = {
@@ -29,12 +30,42 @@ const HomePage = () => {
     showStar: false
   };
 
+  const featuresData = [
+    {
+      HeadingTag: "h5",
+      titleLink: "/dream-home",
+      cardTitle: "Find Your Dream Home",
+      iconType: "icon1",
+    },
+    {
+      HeadingTag: "h5",
+      titleLink: "/property-value",
+      cardTitle: "Unlock Property Value",
+      iconType: "icon2",
+    },
+    {
+      HeadingTag: "h5",
+      titleLink: "/management",
+      cardTitle: "Effortless Property Management",
+      iconType: "icon3",
+    },
+    {
+      HeadingTag: "h5",
+      titleLink: "/investments",
+      cardTitle: "Smart Investments, Informed Decisions",
+      iconType: "icon4",
+    },
+  ];
+
   return (
     <div>
       {/* Add the className prop here */}
       <Section className="AS-hero-section">
         <HeroSection data={heroDataForHomePage} />
       </Section>
+
+      <SiteFeaturesSection data={featuresData} />
+
       <FeaturedPropertiesSection />
       <TestimonialsSection
         title={'What Our Clients Say'}
