@@ -9,11 +9,11 @@
     margin-right: 10px;
 }
 .zs-icon-button.dark {
-    background-color: #191919;
+    background-color: var(--grey-08);
 }
 
 .zs-icon-button.darker {
-    background-color: var(--grey-08);
+    background-color: var(--grey-10);
 }
 
 .zs-icon-button.disabled {

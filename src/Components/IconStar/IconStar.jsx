@@ -5,7 +5,7 @@ const IconStar = () => {
     return (
         <div className="MS-icon-star-container">
             <img 
-                src="./../../../public/assets/imgs/IconStart.svg" 
+                src="/assets/imgs/IconStart.svg"
                 alt="Three Stars Icon" 
                 className="MS-icon-star"
             />

@@ -2,20 +2,46 @@
     display: flex;
     justify-content: space-between;
     gap: 3rem;
+    padding-top: 8rem;
 }
 
 .container>* {
     flex: 1;
 }
 
+.navigation {
+    display: flex;
+    justify-content: flex-end;
+    align-items: end;
+    border-top: 1px solid var(--grey-15);
+    padding-top: 20px;
+    margin-top: 5rem;
+}
+
+
 /* ============================================================= */
 
 @media screen and (max-width: 1440px) and (min-width: 993px) {
     .container {
         gap: 2rem;
+        padding-top: 6rem;
+    }
+
+    .navigation {
+        padding-top: 1.6rem;
+        margin-top: 4rem;
     }
 }
 
 /* ============================================================= */
 
-@media screen and (max-width: 992px) {}
+@media screen and (max-width: 992px) {
+    .container {
+        padding-top: 4rem;
+    }
+
+    .navigation {
+        padding-top: 1.6rem;
+        margin-top: 3rem;
+    }
+}

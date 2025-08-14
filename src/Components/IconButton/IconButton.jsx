@@ -16,6 +16,7 @@ const IconButton = ({ icon, variant = 'dark', disabled = false, type = 'arrow', 
         <button
             className={buttonClass}
             disabled={disabled}
+            onClick={onClick}
             icon={icon}
         >
             {icons[icon]}

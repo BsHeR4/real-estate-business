@@ -1,0 +1,58 @@
+
+.ms-value-card {
+    background-color: transparent;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+    position: relative;
+}
+
+.ms-value-card-header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.ms-value-icon {
+    width: 50px;
+    height: 50px;
+    padding: 10px;
+    border: 1px solid #555;
+    border-radius: 50%;
+}
+
+.ms-value-title {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.ms-value-description {
+    color: #999;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+
+.ms-right-border {
+    border-right: 1px solid #333;
+}
+
+.ms-bottom-border {
+    border-bottom: 1px solid #333;
+}
+
+
+@media screen and (max-width: 992px) {
+    .ms-value-title {
+        font-size: 18px;
+    }
+    .ms-value-description {
+        font-size: 14px;
+    }
+    .ms-right-border {
+        border-right: none;
+    }
+}

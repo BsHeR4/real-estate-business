@@ -1,0 +1,72 @@
+.ms-common-card {
+  position: relative;
+  border-radius: 10px;
+  border: 1px solid var(--grey-15) !important;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: var(--grey-10) !important;
+}
+
+.ms-arrow-icon {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 26px;
+  height: 26px;
+}
+
+.ms-card-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.ms-icon-border-outer {
+  border: 2px solid transparent;
+  border-radius: 50%;
+  padding: 6px;
+}
+
+.ms-icon-border-inner {
+  border: 2px solid transparent;
+  border-radius: 50%;
+}
+
+.ms-card-icon {
+  padding: 8px;
+  width: 48px;
+  height: 48px;
+}
+
+.ms-card-title-link,
+.ms-card-title {
+  color: #000;
+  font-weight: 600;
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.3s ease;
+  color: var(--color-white);
+}
+
+.ms-card-title-link:hover {
+  border-bottom-color: #a855f7;
+}
+
+.ms-card-desc {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 150%;
+  color: #666;
+}
+
+@media (min-width: 768px) {
+  .ms-card-desc {
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 1536px) {
+  .ms-card-desc {
+    font-size: 18px;
+  }
+}
