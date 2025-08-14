@@ -3,6 +3,14 @@
     flex-direction: column;
     justify-content: space-between;
     height: 100%;
+
+    p {
+        padding-bottom: 30px;
+        font-size: 1.8rem;
+        font-weight: 500;
+        line-height: 150%;
+        color: var(--grey-60);
+    }
 }
 
 .cardImage {
@@ -15,14 +23,6 @@ h2 {
     font-size: 2.4rem;
     font-weight: 600;
     color: var(--color-white);
-}
-
-p {
-    padding-bottom: 30px;
-    font-size: 1.8rem;
-    font-weight: 500;
-    line-height: 150%;
-    color: var(--grey-60);
 }
 
 span {
