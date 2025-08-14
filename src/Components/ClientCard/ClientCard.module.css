@@ -1,0 +1,162 @@
+.clientCard {
+    max-width: 40.2864vw;
+    width: fit-content;
+}
+
+.p30 {
+    padding: 30px !important;
+}
+
+span {
+    color: var(--grey-60);
+    font-weight: 500;
+    font-size: 1.8rem;
+}
+
+h3 {
+    padding-top: 0.6rem;
+    font-weight: 600;
+    font-size: 3rem;
+    color: var(--color-white);
+}
+
+svg {
+    color: var(--grey-60);
+    font-size: 2.4rem;
+}
+
+p {
+    color: var(--color-white);
+    font-family: Urbanist;
+    font-weight: 500;
+    font-size: 1.8rem;
+    line-height: 150%;
+
+}
+
+.container,
+.infoContainer {
+    display: flex;
+    justify-content: space-between;
+
+
+}
+
+.infoContainer {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+
+/* .iconContainer>div {
+    display: flex;
+    gap: 0.6rem;
+    padding-bottom: 0.8rem;
+
+    span {
+        padding-bottom: 0rem;
+    }
+} */
+
+/* .iconContainer:nth-child(2) {
+    padding-left: 3rem;
+    border-left: 1px solid var(--grey-15);
+} */
+
+.baseCardParagraph {
+    padding: 3rem;
+
+    p {
+        padding-top: 1.4rem;
+    }
+}
+
+@media screen and (max-width: 1440px) and (min-width: 993px) {
+    span {
+        font-size: 1.6rem;
+    }
+
+    h3 {
+        font-size: 2.4rem;
+    }
+
+    p {
+        font-size: 1.6rem;
+    }
+
+    /* .iconContainer>div {
+        span {
+            font-size: 1.4rem;
+        }
+    } */
+
+    svg {
+        height: 20px;
+        width: 20px;
+    }
+
+    .baseCardParagraph {
+        span {
+            font-size: 1.6rem;
+        }
+
+        p {
+            font-size: 1.6rem;
+        }
+    }
+
+    .infoContainer {
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+    }
+}
+
+
+@media screen and (max-width: 992px) {
+
+    .fullWidth {
+        width: 100%;
+    }
+
+    span {
+        font-size: 1.4rem;
+    }
+
+    h3 {
+        font-size: 2rem;
+        padding-bottom: 2rem;
+    }
+
+    p {
+        font-size: 1.4rem;
+    }
+
+
+    /* .iconContainer>div {
+        span {
+            font-size: 1.2rem;
+        }
+    } */
+
+    svg {
+        height: 18px;
+        width: 18px;
+    }
+
+    .clientCard {
+        width: max-content !important;
+        max-width: 100%;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+
+    .infoContainer {
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+    }
+
+}
