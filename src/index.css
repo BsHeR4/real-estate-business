@@ -55,7 +55,7 @@ ul {
 .AS-hero-title {
     display: flex;
     font-weight: 600 !important;
-    width: 758px !important;
+    /* width: 758px !important; */
     font-size: 60px !important;
     line-height: 120% !important;
     opacity: 1;
@@ -69,7 +69,7 @@ ul {
 
 .AS-hero-subtitle {
     flex-wrap: wrap;
-    width: 758px !important;
+    /* width: 758px !important; */
     opacity: 1 !important;
     font-weight: 500 !important;
     font-size: 18px !important;
@@ -78,15 +78,19 @@ ul {
     padding-top: 24px;
 }
 
+.as-about-us-title {
+    /* margin-top: -90px !important; */
+}
+
 @media screen and (max-width: 1440px) and (min-width: 993px) {
     .AS-hero-title {
-        width: 610px !important;
+        /* width: 610px !important; */
         font-size: 46px !important;
         margin-top: 20px;
     }
 
     .AS-hero-subtitle {
-        width: 500px !important;
+        /* width: 500px !important; */
         font-size: 16px !important;
         padding-top: 20px !important;
 
@@ -97,7 +101,7 @@ ul {
 
 @media screen and (max-width: 992px) {
     .as-button-full-width {
-        width: 100% !important;
+        max-width: 100% !important;
     }
 
     .AS-hero-section {
@@ -112,7 +116,7 @@ ul {
     }
 
     .AS-hero-subtitle {
-        width: 358px !important;
+        /* width: 358px !important; */
         font-size: 14px !important;
         display: contents !important;
         padding-top: 16px;
@@ -120,10 +124,10 @@ ul {
 
     .section-header {
         display: flex !important;
-        width: 250px !important;
+        /* width: 250px !important; */
         text-align: left !important;
         /* padding: 0 162px; */
-        background-color: #141414;
+        /* background-color: #141414; */
         gap: 20px !important;
         flex-direction: column !important;
     }
@@ -140,10 +144,20 @@ ul {
     padding-right: 0px !important;
 }
 
+.py-0 {
+    padding-top: 0px !important;
+    padding-bottom: 0px !important;
+}
+
+.pt-0 {
+    padding-top: 0px !important;
+}
+
 .py-16 {
     padding-top: 16px !important;
     padding-bottom: 16px !important;
 }
+
 
 /*End Global Modifiers*/
 

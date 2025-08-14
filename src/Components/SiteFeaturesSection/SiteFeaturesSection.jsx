@@ -4,7 +4,7 @@ import "./SiteFeaturesSection.css";
 
 const SiteFeaturesSection = ({ data }) => {
   return (
-    <Section className="p-0 sectionShadow">
+    <Section className="px-0 pt-0 sectionShadow">
       <div className="ms-section">
         {data.map((card, index) => (
           <CommonCard

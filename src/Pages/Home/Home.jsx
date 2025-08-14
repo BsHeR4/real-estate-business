@@ -7,11 +7,16 @@ import TestimonialCard from '../../components/TestimonialCard/TestimonialCard';
 import FAQSection from '../../components/Faq/FAQSection';
 import Footer from '../../components/Footer/Footer';
 import SiteFeaturesSection from '../../Components/SiteFeaturesSection/SiteFeaturesSection';
+import CTASection from '../../components/CTASection/CTASection';
 
 const HomePage = () => {
   const heroDataForHomePage = {
     title: "Discover Your Dream Property with Estatein",
+    titleClassName: "AS-hero-title",
+
     subtitle: "Your journey to finding the perfect property begins here. Explore our listings to find the home that matches your dreams.",
+    subtitleClassName: "AS-hero-subtitle",
+
     buttons: [
       { id: 'hero-btn-1', text: "Learn More", link: "/AboutUs", variant: "secondary", size: "small" },
       { id: 'hero-btn-2', text: "Browse Properties", link: "/PropertyDetails", variant: "primary", size: "small" }
@@ -59,8 +64,8 @@ const HomePage = () => {
 
   return (
     <div>
-      {/* Add the className prop here */}
-      <Section className="AS-hero-section">
+
+      <Section className="AS-hero-section py-0">
         <HeroSection data={heroDataForHomePage} />
       </Section>
 
@@ -104,9 +109,15 @@ const HomePage = () => {
         />
 
       </TestimonialsSection>
+
       <FAQSection />
+      
+      <CTASection />
+
       <Footer />
-    </div>
+
+
+    </div >
   );
 };
 
