@@ -37,7 +37,8 @@
 }
 
 html {
-    font-size: 62.5%; /* 1rem = 10px */
+    font-size: 62.5%;
+    /* 1rem = 10px */
     scroll-behavior: smooth;
 }
 
@@ -62,7 +63,7 @@ ul {
 
 .AS-hero-section {
     padding-right: 0 !important;
-    padding-top:0 !important ;
+    padding-top: 0 !important;
 }
 
 .AS-hero-subtitle {
@@ -76,6 +77,14 @@ ul {
     padding-top: 24px;
 }
 
+.card-shadow {
+    box-shadow: 0px 0px 0px 8px #191919;
+}
+
+.p-b-80 {
+    padding-bottom: 8rem;
+}
+
 @media screen and (max-width: 1440px) and (min-width: 993px) {
     .AS-hero-title {
         width: 610px !important;
@@ -87,9 +96,9 @@ ul {
         width: 500px !important;
         font-size: 16px !important;
         padding-top: 20px !important;
-        
+
     }
-    
+
 }
 
 
@@ -97,12 +106,12 @@ ul {
     .as-button-full-width {
         width: 100% !important;
     }
-    
-.AS-hero-section {
-    padding-right: 16px !important;
-    padding-top: 40px !important ;
-}
-    
+
+    .AS-hero-section {
+        padding-right: 16px !important;
+        padding-top: 40px !important;
+    }
+
     .AS-hero-title {
         /* display: contents; */
         max-width: 358px !important;
@@ -138,4 +147,5 @@ ul {
     padding-top: 16px !important;
     padding-bottom: 16px !important;
 }
+
 /*End Global Modifiers*/
