@@ -1,0 +1,36 @@
+.zs-exp-cards-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    row-gap: 50px;
+    margin-top: 80px; 
+}
+
+@media screen and (max-width:1440px){
+  .zs-exp-cards-grid{
+    margin-top: 60px; 
+    gap:20px;
+    row-gap:40px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  /* choose all childern from No.4 to the last one */
+  .zs-exp-cards-grid > *:nth-child(n + 5) {
+    display: none;
+  }
+    .zs-exp-cards-grid {
+        grid-template-columns: repeat(2, 1fr);
+        margin-top: 40px; 
+        gap:30px;
+    }
+}
+
+@media screen and (max-width: 576px){
+    .zs-exp-cards-grid > *:nth-child(n + 4) {
+    display: none;
+  }
+    .zs-exp-cards-grid {
+        grid-template-columns: 1fr;
+    }
+}
