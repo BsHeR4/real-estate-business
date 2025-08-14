@@ -1,0 +1,9 @@
+.zs-img-mansion {
+    width: 100%;
+}
+
+.zs-img-mansion img {
+    display: block;
+    max-inline-size: 100%;
+    height: 100%;
+}
