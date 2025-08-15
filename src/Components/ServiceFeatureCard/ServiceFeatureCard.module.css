@@ -1,0 +1,67 @@
+.ServiceFeatureCard .container {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.ServiceFeatureCard h3 {
+    width: fit-content;
+    font-weight: 600;
+    font-size: 2.4rem;
+    color: var(--color-white);
+}
+
+.ServiceFeatureCard p {
+    padding-top: 3rem;
+    max-width: 41.2rem;
+    font-weight: 500;
+    font-size: 1.8rem;
+    line-height: 150%;
+    color: var(--grey-60);
+}
+
+.ServiceFeatureCard svg {
+    width: 82px;
+    height: 82px;
+}
+
+@media screen and (max-width: 1440px) and (min-width: 993px) {
+    .ServiceFeatureCard .container {
+        gap: 1.6rem;
+    }
+
+    .ServiceFeatureCard h3 {
+        font-size: 2rem;
+    }
+
+    .ServiceFeatureCard p {
+        padding-top: 2rem;
+        max-width: 33.3rem;
+        font-size: 1.6rem;
+    }
+
+    .ServiceFeatureCard svg {
+        width: 60px;
+        height: 60px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .ServiceFeatureCard .container {
+        gap: 1rem;
+    }
+
+    .ServiceFeatureCard h3 {
+        font-size: 1.8rem;
+    }
+
+    .ServiceFeatureCard p {
+        padding-top: 1.6rem;
+        font-size: 1.4rem;
+    }
+
+    .ServiceFeatureCard svg {
+        width: 48px;
+        height: 48px;
+    }
+}
