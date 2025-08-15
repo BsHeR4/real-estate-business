@@ -1,0 +1,66 @@
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 99px;
+    padding: 25.5px 162px;
+    background-color: var(--grey-10);
+}
+
+ul {
+    display: flex;
+    gap: 3rem;
+}
+
+nav svg {
+    display: none;
+    width: 28px;
+    height: 28px;
+    color: var(--color-white);
+}
+
+@media screen and (max-width: 1440px) and (min-width: 993px) {
+
+    /* 
+        Start General Navbar Styling
+    */
+
+    nav {
+        padding: 21.5px 5.5555vw;
+        height: 77px;
+    }
+
+    /* 
+        End General Navbar Styling
+    */
+}
+
+/* ============================================================= */
+
+@media screen and (max-width: 992px) {
+
+    /* 
+        Start General Section Styling
+    */
+
+    nav {
+        padding: 20px 16px;
+        height: 68px;
+    }
+
+    /* 
+        End General Section Styling
+    */
+
+    ul {
+        display: none;
+    }
+
+    nav svg {
+        display: inline-block;
+    }
+
+    nav a button {
+        display: none;
+    }
+}

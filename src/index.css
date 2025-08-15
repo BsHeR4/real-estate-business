@@ -1,10 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Urbanist', sans-serif;
 }
+
 /*Global Modifiers*/
 :root {
     --color-white: #FFFFFF;
@@ -33,14 +35,107 @@
     --grey-50: #808080;
     --grey-60: #999999;
 }
-html{
+
+html {
+    font-size: 62.5%; /* 1rem = 10px */
     scroll-behavior: smooth;
 }
-a{
+
+a {
     text-decoration: none;
 }
-ul{
+
+ul {
     list-style: none;
 }
 
+
+.AS-hero-title {
+    display: flex;
+    font-weight: 600 !important;
+    width: 758px !important;
+    font-size: 60px !important;
+    line-height: 120% !important;
+    opacity: 1;
+    flex-wrap: wrap;
+}
+
+.AS-hero-section {
+    padding-right: 0 !important;
+    padding-top:0 !important ;
+}
+
+.AS-hero-subtitle {
+    flex-wrap: wrap;
+    width: 758px !important;
+    opacity: 1 !important;
+    font-weight: 500 !important;
+    font-size: 18px !important;
+    line-height: 150% !important;
+    font-style: Medium;
+    padding-top: 24px;
+}
+
+@media screen and (max-width: 1440px) and (min-width: 993px) {
+    .AS-hero-title {
+        width: 610px !important;
+        font-size: 46px !important;
+        margin-top: 20px;
+    }
+
+    .AS-hero-subtitle {
+        width: 500px !important;
+        font-size: 16px !important;
+        padding-top: 20px !important;
+        
+    }
+    
+}
+
+
+@media screen and (max-width: 992px) {
+    .as-button-full-width {
+        width: 100% !important;
+    }
+    
+.AS-hero-section {
+    padding-right: 16px !important;
+    padding-top: 40px !important ;
+}
+    
+    .AS-hero-title {
+        /* display: contents; */
+        max-width: 358px !important;
+        font-size: 28px !important;
+    }
+
+    .AS-hero-subtitle {
+        width: 358px !important;
+        font-size: 14px !important;
+        display: contents !important;
+        padding-top: 16px;
+    }
+
+    .section-header {
+        display: flex !important;
+        width: 250px !important;
+        text-align: left !important;
+        /* padding: 0 162px; */
+        background-color: #141414;
+        gap: 20px !important;
+        flex-direction: column !important;
+    }
+
+
+}
+
+.px-0 {
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+}
+
+.py-16 {
+    padding-top: 16px !important;
+    padding-bottom: 16px !important;
+}
 /*End Global Modifiers*/

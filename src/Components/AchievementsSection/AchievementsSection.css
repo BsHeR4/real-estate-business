@@ -1,0 +1,25 @@
+
+.achiv_card{
+    display: flex;
+    margin-top: 80px;
+    gap: 40px;
+    flex: 1;
+}
+
+
+@media screen and (max-width:1440px){
+    .achiv_card{
+        gap: 30px;
+        margin-top: 60px;
+    }
+}
+
+
+@media screen and (max-width:992px){
+    .achiv_card{
+        flex-direction: column;
+        gap: 20px;
+        margin-top: 40px;
+    } 
+}
+
