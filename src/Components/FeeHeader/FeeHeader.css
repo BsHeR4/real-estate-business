@@ -1,0 +1,57 @@
+.mk-fee-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 8rem;
+}
+
+.mk-fee-title{
+    font-size: 2.4rem;
+    font-weight: 600;
+    color: var(--color-white);
+    line-height: 150%;
+}
+
+.mk-fee-button{
+    color: var(--color-white);
+    font-size: 1.8rem;
+    font-weight: 500;
+    line-height: 150%;
+    padding: 1.8rem 2.4rem;
+    border: 1px solid var(--grey-15);
+    border-radius: 10px;
+    background-color: var(--grey-10);
+    outline: none;
+}
+
+@media screen and (max-width: 1440px) and (min-width: 993px){
+    .mk-fee-header {
+        padding-bottom: 6rem;
+    }
+
+    .mk-fee-title{
+        font-size: 2rem;
+    }
+
+    .mk-fee-button{
+        font-size: 1.4rem;
+        padding: 1.4rem 2rem;
+        border-radius: 8px;
+    }
+}
+
+@media screen and (max-width: 992px) and (min-width: 300px){
+    .mk-fee-header {
+        padding-bottom: 4rem;
+    }
+
+    .mk-fee-title{
+        font-size: 1.8rem;
+    }
+
+    .mk-fee-button{
+        font-size: 1.4rem;
+        padding: 1.4rem 2rem;
+        border-radius: 8px;
+    }
+}

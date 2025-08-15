@@ -1,0 +1,138 @@
+.mk-note-container{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    width: 100%;
+    padding: 3rem 5rem;
+    border: 1px solid var(--grey-15);
+    border-radius: 1.2rem;
+    margin-top: 8rem;
+    margin-bottom: 5rem;
+    background-color: var(--grey-10);
+
+    .mk-note{
+        font-size: 2.4rem;
+        color: var(--color-white);
+        font-weight: 600;
+        line-height: 150%;
+        padding-right: 2rem;
+        border-right: 1px solid var(--grey-15);
+    }
+
+    .mk-note-description{
+        font-size: 1.8rem;
+        font-weight: 500;
+        line-height: 150%;
+        color: var(--grey-60);
+    }
+}
+
+.mk-two-column-layout {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 5rem;
+}
+
+.mk-left-column {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+}
+
+.mk-price-label {
+    font-size: 2rem;
+    font-weight: 500;
+    line-height: 150%;
+    color: var(--grey-60);
+}
+
+.mk-price-value {
+    font-size: 4rem;
+    font-weight: 600;
+    color: var(--color-white);
+}
+
+.mk-right-column {
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+}
+
+@media screen and (max-width: 1440px) and (min-width: 993px){
+    .mk-note-container{
+        gap: 1.6rem;
+        padding: 2rem 4rem;
+        border-radius: 8px;
+        margin-top: 6rem;
+        margin-bottom: 4rem;
+
+        .mk-note{
+            font-size: 2rem;
+            padding-right: 1.6rem;
+        }
+
+        .mk-note-description{
+            font-size: 1.4rem;
+        }
+    }
+
+    .mk-two-column-layout {
+        gap: 4rem;
+    }
+
+    .mk-price-label {
+        font-size: 1.6rem;
+    }
+
+    .mk-price-value {
+        font-size: 3rem;
+    }
+
+    .mk-right-column {
+        gap: 4rem;
+    }
+}
+
+@media screen and (max-width: 992px) and (min-width: 300px){
+    .mk-note-container{
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        gap: 1rem;
+        padding: 2.4rem 2rem;
+        border-radius: 0.8rem;
+        margin-top: 4rem;
+        margin-bottom: 3rem;
+
+        .mk-note{
+            font-size: 1.8rem;
+            border-right: none;
+            padding-right: 0;
+        }
+
+        .mk-note-description{
+            width: 100%;
+            font-size: 1.4rem;
+            padding-top: 1rem;
+            border-top: 1px solid var(--grey-15);
+        }
+    }
+
+    .mk-two-column-layout {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .mk-price-label {
+        font-size: 1.4rem;
+    }
+
+    .mk-price-value {
+        font-size: 2.4rem;
+    }
+
+    .mk-right-column {
+        gap: 2rem;
+    }
+}
