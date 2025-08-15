@@ -5,7 +5,9 @@
     max-width: 50%;
     height: fit-content;
 }
-
+.zs-villa-details-wrapper{
+    display: flex;
+}
 .zs-section-title {
     font-size: 24px;
     font-weight: 600;
@@ -21,17 +23,19 @@
 }
 
 .zs-villa-stats {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     border-top: 1px solid var(--grey-15);
     padding-top: 20px;
-    gap: 20px;
 
     .zs-stat-item {
         border-right: 1px solid var(--grey-15);
-        flex-grow: 1;
-        margin-right: 20px;
-    }
+        padding-left: 10px;
 
+    }
+    .zs-stat-item:not:first-child{
+        margin-left: 10px;
+    }
     .zs-stat-item:last-child {
         border-right: none;
     }
@@ -99,7 +103,68 @@
     align-items: center;
 
     img {
-        margin-left: 24px;
         margin-right: 10px;
+    }
+}
+@media screen and (max-width:1440px){
+    .zs-stats-info .icon{
+        width: 20px;
+    }
+    .zs-stats-info  .zs-stats-info-text{
+        font-size: 14px;
+    }
+    .zs-stat-value{
+        font-size: 20px;
+    }
+    .zs-villa-feature{
+        padding: 40px;
+        .zs-feature-title{
+            margin-bottom: 40px;
+        }
+    }
+}
+@media screen and (max-width:992px){
+    .zs-villa-details-wrapper{
+        display: flex;
+        flex-direction: column;
+    }
+    .zs-villa-details{
+        max-width: 100%;
+        padding: 20px;
+    }
+    .zs-villa-description-text {
+    font-size: 14px;
+    margin-bottom: 20px;
+    }
+        .zs-villa-stats {
+        grid-template-columns: repeat(2, 1fr); 
+    }
+    .zs-villa-stats > *:nth-child(2){
+        border-right: none;
+    }
+    .zs-villa-stats > *:nth-child(3) {
+        grid-column: 1 / -1;
+        margin-top: 40px;
+        border-top: 1px solid var(--grey-15);
+        padding-top: 20px;
+    }
+    .zs-section-title{
+        font-size: 18px;
+    }
+        .zs-stat-value{
+        font-size: 18px;
+    }
+    .zs-villa-feature{
+        padding: 20px;
+        .zs-feature-title{
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+    }
+    .zs-feature-item{
+        padding: 10px 12px;
+        span{
+            font-size: 14px;
+        }
     }
 }
