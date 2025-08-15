@@ -1,0 +1,79 @@
+.serviceCTA {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 3rem;
+    min-height: 26.6rem;
+}
+
+.serviceCTA .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.serviceCTA.background {
+    background-image: url(./../../../public/assets/imgs/ServicesPage/AbstractDesignDesktop.png);
+    background-color: var(--grey-10);
+}
+
+.serviceCTA h3 {
+    font-weight: 700;
+    font-size: 3rem;
+    line-height: 150%;
+    color: var(--color-white);
+}
+
+.serviceCTA p {
+    max-width: 952.3333px;
+    font-weight: 500;
+    font-size: 1.8rem;
+    line-height: 150%;
+    color: var(--grey-60);
+}
+
+@media screen and (max-width: 1440px) and (min-width: 993px) {
+    .serviceCTA {
+        min-height: 23.2rem;
+        gap: 2rem;
+    }
+
+    .serviceCTA h3 {
+        font-size: 2.4rem;
+    }
+
+    .serviceCTA p {
+        font-size: 1.6rem;
+    }
+}
+
+
+
+@media screen and (max-width: 992px) {
+
+    .serviceCTA {
+        gap: 2rem;
+        padding: 24px;
+    }
+
+    .serviceCTA.background {
+        background-image: url(./../../../public/assets/imgs/ServicesPage/AbstractDesignMobile.png);
+    }
+
+    .serviceCTA h3 {
+        font-size: 2rem;
+    }
+
+    .serviceCTA p {
+        font-size: 1.4rem;
+    }
+
+    .serviceCTA .container {
+        flex-direction: column;
+    }
+
+    .serviceCTA .container button {
+        width: 100%;
+    }
+}
