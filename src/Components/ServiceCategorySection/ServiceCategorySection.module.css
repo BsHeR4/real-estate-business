@@ -1,0 +1,28 @@
+.serviceCategorySection {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    gap: 3rem;
+    padding-top: 8rem;
+}
+
+.cta {
+    grid-column-start: 2;
+    grid-column-end: 4;
+}
+
+@media screen and (max-width: 1440px) and (min-width: 993px) {
+    .serviceCategorySection {
+        gap: 2rem;
+        padding-top: 6rem;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .serviceCategorySection {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        padding-top: 4rem;
+    }
+
+}
