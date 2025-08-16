@@ -1,7 +1,6 @@
 import './AllRightsFooter.css'
 import { Link } from 'react-router-dom'
-import { FaFacebookF, FaLinkedinIn, FaTwitter } from 'react-icons/fa6'
-import { FaYoutube } from 'react-icons/fa'
+import SocialData from './SocialData'
 
 const AllRightsFooter = () => {
     return (
@@ -12,10 +11,9 @@ const AllRightsFooter = () => {
         </div>
 
         <div className='social-icons'>
-            <div className='social-icon'><Link to="facebook.com"><FaFacebookF/></Link></div>
-            <div className='social-icon'><Link to="linkedin.com"><FaLinkedinIn/></Link></div>
-            <div className='social-icon'><Link to="twitter.com"><FaTwitter/></Link></div>
-            <div className='social-icon'><Link to="youtube.com"><FaYoutube/></Link></div>
+            {SocialData.map((SocialIcon, index) => (
+                <div className='social-icon' key={index}><Link to={SocialIcon.url}>{SocialIcon.content}</Link></div>
+            ))}
         </div>
     </div>
     )

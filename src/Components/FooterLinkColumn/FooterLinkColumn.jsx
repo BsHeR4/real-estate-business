@@ -2,14 +2,19 @@ import './FooterLinkColumn.css'
 import SubscriptionForm from '../SubscriptionForm/SubscriptionForm'
 import { Link } from 'react-router-dom'
 
+
+
 const FooterLinkColumn = () => {
     return (
     <div className='footer_list'>
         <SubscriptionForm/>
 
-        <div className='footer-column'>
+        
             
-            <div>
+        <div className="footer-grid">
+
+                
+        <div className='footer-column col1'>
             <h4><Link to="/">Home</Link></h4>
             <ul className='UlStyle'>
                 <li><Link to="">Hero Section</Link></li>
@@ -19,7 +24,9 @@ const FooterLinkColumn = () => {
                 <li><Link to="">FAQ’s</Link></li>
             </ul>
         </div>
-        <div>
+
+        
+        <div className='footer-column col2'>
             <h4><Link to="/AboutUs">About Us</Link></h4>
             <ul className='UlStyle'>
                 <li><Link to="">Our Story</Link></li>
@@ -29,14 +36,15 @@ const FooterLinkColumn = () => {
                 <li><Link to="">Our Clients</Link></li>
             </ul>
         </div>
-        <div>
+        <div className='footer-column col3'>
             <h4><Link to="/PropertyDetails">Properties</Link></h4>
             <ul className='UlStyle'>
                 <li><Link to="">Portfolio</Link></li>
                 <li><Link to="">Categories</Link></li>
             </ul>
         </div>
-        <div>
+
+        <div className='footer-column col4'>
             <h4><Link to="/Services">Services</Link></h4>
             <ul className='UlStyle'>
                 <li><Link to="">Valuation Mastery</Link></li>
@@ -46,16 +54,25 @@ const FooterLinkColumn = () => {
                 <li><Link to="">Property Management</Link></li>
             </ul>
         </div>
-        <div>
+        <div className='footer-column col5'>
             <h4><Link to="/Contact">Contact Us</Link></h4>
             <ul className='UlStyle'>
                 <li><Link to="">Contact Form</Link></li>
                 <li><Link to="">Our Offices</Link></li>
             </ul>
         </div>
+        
+
         </div>
-    </div>
+        
+        </div>
+
     )
 }
 
 export default FooterLinkColumn
+
+
+
+
+
