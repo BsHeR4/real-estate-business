@@ -1,0 +1,20 @@
+.zs-smart-invest-wrapper {
+    display: flex;
+    gap: 60px;
+}
+
+.zs-smart-info {
+    max-width: 30vw;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.zs-smart-cards {
+    background-color: var(--grey-10);
+    padding: 10px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    border-radius: 12px;
+}
