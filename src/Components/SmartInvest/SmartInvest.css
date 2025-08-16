@@ -4,7 +4,7 @@
 }
 
 .zs-smart-info {
-    max-width: 30vw;
+    max-width:519px;
     display: flex;
     flex-direction: column;
     gap: 50px;
@@ -17,4 +17,30 @@
     grid-template-columns: repeat(2, 1fr);
     gap: 10px;
     border-radius: 12px;
+}
+
+@media screen and (max-width:1440px){
+    .zs-smart-info{
+        max-width: 412px !important;
+    }
+    .zs-smart-invest-wrapper {
+    gap: 50px;
+}
+    .zs-smart-cards img{
+        width: 62px;
+    }
+    .zs-smart-cards .mk-card{
+        padding: 40px;
+    }
+}
+@media screen and (max-width:992px){
+    .zs-smart-invest-wrapper{
+        flex-direction: column;
+    }
+    .zs-smart-cards{
+        grid-template-columns:  1fr;
+        .mk-card{
+            width: 100%;
+        }
+    }
 }

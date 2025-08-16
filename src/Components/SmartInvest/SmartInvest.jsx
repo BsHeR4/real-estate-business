@@ -16,25 +16,25 @@ export default function SmartInvest() {
                         >
                         </SectionHeader>
                         <div className="zs-serviceCTA">
-                       <ServiceCTA title="Unlock Your Investment Potential"
-                            description="Explore our Property Management Service categories and let us handle the complexities while you enjoy the benefits of property ownership."
-                            Button
-                        >
-                        </ServiceCTA>
+                            <ServiceCTA title="Unlock Your Investment Potential"
+                                description="Explore our Property Management Service categories and let us handle the complexities while you enjoy the benefits of property ownership."
+                                Button
+                            >
+                            </ServiceCTA>
                         </div>
- 
+
                     </div>
                     <div className="zs-smart-cards">
-                            {FeatureCardData.map((item, index) => (
-                                <ServiceFeatureCard
-                                    key={index}
-                                    icon={item.icon}
-                                    title={item.title}
-                                    description={item.desc}
-                                />
-                            ))}
-                        </div>
+                        {FeatureCardData.map((item, index) => (
+                            <ServiceFeatureCard
+                                key={index}
+                                icon={item.icon}
+                                title={item.title}
+                                description={item.desc}
+                            />
+                        ))}
                     </div>
+                </div>
             </Section>
         </>
     )
