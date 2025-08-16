@@ -109,7 +109,7 @@ ul {
 
 @media screen and (max-width: 992px) {
     .as-button-full-width {
-        max-width: 100% !important;
+        width: 100% !important;
     }
 
     .AS-hero-section {
@@ -119,7 +119,7 @@ ul {
 
     .AS-hero-title {
         /* display: contents; */
-        max-width: 358px !important;
+        /* max-width: 358px !important; */
         font-size: 28px !important;
     }
 

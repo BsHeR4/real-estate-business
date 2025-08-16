@@ -1,0 +1,72 @@
+.selectGroup {
+    position: relative;
+    margin-top: 50px;
+    width: 100%;
+}
+
+.selectLabel {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 150%;
+}
+
+.selectField {
+    margin-top: 18px;
+    width: 100%;
+    min-height: 68px;
+    border: 1px solid #262626;
+    border-radius: 8px;
+    padding: 24px 20px;
+    background-color: #1A1A1A;
+    color: #666666;
+    transition: border-color 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+.selectField:focus {
+    outline: none;
+    border-color: #703BF7;
+}
+
+.selectField option[disabled] {
+    color: #777777;
+}
+
+
+@media screen and (max-width: 1440px) and (min-width: 993px) {
+    .selectGroup {
+        margin-top: 30px;
+    }
+
+    .selectLabel {
+        font-weight: 600;
+        font-size: 16px;
+    }
+
+    .selectField {
+        margin-top: 14px;
+        min-height: 50px;
+        padding: 14px 20px;
+        border-radius: 6px;
+    }
+
+}
+
+@media screen and (max-width: 992px) {
+
+    .selectGroup {
+        margin-top: 20px;
+    }
+
+    .selectLabel {
+        font-weight: 600;
+        font-size: 16px;
+    }
+
+    .selectField {
+        margin-top: 14px;
+        min-height: 50px;
+        padding: 14px 20px;
+        border-radius: 6px;
+    }
+}

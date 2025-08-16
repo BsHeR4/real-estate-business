@@ -1,0 +1,93 @@
+/* FormTextarea.module.css */
+.textareaGroup {
+    width: 100%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+.textareaLabel {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 150%;
+}
+
+.textareaField {
+    margin-top: 18px;
+    width: 100%;
+    min-height: 170px;
+    padding: 24px 20px;
+    border: 1px solid #262626;
+    border-radius: 8px;
+    background-color: #1A1A1A;
+    color: #ffffff;
+    box-sizing: border-box;
+    resize: vertical;
+}
+
+.textareaField::placeholder {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 20px;
+    color: #666666;
+}
+
+.textareaField:focus {
+    outline: none;
+    border-color: #703BF7;
+}
+
+
+@media screen and (max-width: 1440px) and (min-width: 993px) {
+    .textareaGroup {
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    .textareaLabel {
+        font-size: 16px;
+    }
+
+    .textareaField {
+        margin-top: 16px;
+        width: 100%;
+        min-height: 122px;
+        padding: 16px 20px;
+        gap: 12px;
+        border-radius: 6px;
+    }
+
+    .textareaField::placeholder {
+        font-size: 14px;
+    }
+
+}
+
+@media screen and (max-width: 992px) {
+    .textareaGroup {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .textareaLabel {
+        font-size: 16px;
+    }
+
+    .textareaField {
+        margin-top: 10px;
+        width: 100%;
+        min-height: 90px;
+        padding: 16px 20px;
+        border: 1px solid #262626;
+        border-radius: 6px;
+        background-color: #1A1A1A;
+        color: #ffffff;
+        box-sizing: border-box;
+        resize: vertical;
+    }
+
+    .textareaField::placeholder {
+        font-size: 14px;
+    }
+}

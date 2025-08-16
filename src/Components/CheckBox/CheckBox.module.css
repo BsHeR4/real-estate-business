@@ -1,0 +1,94 @@
+/* CheckBox.module.css */
+.checkboxGroup {
+    display: flex;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.checkboxInput {
+    width: 28px;
+    height: 28px;
+    appearance: none;
+    border: 1px solid #262626;
+    border-radius: 4px;
+    background-color: #1A1A1A;
+    cursor: pointer;
+    position: relative;
+}
+
+.checkboxInput:checked {
+    background-color: #703BF7;
+    border-color: #703BF7;
+}
+
+.checkboxInput:checked::after {
+    content: "";
+    position: absolute;
+    top: 2px;
+    left: 10px;
+    width: 4px;
+    height: 14px;
+    border: solid #fff;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+}
+
+.checkboxLabel {
+    font-weight: 500;
+    font-size: 18px;
+    color: #999999;
+    padding-left: 10px;
+}
+
+
+@media screen and (max-width: 1440px) and (min-width: 993px) {
+    .checkboxGroup {
+        margin-bottom: 30px;
+    }
+
+
+    .checkboxInput {
+        width: 24px;
+        height: 24px;
+        border-radius: 4px;
+    }
+
+    .checkboxInput:checked::after {
+        top: 2px;
+        left: 8px;
+        width: 4px;
+        height: 14px;
+    }
+
+    .checkboxLabel {
+        font-size: 16px;
+        padding-left: 6px;
+    }
+
+}
+
+@media screen and (max-width: 992px) {
+    .checkboxGroup {
+        margin-bottom: 20px;
+    }
+
+
+    .checkboxInput {
+        width: 24px;
+        height: 24px;
+        border-radius: 4px;
+    }
+
+    .checkboxInput:checked::after {
+        top: 2px;
+        left: 8px;
+        width: 4px;
+        height: 14px;
+    }
+
+    .checkboxLabel {
+        font-size: 14px;
+        padding-left: 6px;
+    }
+
+}

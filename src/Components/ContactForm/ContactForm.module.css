@@ -1,0 +1,69 @@
+/* ContactForm.module.css */
+.contactSection {
+    background-color: #141414;
+    color: #fff;
+}
+
+.contactForm {
+    width: 100%;
+    background-color: #141414;
+    border: 1px solid #262626;
+    border-radius: 12px;
+    padding: 50px 100px;
+    margin-top: 80px;
+}
+
+.formGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+}
+
+.fullWidth {
+    grid-column: 1 / -1;
+}
+
+.formFooter {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    flex-wrap: wrap;
+
+}
+
+@media screen and (max-width: 992px) {
+    .formGrid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
+    .contactForm {
+        padding: 20px 20px;
+        margin-top: 40px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .formGrid {
+        grid-template-columns: 1fr;
+    }
+
+    .formFooter {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .formFooter>button {
+        width: 100%;
+    }
+}
+
+
+@media screen and (max-width: 1440px) and (min-width: 993px) {
+
+
+    .contactForm {
+        padding: 50px 80px;
+        margin-top: 60px;
+    }
+}

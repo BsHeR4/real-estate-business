@@ -1,0 +1,93 @@
+/* FormInput.module.css */
+.inputGroup {
+    position: relative;
+    margin-top: 50px;
+    width: 100%;
+}
+
+.inputLabel {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 150%;
+}
+
+.inputField {
+    margin-top: 16px;
+    width: 100%;
+    min-height: 68px;
+    border: 1px solid #262626;
+    border-radius: 8px;
+    padding: 24px 20px;
+    background-color: #1A1A1A;
+    color: #ffffff;
+    transition: border-color 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+.inputField::placeholder {
+    color: #666666;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 20px;
+}
+
+.inputField:focus {
+    outline: none;
+    border-color: #703BF7;
+}
+
+@media screen and (max-width: 1440px) and (min-width: 993px) {
+    .inputGroup {
+        margin-top: 30px;
+    }
+
+    .inputLabel {
+        font-size: 16px;
+    }
+
+    .inputField {
+        margin-top: 14px;
+        min-height: 50px;
+        padding: 16px 20px;
+        border: 1px solid #262626;
+        border-radius: 6px;
+        background-color: #1A1A1A;
+        color: #ffffff;
+    }
+
+
+    .inputField::placeholder {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+
+}
+
+@media screen and (max-width: 992px) {
+
+    .inputGroup {
+        margin-top: 20px;
+    }
+
+    .inputLabel {
+        font-size: 16px;
+        margin-top: 20px;
+    }
+
+    .inputField {
+        margin-top: 10px;
+        min-height: 50px;
+        padding: 16px 20px;
+        border: 1px solid #262626;
+        border-radius: 6px;
+        background-color: #1A1A1A;
+        color: #ffffff;
+    }
+
+
+    .inputField::placeholder {
+        font-size: 14px;
+        line-height: 20px;
+    }
+}
