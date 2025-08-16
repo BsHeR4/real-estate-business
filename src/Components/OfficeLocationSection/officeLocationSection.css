@@ -1,0 +1,47 @@
+.mk-office-location-buttons{
+    width: fit-content;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 1rem;
+    background-color: var(--grey-10);
+    border-radius: 1rem;
+    margin-top: 8rem;
+    margin-bottom: 5rem;
+}
+
+.mk-office-location-buttons button{
+    width: 15.867rem;
+    height: 6.3rem;
+    padding: 0;
+}
+
+.mk-office-location-buttons button:focus {
+    background-color: var(--grey-08);
+    border-color: var(--grey-15);
+}
+
+@media screen and (max-width: 1440px) and (min-width: 993px){
+    .mk-office-location-buttons{
+        margin-top: 6rem;
+        margin-bottom: 4rem;
+    }
+
+    .mk-office-location-buttons button{
+        width: 12.433rem;
+        height: 4.9rem;
+    }
+}
+
+@media screen and (max-width: 992px) and (min-width: 300px){
+    .mk-office-location-buttons{
+        margin-top: 4rem;
+        margin-bottom: 3rem;
+    }
+
+    .mk-office-location-buttons button{
+        width: 10.567rem;
+        height: 4.9rem;
+    }
+}
+

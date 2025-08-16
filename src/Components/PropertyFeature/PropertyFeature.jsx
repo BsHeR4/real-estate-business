@@ -9,9 +9,9 @@ import styles from './PropertyFeature.module.css';
  * @param {React.ReactNode} props.children - The text content to be displayed on the right
  * * @returns {JSX.Element} A styled div containing the icon and text
  */
-function PropertyFeature({ icon, children }) {
+function PropertyFeature({ icon, children, className}) {
     return (
-        <div className={styles.propertyFeature}>
+        <div className={`${styles.propertyFeature} ${className || ''}`}>
             <span className={styles.icon}>{icon}</span>
             <span className={styles.paragraph}>{children}</span>
         </div>
