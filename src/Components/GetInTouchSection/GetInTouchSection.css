@@ -1,0 +1,67 @@
+
+.ms_container_gitintouch {
+    display: flex;
+    flex-direction: column; 
+    align-items: flex-start; 
+    box-sizing: border-box;
+    background-color: #26262600;
+}
+
+
+.ms_card_gitintouch {
+    width: 100%;
+    padding : 150px 400px 168px 162px;
+    box-sizing: border-box;
+    background-color: #26262600; 
+}
+
+
+.ms_taitle_gitintouch {
+    font-family: 'Urbanist', sans-serif;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 150%;
+    color: #FFFFFF;
+    margin-bottom: 14px;
+}
+
+
+.ms_para_gitintouch {
+    font-family: 'Urbanist', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 150%;
+    color: #999999;
+}
+
+  /* الشاشات الصغيرة (300px - 992px) */
+@media (max-width: 992px) {
+    .ms_container_gitintouch {
+    padding: 50px 16px;
+    }
+
+    .ms_taitle_gitintouch {
+    font-size: 28px;
+    }
+
+    .ms_para_gitintouch {
+    font-size: 14px;
+    }
+}
+
+  /* الشاشات المتوسطة (993px - 1440px) */
+@media (min-width: 993px) and (max-width: 1440px) {
+    .ms_container_gitintouch {
+            padding-left: 80px;
+        padding-right: 200px;
+    }
+
+    .ms_taitle_gitintouch {
+        font-size: 38px;
+    }
+
+    .ms_para_gitintouch {
+        font-size: 16px;
+    }
+}
+
