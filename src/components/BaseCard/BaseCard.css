@@ -1,12 +1,12 @@
-.mk-card {
-    width: fit-content;
+.mk-card{
+    /*width: fit-content;*/
     background-color: var(--grey-08);
     border: 1px solid var(--grey-15);
     border-radius: 12px;
 }
 
-.mk-small-padding {
-    padding: 30px !important;
+.mk-small-padding{
+    padding: 3rem !important;
 }
 
 .mk-medium-padding {
@@ -35,9 +35,9 @@
     }
 }
 
-@media screen and (max-width: 992px) and (min-width: 300px) {
-    .mk-small-padding {
-        padding: 20px !important;
+@media screen and (max-width: 992px) and (min-width: 300px){
+    .mk-small-padding{
+        padding: 2rem !important;
     }
 
     .mk-card {

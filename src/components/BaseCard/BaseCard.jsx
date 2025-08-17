@@ -19,8 +19,11 @@ import './BaseCard.css'
  * Dependencies:
  * - BaseCard.css: Styling module
  */
-const BaseCard = ({ children, padding, className }) => {
-    const paddingClass = padding === 'large' ? 'mk-large-padding' : 'mk-medium-padding'
+const BaseCard = ({ children, padding, className = '' }) => {
+    const paddingClass =
+        padding === 'large' ? 'mk-large-padding' :
+            padding === 'small' ? 'mk-small-padding' :
+                'mk-medium-padding';
     return (
         <div className={`mk-card ${paddingClass} ${className}`}>
             {children}
