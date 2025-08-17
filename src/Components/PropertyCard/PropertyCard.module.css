@@ -18,46 +18,46 @@
     width: 100%;
 }
 
-h2 {
+.baseContainer h2 {
     padding-bottom: 6px;
     font-size: 2.4rem;
     font-weight: 600;
     color: var(--color-white);
 }
 
-span {
+.baseContainer span {
     font-weight: 500;
     color: var(--color-white);
     text-decoration: underline;
     text-decoration-thickness: 0%;
 }
 
-.properties {
+.baseContainer .properties {
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
     padding-bottom: 30px;
 }
 
-.container {
+.baseContainer .container {
     display: flex;
     justify-content: space-between;
     gap: 2.6041vw;
 }
 
-.priceContainer {
+.baseContainer .priceContainer {
     display: flex;
     flex-direction: column;
     gap: 2px;
 }
 
-.priceTitle {
+.baseContainer .priceTitle {
     color: var(--grey-60);
     text-decoration: none;
     font-size: 1.8rem;
 }
 
-.price {
+.baseContainer .price {
     color: var(--color-white);
     font-size: 2.4rem;
     font-weight: 600;
@@ -67,24 +67,24 @@ span {
 /* ============================================================= */
 
 @media screen and (max-width: 1440px) and (min-width: 993px) {
-    .properties {
+    .baseContainer .properties {
         gap: 6px;
     }
 
-    .priceTitle {
+    .baseContainer .priceTitle {
         font-size: 1.4rem;
     }
 
-    .price {
+    .baseContainer .price {
         font-size: 2rem;
     }
 
-    h2 {
+    .baseContainer h2 {
         padding-bottom: 4px;
         font-size: 2rem;
     }
 
-    p {
+    .baseContainer p {
         padding-bottom: 24px;
         font-size: 1.6rem;
     }
@@ -93,24 +93,24 @@ span {
 /* ============================================================= */
 
 @media screen and (max-width: 992px) {
-    .properties {
+    .baseContainer .properties {
         gap: 6px;
     }
 
-    .priceTitle {
+    .baseContainer .priceTitle {
         font-size: 1.4rem;
     }
 
-    .price {
+    .baseContainer .price {
         font-size: 1.8rem;
     }
 
-    h2 {
+    .baseContainer h2 {
         padding-bottom: 2px;
         font-size: 1.8rem;
     }
 
-    p {
+    .baseContainer p {
         padding-bottom: 20px;
         font-size: 1.4rem;
     }

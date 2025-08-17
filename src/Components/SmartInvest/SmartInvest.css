@@ -1,0 +1,46 @@
+.zs-smart-invest-wrapper {
+    display: flex;
+    gap: 60px;
+}
+
+.zs-smart-info {
+    max-width:519px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.zs-smart-cards {
+    background-color: var(--grey-10);
+    padding: 10px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    border-radius: 12px;
+}
+
+@media screen and (max-width:1440px){
+    .zs-smart-info{
+        max-width: 412px !important;
+    }
+    .zs-smart-invest-wrapper {
+    gap: 50px;
+}
+    .zs-smart-cards img{
+        width: 62px;
+    }
+    .zs-smart-cards .mk-card{
+        padding: 40px;
+    }
+}
+@media screen and (max-width:992px){
+    .zs-smart-invest-wrapper{
+        flex-direction: column;
+    }
+    .zs-smart-cards{
+        grid-template-columns:  1fr;
+        .mk-card{
+            width: 100%;
+        }
+    }
+}
