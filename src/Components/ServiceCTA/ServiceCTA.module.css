@@ -4,6 +4,7 @@
     justify-content: center;
     gap: 3rem;
     min-height: 26.6rem;
+    width: 100%;
 }
 
 .serviceCTA .container {
@@ -26,7 +27,7 @@
 }
 
 .serviceCTA p {
-    max-width: 952.3333px;
+    /* max-width: 952.3333px; */
     font-weight: 500;
     font-size: 1.8rem;
     line-height: 150%;
