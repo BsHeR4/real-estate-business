@@ -4,8 +4,8 @@ import Avatar from "../Avatar/Avatar.jsx";
 import InputMessage from "../InputMessage/InputMessage.jsx";
 import './TeamMemberCard.css'
 
-const TeamMemberCard = ({photo, icon, member}) => {
-    const {name, position} = member;
+const TeamMemberCard = ({ photo, icon, member }) => {
+    const { name, position } = member;
     return (
         <BaseCard className={'mk-small-padding'}>
             <Avatar photo={photo} icon={icon} />

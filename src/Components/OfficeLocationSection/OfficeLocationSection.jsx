@@ -7,7 +7,6 @@ import Button from "../Button/Button.jsx";
 const OfficeLocationSection = ({title, subtitle, children, buttons = []}) => {
     return (
         <Section>
-            <section>
                 <SectionHeader title={title} subtitle={subtitle} />
 
                 <div className='mk-office-location-buttons'>
@@ -25,7 +24,6 @@ const OfficeLocationSection = ({title, subtitle, children, buttons = []}) => {
                 <div>
                     {children}
                 </div>
-            </section>
         </Section>
     );
 };

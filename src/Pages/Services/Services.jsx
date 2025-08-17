@@ -1,6 +1,7 @@
 import React from 'react'
 import ServiceCategorySection from './../../Components/ServiceCategorySection/ServiceCategorySection'
 import { servicePageSections } from './../../Data/servicesPageData'
+import SmartInvest from './../../Components/SmartInvest/SmartInvest.jsx'
 function Services() {
   const propertyValue = servicePageSections.unlock_property_value
   const propertyManag = servicePageSections.effortless_property_management
@@ -19,6 +20,7 @@ function Services() {
         features={propertyManag.features_data}
         ctaData={propertyManag.cta_data}
       />
+      <SmartInvest />
     </div>
   )
 }

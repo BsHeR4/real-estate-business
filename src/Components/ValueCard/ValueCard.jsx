@@ -7,7 +7,9 @@ function ValueCard({ icon, title, description, addRightBorder, addBottomBorder }
             className={`ms-value-card ${addRightBorder ? "ms-right-border" : ""} ${addBottomBorder ? "ms-bottom-border" : ""}`}
         >
             <div className="ms-value-card-header">
-                <img src={icon} alt={title} className="ms-value-icon" />
+                <div className="bm-icon-border">
+                    {icon}
+                </div>
                 <h5 className="ms-value-title">{title}</h5>
             </div>
             <p className="ms-value-description">{description}</p>
