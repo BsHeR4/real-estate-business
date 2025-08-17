@@ -7,6 +7,7 @@ import Banner from './Components/Banner/Banner.jsx'
 import Navbar from './Components/Navbar/Navbar.jsx'
 import Footer from './Components/Footer/Footer';
 import CTASection from './Components/CTASection/CTASection';
+import Explore from './Components/Explore/Explore.jsx'
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <BrowserRouter>
@@ -15,6 +16,7 @@ createRoot(document.getElementById('root')).render(
       <App />
       <CTASection />
       <Footer />
+      <Explore /> 
     </BrowserRouter>
   </StrictMode>,
 )
