@@ -9,28 +9,24 @@
     padding: 3rem !important;
 }
 
-.mk-medium-padding {
+.mk-medium-padding{
     padding: 4rem;
 }
 
-.mk-large-padding {
+.mk-large-padding{
     padding: 5rem;
 }
 
-@media screen and (max-width: 1440px) and (min-width: 993px) {
-    .mk-small-padding {
+@media screen and (max-width: 1440px) and (min-width: 993px){
+    .mk-small-padding{
         padding: 24px !important;
     }
 
-    .mk-card {
-        border-radius: 10px;
-    }
-
-    .mk-medium-padding {
+    .mk-medium-padding{
         padding: 3rem;
     }
 
-    .mk-large-padding {
+    .mk-large-padding{
         padding: 4rem;
     }
 }
@@ -40,15 +36,11 @@
         padding: 2rem !important;
     }
 
-    .mk-card {
-        border-radius: 10px;
-    }
-
-    .mk-medium-padding {
+    .mk-medium-padding{
         padding: 2.4rem;
     }
 
-    .mk-large-padding {
+    .mk-large-padding{
         padding: 3rem;
     }
 }

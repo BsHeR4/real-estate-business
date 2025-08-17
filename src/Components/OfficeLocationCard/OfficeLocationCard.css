@@ -1,0 +1,129 @@
+.mk-location-card-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem;
+}
+
+.mk-location-card-container > * {
+    display: flex;
+    flex-direction: column;
+}
+
+.mk-padding{
+    padding: 1.4rem 2rem !important;
+}
+
+.mk-location-details{
+    span, span svg{
+        color: var(--color-white);
+    }
+}
+
+.mk-location-content{
+    margin-bottom: 4rem;
+    flex-grow: 1;
+}
+
+.mk-location-title{
+    font-size: 1.8rem;
+    font-weight: 500;
+    line-height: 150%;
+    color: var(--color-white);
+    margin-bottom: 1rem;
+}
+
+.mk-location-address{
+    font-size: 3rem;
+    font-weight: 600;
+    line-height: 150%;
+    color: var(--color-white);
+    margin-bottom: 1.4rem;
+}
+
+
+
+.mk-location-description{
+    font-size: 1.8rem;
+    font-weight: 500;
+    line-height: 150%;
+    color: var(--grey-60);
+}
+
+.mk-location-details{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 4rem;
+}
+
+@media screen and  (max-width: 1440px) and (min-width: 993px){
+    .mk-location-card-container{
+        gap: 2rem;
+    }
+
+    .mk-padding{
+        padding: 1rem 1.6rem !important;
+    }
+
+    .mk-location-content{
+        margin-bottom: 3rem;
+    }
+
+    .mk-location-title{
+        font-size: 1.4rem;
+        margin-bottom: 0.6rem;
+    }
+
+    .mk-location-address{
+        font-size: 2.4rem;
+        margin-bottom: 1rem;
+    }
+
+    .mk-location-description{
+        font-size: 1.6rem;
+    }
+
+    .mk-location-details{
+        gap: 0.8rem;
+        margin-bottom: 3rem;
+    }
+}
+
+@media screen and (max-width: 992px) and (min-width: 300px){
+    .mk-location-card-container{
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .mk-large-padding{
+        padding: 2.4rem !important;
+    }
+
+    .mk-padding{
+        padding: 1rem 1.6rem !important;
+    }
+
+    .mk-location-content{
+        margin-bottom: 2.4rem;
+    }
+
+    .mk-location-title{
+        font-size: 1.4rem;
+        margin-bottom: 0.4rem;
+    }
+
+    .mk-location-address{
+        font-size: 2rem;
+        margin-bottom: 0.8rem;
+    }
+
+    .mk-location-description{
+        font-size: 1.4rem;
+    }
+
+    .mk-location-details{
+        gap: 0.8rem;
+        margin-bottom: 2.4rem;
+    }
+}
