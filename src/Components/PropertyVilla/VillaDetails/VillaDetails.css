@@ -1,0 +1,170 @@
+.zs-villa-details {
+    padding: 50px;
+    border: 1px solid var(--grey-15);
+    border-radius: 12px;
+    max-width: 50%;
+    height: fit-content;
+}
+.zs-villa-details-wrapper{
+    display: flex;
+}
+.zs-section-title {
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--color-white);
+    margin-bottom: 14px;
+}
+
+.zs-villa-description-text {
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--grey-60);
+    margin-bottom: 50px;
+}
+
+.zs-villa-stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    border-top: 1px solid var(--grey-15);
+    padding-top: 20px;
+
+    .zs-stat-item {
+        border-right: 1px solid var(--grey-15);
+        padding-left: 10px;
+
+    }
+    .zs-stat-item:not:first-child{
+        margin-left: 10px;
+    }
+    .zs-stat-item:last-child {
+        border-right: none;
+    }
+}
+
+.zs-stats-info {
+    display: flex;
+    align-items: flex-end;
+
+    .icon {
+        color: var(--grey-60);
+        font-size: 24px;
+    }
+
+    .zs-stats-info-text {
+        margin-left: 6px;
+        color: var(--color-white);
+        font-size: 18px;
+        font-weight: 500;
+    }
+}
+
+.zs-stat-value {
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--color-white);
+    margin-top: 10px;
+}
+
+/*End Villa Details*/
+
+/*Villa Key Feature*/
+.zs-villa-details-wrapper {
+    display: flex;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.zs-villa-feature {
+    padding: 50px;
+    border: 1px solid var(--grey-15);
+    border-radius: 12px;
+}
+
+.zs-features-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.zs-feature-title {
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--color-white);
+    margin-bottom: 50px;
+}
+
+.zs-feature-item {
+    padding: 18px 24px;
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--grey-60);
+    border-left: 1px solid var(--purple-60);
+    background-image: linear-gradient(to right, var(--grey-10), #1A1A1A00);
+    display: flex;
+    align-items: center;
+
+    img {
+        margin-right: 10px;
+    }
+}
+@media screen and (max-width:1440px){
+    .zs-stats-info .icon{
+        width: 20px;
+    }
+    .zs-stats-info  .zs-stats-info-text{
+        font-size: 14px;
+    }
+    .zs-stat-value{
+        font-size: 20px;
+    }
+    .zs-villa-feature{
+        padding: 40px;
+        .zs-feature-title{
+            margin-bottom: 40px;
+        }
+    }
+}
+@media screen and (max-width:992px){
+    .zs-villa-details-wrapper{
+        display: flex;
+        flex-direction: column;
+    }
+    .zs-villa-details{
+        max-width: 100%;
+        padding: 20px;
+    }
+    .zs-villa-description-text {
+    font-size: 14px;
+    margin-bottom: 20px;
+    }
+        .zs-villa-stats {
+        grid-template-columns: repeat(2, 1fr); 
+    }
+    .zs-villa-stats > *:nth-child(2){
+        border-right: none;
+    }
+    .zs-villa-stats > *:nth-child(3) {
+        grid-column: 1 / -1;
+        margin-top: 40px;
+        border-top: 1px solid var(--grey-15);
+        padding-top: 20px;
+    }
+    .zs-section-title{
+        font-size: 18px;
+    }
+        .zs-stat-value{
+        font-size: 18px;
+    }
+    .zs-villa-feature{
+        padding: 20px;
+        .zs-feature-title{
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+    }
+    .zs-feature-item{
+        padding: 10px 12px;
+        span{
+            font-size: 14px;
+        }
+    }
+}

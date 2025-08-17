@@ -1,0 +1,106 @@
+.zs-villa-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.zs-villa-info {
+    display: flex;
+    align-items: center;
+
+    .zs-villa-name {
+        font-size: 30px;
+        font-weight: 600;
+        color: var(--color-white);
+        line-height: 150%;
+    }
+}
+
+.zs-villa-location {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    margin-left: 20px;
+
+    .zs-villa-location-icon {
+        margin-right: 6px;
+    }
+}
+
+.zs-villa-location:hover {
+    background-color: inherit !important;
+}
+
+.zs-villa-cost {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-grow: 1;
+
+    .zs-villa-price-word {
+        color: var(--grey-60);
+        font-size: 18px;
+        line-height: 150%;
+        font-weight: 500;
+    }
+
+    .zs-villa-price {
+        font-size: 24px;
+        color: var(--color-white);
+        font-weight: 600;
+    }
+}
+
+@media screen and (max-width: 1440px) {
+    .zs-villa-name {
+        font-size: 24px !important;
+    }
+
+    .zs-villa-location,
+    .zs-villa-price-word {
+        font-size: 14px !important;
+    }
+
+    .zs-villa-price {
+        font-size: 20px !important;
+    }
+}
+
+@media screen and (max-width:992px) {
+    .zs-villa-header {
+        flex-direction: column;
+        align-items: baseline;
+        margin-bottom: 30px;
+    }
+
+    .zs-villa-location {
+        margin-left: 0;
+    }
+
+    .zs-villa-cost-wrapper {
+        display: flex;
+        margin-left: 20px;
+
+        .zs-villa-price-word {
+            margin-right: 4px;
+        }
+    }
+
+    .zs-villa-cost {
+        display: flex;
+    }
+
+    .zs-villa-name {
+        font-size: 20px !important;
+        margin-bottom: 10px;
+    }
+
+    .zs-villa-price {
+        font-size: 18px !important;
+    }
+
+    .zs-villa-info {
+        flex-direction: column;
+        align-items: baseline !important;
+    }
+}
