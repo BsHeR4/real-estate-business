@@ -70,11 +70,7 @@
     .zs-explore-wrapper .zs-explore-info {
         grid-area: 3 / 1 / 3 / 5;
         margin-top: 24px;
-        gap: 8px;
-    }
-
-    .zs-explore-info {
-        gap: 8px;
+        gap: 8px !important;
     }
 
     .zs-explore-wrapper img {
