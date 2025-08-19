@@ -4,6 +4,7 @@ import Home from './Pages/Home/Home'
 import PropertyDetails from './Pages/PropertyDetails/PropertyDetails'
 import Services from './Pages/Services/Services'
 import Contact from './Pages/Contact/Contact'
+import AchievementsSection from './Components/AchievementsSection/AchievementsSection'
 
 
 function App() {
@@ -16,6 +17,9 @@ function App() {
         <Route path="/Services" element={<Services />} />
         <Route path="/Contact" element={<Contact />} />
       </Routes>
+
+      
+      
     </>
   );
 }
