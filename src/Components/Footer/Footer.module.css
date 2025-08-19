@@ -1,0 +1,29 @@
+.footer {
+    background-color: var(--grey-08);
+}
+
+.footer .container {
+    display: flex;
+    justify-content: space-between;
+    gap: 10.1562vw;
+    padding: 55px 8.4375vw;
+}
+
+@media screen and (max-width: 1440px) and (min-width: 993px) {
+    .footer .container {
+        gap: 4.16666vw;
+        padding: 45px 5.5555vw;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .footer {
+        background-color: var(--grey-08);
+    }
+
+    .footer .container {
+        flex-direction: column;
+        gap: 50px;
+        padding: 33px 16px;
+    }
+}

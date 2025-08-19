@@ -14,6 +14,7 @@ createRoot(document.getElementById('root')).render(
       <Navbar />
       <App />
       <CTASection />
+      <Footer />
     </BrowserRouter>
   </StrictMode>,
 )
