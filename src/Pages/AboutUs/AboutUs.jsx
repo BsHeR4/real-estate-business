@@ -6,6 +6,7 @@ import Experience from '../../components/Experience/Experience';
 import TeamSection from '../../components/TeamSection/TeamSection';
 import ClientsSection from '../../components/ClientsSection/ClientsSection';
 import TeamMemberCard from '../../components/TeamMemberCard/TeamMemberCard';
+import AchievementsSection from '../../components/AchievementsSection/AchievementsSection';
 import { FaTwitter } from "react-icons/fa";
 
 const AboutUsPage = () => {
@@ -36,6 +37,8 @@ const AboutUsPage = () => {
       </Section>
 
       <ValuesSection />
+
+      <AchievementsSection />
 
       <Experience />
 

@@ -6,6 +6,7 @@ import Section from '../../components/Section/Section';
 import { officeLocations } from './../../Data/contactData'
 import PageIntro from './../../Components/PageIntro/PageIntro.jsx'
 import ServiceNavigationBar from './../../Components/ServiceNavigationBar/ServiceNavigationBar.jsx'
+import Explore from './../../Components/Explore/Explore.jsx'
 import { contactCards } from './../../Data/contactData.jsx'
 
 function Contact() {
@@ -39,6 +40,8 @@ function Contact() {
       >
         <OfficeLocationCard details={officeLocations} />
       </OfficeLocationSection>
+      <Explore />
+
     </div>
   );
 }
