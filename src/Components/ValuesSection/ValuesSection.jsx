@@ -1,35 +1,39 @@
 import React from "react";
 import Section from "../Section/Section";
 import SectionHeader from "../SectionHeader/SectionHeader";
+import BaseCard from "../BaseCard/BaseCard";
 import ValueCard from "../ValueCard/ValueCard";
+import { FaStar } from "react-icons/fa6";
 import "./ValuesSection.css";
+import  Excellence  from './../../assets/icons/excellence.svg?react'
+import  Client  from './../../assets/icons/clients.svg?react'
 
 function ValuesSection() {
     const values = [
         {
-            icon: "/public/assets/img/Icon Container.svg",
+            icon: <FaStar />,
             title: "Trust",
             description: "Trust is the cornerstone of every successful real estate transaction."
         },
         {
-            icon: "/public/assets/img/Icon Container(1).svg",
+            icon: <Excellence />,
             title: "Excellence",
             description: "We set the bar high for ourselves. From the properties we list to the services we provide."
         },
         {
-            icon: "/public/assets/img/Icon Container(2).svg",
+            icon: <Client />,
             title: "Client-Centric",
             description: "Your dreams and needs are at the center of our universe. We listen, understand."
         },
         {
-            icon: "/public/assets/img/Icon Container(3).svg",
+            icon: <FaStar />,
             title: "Our Commitment",
             description: "We are dedicated to providing you with the highest level of service, professionalism, and support."
         }
     ];
 
     return (
-        <Section className="ms-values-section">
+        <Section>
             <div className="ms-values-container">
                 <div className="ms-values-left">
                     <SectionHeader
@@ -37,7 +41,7 @@ function ValuesSection() {
                         subtitle="Our story is one of continuous growth and evolution. We started as a small team with big dreams, determined to create a real estate platform that transcended the ordinary."
                     />
                 </div>
-                <div className="ms-values-right">
+                <BaseCard className="ms-values-right card-shadow">
                     {values.map((value, index) => (
                         <ValueCard
                             key={index}
@@ -48,7 +52,7 @@ function ValuesSection() {
                             addBottomBorder={index < 2}
                         />
                     ))}
-                </div>
+                </BaseCard>
             </div>
         </Section>
     );

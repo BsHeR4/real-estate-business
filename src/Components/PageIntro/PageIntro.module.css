@@ -1,0 +1,27 @@
+.PageIntro {
+    display: flex;
+    align-items: center;
+    background-image: linear-gradient(95.93deg, #262626 -26.82%, rgba(38, 38, 38, 0) 40.46%);
+    height: 390px;
+}
+
+.PageIntro p {
+    max-width: 1358px;
+}
+@media screen and (max-width: 1440px) and (min-width: 993px) {
+    .PageIntro {
+        height: 315px;
+    }
+    .PageIntro p {
+        max-width: 1160px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .PageIntro {
+        height: 278px;
+    }
+    .PageIntro p {
+        max-width: fit-content;
+    }
+}
