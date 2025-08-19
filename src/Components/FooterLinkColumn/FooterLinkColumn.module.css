@@ -1,4 +1,122 @@
-.footer_list {
+.footerColumns {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    justify-content: space-between;
+    gap: 2rem;
+    width: 100%;
+}
+
+.footerColumn {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    width: fit-content;
+}
+
+.footerColumn h3 {
+    font-weight: 500;
+    font-size: 2rem;
+    line-height: 24px;
+    letter-spacing: -0.6%;
+    color: var(--grey-60);
+}
+
+.footerColumn ul {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.footerColumn ul li {
+    font-weight: 500;
+    font-size: 1.8rem;
+    line-height: 24px;
+    letter-spacing: -0.6%;
+}
+
+.footerColumn ul li a {
+    color: var(--color-white);
+}
+
+@media screen and (max-width: 1440px) and (min-width: 993px) {
+    .footerColumns {
+        gap: 1rem;
+    }
+
+    .footerColumn {
+        gap: 2.4rem;
+    }
+
+    .footerColumn h3 {
+        font-size: 1.8rem;
+    }
+
+    .footerColumn ul {
+        gap: 1.6rem;
+    }
+
+    .footerColumn ul li {
+        font-size: 1.6rem;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .footerColumns {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+
+    .footerColumn:nth-child(2)::before {
+        padding-right: 5.1413vw;
+        position: absolute;
+        right: 100%;
+        content: '';
+        height: 100%;
+        border-left: 1px solid var(--grey-15);
+    }
+
+    .footerColumn:nth-child(4)::before {
+        padding-right: 5.1413vw;
+        position: absolute;
+        right: 100%;
+        content: '';
+        height: 100%;
+        border-left: 1px solid var(--grey-15);
+    }
+
+    .footerColumn:nth-child(4) {
+        grid-column-start: 2;
+        grid-row-start: 2;
+        grid-row-end: 4;
+    }
+
+    .footerColumn {
+        position: relative;
+        width: 85%;
+        gap: 1.6rem;
+    }
+
+    .footerColumn h3 {
+        font-size: 1.6rem;
+    }
+
+    .footerColumn ul {
+        gap: 0.8rem;
+    }
+
+    .footerColumn::after {
+        content: '';
+        padding-top: 2rem;
+        border-bottom: 1px solid var(--grey-15);
+        width: 100%;
+    }
+
+    .footerColumn ul li {
+        font-size: 1.4rem;
+    }
+}
+
+/* .footer_list {
     background-color: var(--grey-08);
     padding: 100px 162px;
     display: flex;
@@ -118,4 +236,4 @@
         padding-bottom: 20px;
         border-bottom: 1px solid var(--grey-15);
     }
-}
+} */

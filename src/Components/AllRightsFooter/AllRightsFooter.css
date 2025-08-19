@@ -14,6 +14,10 @@
     gap: 10px;
 }
 
+.social-icons svg {
+    color: var(--color-white);
+}
+
 .allrights {
     display: flex;
     gap: 38px;

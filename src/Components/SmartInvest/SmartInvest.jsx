@@ -18,7 +18,7 @@ export default function SmartInvest() {
                         <div className="zs-serviceCTA">
                             <ServiceCTA title="Unlock Your Investment Potential"
                                 description="Explore our Property Management Service categories and let us handle the complexities while you enjoy the benefits of property ownership."
-                                Button
+                                variant='narrow'
                             >
                             </ServiceCTA>
                         </div>
