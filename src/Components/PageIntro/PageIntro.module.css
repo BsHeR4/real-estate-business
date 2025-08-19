@@ -1,0 +1,6 @@
+.PageIntro {
+    display: flex;
+    align-items: center;
+    background-image: linear-gradient(95.93deg, #262626 -26.82%, rgba(38, 38, 38, 0) 40.46%);
+    height: 390px;
+}
