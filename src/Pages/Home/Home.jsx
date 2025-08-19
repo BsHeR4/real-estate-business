@@ -5,7 +5,8 @@ import FeaturedPropertiesSection from '../../components/FeaturedPropertiesSectio
 import TestimonialsSection from '../../components/TestimonialsSection/TestimonialsSection';
 import TestimonialCard from '../../components/TestimonialCard/TestimonialCard';
 import FAQSection from '../../components/Faq/FAQSection';
-import SiteFeaturesSection from '../../Components/SiteFeaturesSection/SiteFeaturesSection';
+import ServiceNavigationBar from './../../Components/ServiceNavigationBar/ServiceNavigationBar.jsx'
+import { serviceCards } from './../../Data/servicesPageData'
 
 const HomePage = () => {
   const heroDataForHomePage = {
@@ -67,7 +68,7 @@ const HomePage = () => {
         <HeroSection data={heroDataForHomePage} />
       </Section>
 
-      <SiteFeaturesSection data={featuresData} />
+      <ServiceNavigationBar items={serviceCards} />
 
       <FeaturedPropertiesSection />
       <TestimonialsSection

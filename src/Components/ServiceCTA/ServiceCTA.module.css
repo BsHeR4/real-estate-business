@@ -19,19 +19,33 @@
     background-color: var(--grey-10);
 }
 
-.serviceCTA h3 {
+.wide h3 {
     font-weight: 700;
     font-size: 3rem;
     line-height: 150%;
     color: var(--color-white);
 }
 
-.serviceCTA p {
+.wide p {
     /* max-width: 952.3333px; */
     font-weight: 500;
     font-size: 1.8rem;
     line-height: 150%;
     color: var(--grey-60);
+}
+
+.narrow h3 {
+    font-weight: 600;
+    font-size: 2.4rem;
+    line-height: 150%;
+    color: var(--color-white);
+}
+
+.narrow p {
+    font-weight: 500;
+    font-size: 1.8rem;
+    line-height: 150%;
+    color: var(--white-90);
 }
 
 @media screen and (max-width: 1440px) and (min-width: 993px) {
@@ -40,11 +54,19 @@
         gap: 2rem;
     }
 
-    .serviceCTA h3 {
+    .wide h3 {
         font-size: 2.4rem;
     }
 
-    .serviceCTA p {
+    .wide p {
+        font-size: 1.6rem;
+    }
+
+    .narrow h3 {
+        font-size: 2.2rem;
+    }
+
+    .narrow p {
         font-size: 1.6rem;
     }
 }
@@ -62,16 +84,26 @@
         background-image: url(./../../../public/assets/imgs/ServicesPage/AbstractDesignMobile.png);
     }
 
-    .serviceCTA h3 {
+    .wide h3 {
         font-size: 2rem;
     }
 
-    .serviceCTA p {
+    .wide p {
         font-size: 1.4rem;
+    }
+
+    .narrow h3 {
+        font-size: 2rem;
+    }
+
+    .narrow p {
+        font-size: 1.4rem;
+        color: var(--grey-60);
     }
 
     .serviceCTA .container {
         flex-direction: column;
+        align-items: normal;
     }
 
     .serviceCTA .container button {
