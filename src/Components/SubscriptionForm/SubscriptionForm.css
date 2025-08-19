@@ -1,0 +1,19 @@
+.SubscriptionForm {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    width: fit-content;
+}
+
+@media screen and (max-width: 1440px) and (min-width: 993px) {
+    .SubscriptionForm {
+        gap: 2.4rem;
+    }
+}
+
+
+@media screen and (max-width: 992px) {
+    .SubscriptionForm {
+        gap: 2rem;
+    }
+}

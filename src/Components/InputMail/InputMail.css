@@ -7,7 +7,6 @@
     border: 1px solid var(--grey-15);
     border-radius: 12px;
     padding: 18px;
-    margin-top: 30px;
 }
 
 .input-style {
@@ -61,9 +60,9 @@ button {
 @media screen and (max-width: 992px) {
     .input-container {
         width: 88vw;
+        max-width: 70%;
         border-radius: 8px;
         padding: 14px;
-        margin-top: 20px;
     }
 
     .icon {
@@ -72,5 +71,12 @@ button {
 
     .icon1 {
         width: 24px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .input-container {
+        width: 88vw;
+        max-width: 100%;
     }
 }
