@@ -1,0 +1,79 @@
+.zs-explore-wrapper {
+    background-image: url(/public/assets/imgs/explore-abstract.svg);
+    padding: 80px;
+    width: 83.1770vw;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    border: 1px solid var(--grey-15);
+    border-radius: 12px;
+}
+
+.zs-explore-info .MS-icon-star-container {
+    background-color: transparent;
+}
+.zs-explore-info .MS-icon-star{
+    margin-bottom: 0 !important;
+}
+.zs-explore-wrapper .zs-explore-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.zs-explore-wrapper .zs-explore-img1 {
+    grid-area: 1 / 1 / 1 / 3;
+}
+
+.zs-explore-wrapper .zs-explore-img2 {
+    grid-area: 1 / 3 / 2 / 5;
+}
+
+.zs-explore-wrapper .zs-explore-img3 {
+    grid-area: 2 / 1 / 2 / 3;
+}
+
+.zs-explore-wrapper .zs-explore-img4 {
+    grid-area: 2 / 3 / 2 / 4;
+}
+
+.zs-explore-wrapper .zs-explore-img5 {
+    grid-area: 2 / 4 / 2 / 4;
+}
+
+.zs-explore-wrapper .zs-explore-img6 {
+    grid-area: 3 / 3 / 3 / 5;
+}
+.zs-explore-wrapper .zs-explore-info{
+    grid-area: 3 / 1 / 3 / 3
+}
+
+@media screen and (max-width:1440px) {
+    .zs-explore-wrapper {
+        padding: 60px;
+    }
+}
+
+@media screen and (max-width:992px) {
+    .zs-explore-wrapper {
+        padding: 24px;
+        gap: 10px;
+        width: 90vw;
+    }
+
+    .zs-explore-wrapper .zs-explore-img6 {
+        grid-area: 4 / 1 / 5 / 5;
+    }
+
+    .zs-explore-wrapper .zs-explore-info {
+        grid-area: 3 / 1 / 3 / 5;
+        margin-top: 24px;
+        gap: 8px !important;
+    }
+
+    .zs-explore-wrapper img {
+        margin-bottom: 25px;
+    }
+}
