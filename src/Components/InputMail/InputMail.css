@@ -1,5 +1,5 @@
-.input-container{
-    width: 432px;
+.input-container {
+    width: 22.5vw;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -10,31 +10,31 @@
     margin-top: 30px;
 }
 
-.input-style{
+.input-style {
     display: flex;
     align-items: center;
     gap: 10px;
 }
 
-input{
+input {
     background: none;
     border: none;
     outline: none;
 }
 
-input::placeholder{
+input::placeholder {
     color: var(--grey-60);
 }
 
-.icon{
+.icon {
     width: 24px;
 }
 
-.icon1{
+.icon1 {
     width: 30px;
 }
 
-button{
+button {
     width: fit-content;
     background: none;
     border: none;
@@ -42,31 +42,35 @@ button{
 }
 
 @media screen and (max-width: 1440px) and (min-width: 993px) {
-    .input-container{
+    .input-container {
         width: 305px;
         border-radius: 8px;
         padding: 14px;
         margin-top: 24px;
     }
-    .icon{
+
+    .icon {
         width: 20px;
-    }  
-    .icon1{
+    }
+
+    .icon1 {
         width: 24px;
     }
 }
 
 @media screen and (max-width: 992px) {
-    .input-container{
-        width: 357px;
+    .input-container {
+        width: 88vw;
         border-radius: 8px;
         padding: 14px;
         margin-top: 20px;
     }
-    .icon{
+
+    .icon {
         width: 20px;
-    }  
-    .icon1{
+    }
+
+    .icon1 {
         width: 24px;
     }
 }

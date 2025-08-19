@@ -4,10 +4,10 @@ import FooterLinkColumn from '../FooterLinkColumn/FooterLinkColumn'
 
 const Footer = () => {
     return (
-    <div>
-        <FooterLinkColumn/>
-        <AllRightsFooter/>
-    </div>
+        <div>
+            <FooterLinkColumn />
+            <AllRightsFooter />
+        </div>
     )
 }
 

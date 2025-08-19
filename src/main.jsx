@@ -15,7 +15,6 @@ createRoot(document.getElementById('root')).render(
       <Navbar />
       <App />
       <CTASection />
-    <SmartInvest />
     </BrowserRouter>
   </StrictMode>,
 )
