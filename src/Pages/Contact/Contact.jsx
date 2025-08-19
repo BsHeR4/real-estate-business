@@ -4,10 +4,15 @@ import OfficeLocationSection from '../../Components/OfficeLocationSection/Office
 import OfficeLocationCard from '../../Components/OfficeLocationCard/OfficeLocationCard';
 import Section from '../../components/Section/Section';
 import { officeLocations } from './../../Data/contactData'
+import PageIntro from './../../Components/PageIntro/PageIntro.jsx'
+import ServiceNavigationBar from './../../Components/ServiceNavigationBar/ServiceNavigationBar.jsx'
+import { contactCards } from './../../Data/contactData.jsx'
 
 function Contact() {
   return (
     <div>
+      <PageIntro />
+      <ServiceNavigationBar items={contactCards} />
       <Section>
         <ContactForm />
       </Section>
