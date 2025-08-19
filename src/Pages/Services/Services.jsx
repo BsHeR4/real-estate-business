@@ -2,11 +2,16 @@ import React from 'react'
 import ServiceCategorySection from './../../Components/ServiceCategorySection/ServiceCategorySection'
 import { servicePageSections } from './../../Data/servicesPageData'
 import SmartInvest from './../../Components/SmartInvest/SmartInvest.jsx'
+import PageIntro from './../../Components/PageIntro/PageIntro.jsx'
+import ServiceNavigationBar from './../../Components/ServiceNavigationBar/ServiceNavigationBar.jsx'
+import { serviceCards } from './../../Data/servicesPageData'
 function Services() {
   const propertyValue = servicePageSections.unlock_property_value
   const propertyManag = servicePageSections.effortless_property_management
   return (
     <div>
+      <PageIntro />
+      <ServiceNavigationBar items={serviceCards} />
       <ServiceCategorySection
         title={propertyValue.section_header.title}
         subtitle={propertyValue.section_header.subtitle}
