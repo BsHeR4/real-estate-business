@@ -1,48 +1,23 @@
-import React, {useEffect, useState} from 'react';
+import React, {useState} from 'react';
 import './Dashboard.css'
 import EditForm from "./EditForm.jsx";
 import AddForm from "./AddForm.jsx";
 import {MdDelete} from "react-icons/md";
 import {RxUpdate} from "react-icons/rx";
 import {FaPlus} from "react-icons/fa";
+import {useItems} from "../../context/ItemsContext.jsx";
 
 const Dashboard = () => {
-    const [items, setItems] = useState([]);
-    const [addItem, setAddItem] = useState(false);
-    const [editItem, setEditItem] = useState(null);
+    const { items, addItem, deleteItem, updateItem } = useItems();
 
-    useEffect(() => {
-        const storedItems = localStorage.getItem("items");
-        if (storedItems) {
-            setItems(JSON.parse(storedItems));
-        }
-    }, []);
-
-    useEffect(() => {
-        localStorage.setItem("items", JSON.stringify(items));
-    }, [items]);
-
-    const handleAdd = (newItem) => {
-        setItems([...items, newItem]);
-    };
-
-    const handleDelete = (id) => {
-        setItems(items.filter((item) => item.id !== id));
-    };
-
-    const handleUpdate = (id, newTitle, newIcon) => {
-        setItems(
-            items.map((item) =>
-                item.id === id ? { ...item, title: newTitle, icon: newIcon } : item
-            )
-        );
-    };
+    const [showAddModal, setShowAddModal] = useState(false);
+    const [editingItem, setEditingItem] = useState(null);
 
     return (
         <div className="mk-dashboard">
             <h1>Dashboard</h1>
 
-            <button className="mk-btn add" onClick={() => setAddItem(true)}><FaPlus /> Add Item</button>
+            <button className="mk-btn add" onClick={() => setShowAddModal(true)}><FaPlus /> Add Item</button>
 
             <div className="mk-dash-cards">
                 {items.length === 0 ? (
@@ -55,32 +30,32 @@ const Dashboard = () => {
                             <img src={item.icon} alt={item.title} />
                             <h3>{item.title}</h3>
                             <div className="mk-actions">
-                                <button onClick={() => setEditItem(item)} className="mk-btn edit"><RxUpdate /> Edit</button>
-                                <button onClick={() => handleDelete(item.id)} className="mk-btn delete"><MdDelete /> Delete</button>
+                                <button onClick={() => setEditingItem(item)} className="mk-btn edit"><RxUpdate /> Edit</button>
+                                <button onClick={() => deleteItem(item.id)} className="mk-btn delete"><MdDelete /> Delete</button>
                             </div>
                         </div>
                     ))
                 )}
             </div>
 
-            {addItem && (
+            {showAddModal && (
                 <div className="mk-modal-overlay">
                     <div className="mk-modal-content">
                         <AddForm
-                            onSave={handleAdd}
-                            onClose={() => setAddItem(false)}
+                            onSave={addItem}
+                            onClose={() => setShowAddModal(false)}
                         />
                     </div>
                 </div>
             )}
 
-            {editItem && (
+            {editingItem && (
                 <div className="mk-modal-overlay">
                     <div className="mk-modal-content">
                         <EditForm
-                            item={editItem}
-                            onSave={handleUpdate}
-                            onClose={() => setEditItem(null)}
+                            item={editingItem}
+                            onSave={updateItem}
+                            onClose={() => setEditingItem(null)}
                         />
                     </div>
                 </div>

@@ -85,18 +85,22 @@ export const servicePageSections = {
 export const serviceCards =
     [
         {
+            id: 1,
             title: "Find Your Dream Home",
             icon: "./../../../public/assets/imgs/service-icon-1.svg",
         },
         {
+            id: 2,
             title: "Unlock Property Value",
             icon: "./../../../public/assets/imgs/service-icon-2.svg",
         },
         {
+            id: 3,
             title: "Effortless Property Management",
             icon: "./../../../public/assets/imgs/service-icon-3.svg",
         },
         {
+            id: 4,
             title: "Smart Investments, Informed Decisions",
             icon: "./../../../public/assets/imgs/service-icon-4.svg",
         },
