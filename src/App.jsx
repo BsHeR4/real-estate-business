@@ -5,21 +5,24 @@ import PropertyDetails from './Pages/PropertyDetails/PropertyDetails'
 import Services from './Pages/Services/Services'
 import Contact from './Pages/Contact/Contact'
 import AchievementsSection from './Components/AchievementsSection/AchievementsSection'
+import {ItemsProvider} from "./context/ItemsContext.jsx";
+import {serviceCards} from "./Data/servicesPageData.jsx";
+import Dashboard from "./Components/Dashboard/Dashboard.jsx";
 
 
 function App() {
   return (
     <>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="AboutUs" element={<AboutUs />} />
-        <Route path="/PropertyDetails" element={<PropertyDetails />} />
-        <Route path="/Services" element={<Services />} />
-        <Route path="/Contact" element={<Contact />} />
-      </Routes>
-
-      
-      
+      <ItemsProvider initialItems={serviceCards}>
+          <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="AboutUs" element={<AboutUs />} />
+              <Route path="/PropertyDetails" element={<PropertyDetails />} />
+              <Route path="/Services" element={<Services />} />
+              <Route path="/Contact" element={<Contact />} />
+              <Route path="/dashboard" element={<Dashboard />} />
+          </Routes>
+      </ItemsProvider>
     </>
   );
 }

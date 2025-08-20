@@ -6,7 +6,6 @@ import TestimonialsSection from '../../components/TestimonialsSection/Testimonia
 import TestimonialCard from '../../components/TestimonialCard/TestimonialCard';
 import FAQSection from '../../components/Faq/FAQSection';
 import ServiceNavigationBar from './../../Components/ServiceNavigationBar/ServiceNavigationBar.jsx'
-import { serviceCards } from './../../Data/servicesPageData'
 
 const HomePage = () => {
   const heroDataForHomePage = {
@@ -68,7 +67,7 @@ const HomePage = () => {
         <HeroSection data={heroDataForHomePage} />
       </Section>
 
-      <ServiceNavigationBar items={serviceCards} />
+      <ServiceNavigationBar />
 
       <FeaturedPropertiesSection />
       <TestimonialsSection
