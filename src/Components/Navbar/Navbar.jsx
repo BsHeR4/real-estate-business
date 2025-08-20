@@ -35,8 +35,8 @@ function Navbar() {
                 animate="visible"
             >
                 <motion.li variants={itemVariants}><NavLink to={'/'}>Home</NavLink></motion.li>
-                <motion.li variants={itemVariants}><NavLink to={'/PropertyDetails'}>Properties</NavLink></motion.li>
                 <motion.li variants={itemVariants}><NavLink to={'/AboutUs'}>About Us</NavLink></motion.li>
+                <motion.li variants={itemVariants}><NavLink to={'/PropertyDetails'}>Properties</NavLink></motion.li>
                 <motion.li variants={itemVariants}><NavLink to={'/Services'}>Services</NavLink></motion.li>
             </motion.ul>
             <RouterNavLink to={'/Contact'}>
