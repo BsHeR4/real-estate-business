@@ -21,14 +21,23 @@ const itemVariants = {
     visible: { y: 0, opacity: 1 },
 };
 
-function ServiceNavigationBar({ items, className, baseCardClassName }) {
+function ServiceNavigationBar({ items, className, baseCardClassName, directAnimation = false }) {
+    const animationProps = {
+        initial: "hidden",
+        viewport: { once: true }
+    };
+
+    if (directAnimation) {
+        animationProps.animate = "visible";
+    } else {
+        animationProps.whileInView = "visible";
+    }
+
     return (
         <Section className={`${styles.ServiceNavigationBar} ${className}`}>
             <motion.div
                 variants={containerVariants}
-                initial="hidden"
-                whileInView="visible"
-                viewport={{ once: true }}
+                {...animationProps}
             >
                 <BaseCard className={`${styles.cards} ${baseCardClassName}`}>
                     {items.map((item, index) => (

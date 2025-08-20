@@ -60,18 +60,28 @@ const SectionHeader = ({
     className = '',
     titleClassName = '',
     subtitleClassName = '',
+    directAnimation = false,
     ...props
 }) => {
     const containerClasses = clsx('section-header', className);
     const titleClasses = clsx('section-title', titleClassName);
     const subtitleClasses = clsx('section-subtitle', subtitleClassName);
 
+    const animationProps = {
+        initial: "hidden",
+        viewport: { once: true }
+    };
+
+    if (directAnimation) {
+        animationProps.animate = "visible";
+    } else {
+        animationProps.whileInView = "visible";
+    }
+
     return (
         <motion.div
             variants={headerVariants}
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true, amount: 0.3 }}
+            {...animationProps}
             className={containerClasses} {...props}
         >
 

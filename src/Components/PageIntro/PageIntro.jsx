@@ -11,6 +11,7 @@ function PageIntro({ title, subtitle }) {
                 title={title}
                 subtitle={subtitle}
                 showIcon={false}
+                directAnimation={true}
             />
         </Section>
     )
