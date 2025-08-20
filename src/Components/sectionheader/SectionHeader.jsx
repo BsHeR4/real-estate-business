@@ -2,6 +2,7 @@ import React from 'react';
 import './SectionHeader.css';
 import IconStar from '../IconStar/IconStar';
 import clsx from 'clsx';
+import { motion } from 'framer-motion';
 
 /**
  * SectionHeader component
@@ -37,6 +38,20 @@ import clsx from 'clsx';
  * />
  */
 
+const headerVariants = {
+    hidden: { opacity: 0 },
+    visible: {
+        opacity: 1,
+        transition: {
+            staggerChildren: 0.3,
+        },
+    },
+};
+
+const itemVariants = {
+    hidden: { opacity: 0, y: 30 },
+    visible: { opacity: 1, y: 0 },
+};
 
 const SectionHeader = ({
     title,
@@ -52,11 +67,22 @@ const SectionHeader = ({
     const subtitleClasses = clsx('section-subtitle', subtitleClassName);
 
     return (
-        <div className={containerClasses} {...props}>
-            {showIcon && <IconStar className="star-icon" />}
-            <h1 className={titleClasses}>{title}</h1>
-            {subtitle && <p className={subtitleClasses}>{subtitle}</p>}
-        </div>
+        <motion.div
+            variants={headerVariants}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.3 }}
+            className={containerClasses} {...props}
+        >
+
+            {showIcon &&
+                <motion.div variants={itemVariants}>
+                    <IconStar className="star-icon" />
+                </motion.div>
+            }
+            <motion.h1 variants={itemVariants} className={titleClasses}>{title}</motion.h1>
+            {subtitle && <motion.p variants={itemVariants} className={subtitleClasses}>{subtitle}</motion.p>}
+        </motion.div>
     );
 };
 

@@ -5,34 +5,40 @@
 .statItem {
     background-color: #1A1A1A;
     border: 1px solid #262626;
-    width: 239.3333282470703px;
+    width: 12.4479vw;
     opacity: 1;
     gap: 2px;
-    padding-top: 16px;
-    padding-right: 24px;
-    padding-bottom: 16px;
-    padding-left: 24px;
-    border-radius: 12px;
+    padding-top: 1.6rem;
+    padding-right: 2.4rem;
+    padding-bottom: 1.6rem;
+    padding-left: 2.4rem;
+    border-radius: 1.2rem;
     border-width: 1px;
-
 }
 
 .number {
     font-weight: 700;
-    font-style: Bold;
-    font-size: 40px;
+    font-size: 4rem;
     line-height: 150%;
-    color: #FFFFFF;
+    color: var(--color-white);
 }
 
 .label {
     font-weight: 500;
-    font-style: Medium;
-    font-size: 18px;
+    font-size: 1.8rem;
     line-height: 150%;
-    color: #999999;
+    color: var(--grey-60);
 }
 
+@media screen and (max-width: 1734px) and (min-width: 1441px) {
+    .number {
+        font-size: 3.4rem;
+    }
+
+    .label {
+        font-size: 1.4rem;
+    }
+}
 
 /* =================================================================== */
 /* 2. Laptop & Tablet Styles (max-width: 1440px) */
@@ -59,15 +65,15 @@
         line-height: 150%;
 
     }
-    
+
     .label {
         font-weight: 500;
         font-style: Medium;
         font-size: 16px;
         line-height: 150%;
-        
+
     }
-    
+
 }
 
 
