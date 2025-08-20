@@ -27,7 +27,7 @@ const itemVariants = {
  * @description A "smart" container component that assembles and displays the entire 'Featured Properties' section. It includes the section header and the property cards. In a real application, this component would also be responsible for fetching the property data
  * * @returns {JSX.Element} The fully rendered 'Featured Properties' section
  */
-function FeaturedPropertiesSection() {
+function FeaturedPropertiesSection({ properties }) {
     const featuredPropertiesSwiper = useRef(null)
     const breakpoints = {
         0: { slidesPerView: 1, spaceBetween: 0 },
@@ -54,48 +54,21 @@ function FeaturedPropertiesSection() {
                         breakpoints={breakpoints}
                         swipe={featuredPropertiesSwiper}
                     >
-                        <PropertyCard
-                            itemVariant={itemVariants}
-                            img={'./../../../public/assets/imgs/FeatiredProperties/SeasideSerenityVilla.png'}
-                            title={'Seaside Serenity Villa'}
-                            subtitle={'A stunning 4-bedroom, 3-bathroom villa in a peaceful suburban neighborhood... '}
-                            price={'$550,000'}
-                            bedrooms={'4'} bathrooms={'3'}
-                        />
 
-                        <PropertyCard
-                            itemVariant={itemVariants}
-                            img={'./../../../public/assets/imgs/FeatiredProperties/MetropolitanHaven.png'}
-                            title={'Metropolitan Haven'}
-                            subtitle={'A chic and fully-furnished 2-bedroom apartment with panoramic city views... '}
-                            price={'$550,000'}
-                            bedrooms={'2'} bathrooms={'2'}
-                        />
+                        {properties.map((property, index) => (
+                            <PropertyCard
+                                itemVariant={itemVariants}
+                                title={property.title}
+                                subtitle={property.subtitle}
+                                price={property.price}
+                                bedrooms={property.bedrooms}
+                                bathrooms={property.bathrooms}
+                                img={property.img}
+                                buildType={property.buildType}
+                                key={index}
+                            />
+                        ))}
 
-                        <PropertyCard
-                            itemVariant={itemVariants}
-                            img={'./../../../public/assets/imgs/FeatiredProperties/RusticRetreatCottage.png'}
-                            title={'Rustic Retreat Cottage'}
-                            subtitle={'An elegant 3-bedroom, 2.5-bathroom townhouse in a gated community... '}
-                            price={'$550,000'}
-                            bedrooms={'3'} bathrooms={'3'}
-                        />
-                        <PropertyCard
-                            itemVariant={itemVariants}
-                            img={'./../../../public/assets/imgs/FeatiredProperties/RusticRetreatCottage.png'}
-                            title={'Rustic Retreat Cottage'}
-                            subtitle={'An elegant 3-bedroom, 2.5-bathroom townhouse in a gated community... '}
-                            price={'$550,000'}
-                            bedrooms={'3'} bathrooms={'3'}
-                        />
-                        <PropertyCard
-                            itemVariant={itemVariants}
-                            img={'./../../../public/assets/imgs/FeatiredProperties/RusticRetreatCottage.png'}
-                            title={'Rustic Retreat Cottage'}
-                            subtitle={'An elegant 3-bedroom, 2.5-bathroom townhouse in a gated community... '}
-                            price={'$550,000'}
-                            bedrooms={'3'} bathrooms={'3'}
-                        />
                     </Slider>
                 </div>
                 <div className={styles.navigation}>

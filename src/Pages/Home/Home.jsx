@@ -9,6 +9,7 @@ import TestimonialCard from '../../components/TestimonialCard/TestimonialCard';
 import FAQSection from '../../components/Faq/FAQSection';
 import ServiceNavigationBar from './../../Components/ServiceNavigationBar/ServiceNavigationBar.jsx'
 import { serviceCards } from './../../Data/servicesPageData'
+import { properties } from '../../Data/propertyDetailsData.jsx';
 
 const HomePage = () => {
   const heroDataForHomePage = {
@@ -72,7 +73,7 @@ const HomePage = () => {
 
       <ServiceNavigationBar items={serviceCards} className={styles.serviceNavigationBar} baseCardClassName={styles.baseCard} />
 
-      <FeaturedPropertiesSection />
+      <FeaturedPropertiesSection properties={properties} />
       <TestimonialsSection
         title={'What Our Clients Say'}
         subtitle={'Read the success stories and heartfelt testimonials from our valued clients. Discover why they chose Estatein for their real estate needs.'}
