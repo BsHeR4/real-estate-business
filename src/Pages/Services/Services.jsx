@@ -11,7 +11,7 @@ function Services() {
   return (
     <div>
       <PageIntro title={"Elevate Your Real Estate Experience"} subtitle={"Welcome to Estatein, where your real estate aspirations meet expert guidance. Explore our comprehensive range of services, each designed to cater to your unique needs and dreams."} />
-      <ServiceNavigationBar items={serviceCards} />
+      <ServiceNavigationBar items={serviceCards} directAnimation={true} />
       <ServiceCategorySection
         title={propertyValue.section_header.title}
         subtitle={propertyValue.section_header.subtitle}
