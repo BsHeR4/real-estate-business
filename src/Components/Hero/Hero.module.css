@@ -1,0 +1,167 @@
+.hero {
+    display: flex;
+    gap: 8rem;
+    height: calc(100vh - 99px);
+    padding-top: 0px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+    position: relative;
+    z-index: 1;
+    background-color: var(--grey-08);
+}
+
+.hero .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 6rem;
+}
+
+.hero .container .textContainer {
+    max-width: 758px;
+}
+.hero .container .textContainer h1 {
+    font-weight: 600;
+    font-size: 6rem;
+    line-height: 120%;
+    color: var(--color-white);
+}
+
+.hero .container .textContainer p {
+    font-weight: 500;
+    font-size: 1.8rem;
+    line-height: 150%;
+    color: var(--grey-60);
+    padding-top: 2.4rem;
+}
+
+.hero .container .buttons {
+    display: flex;
+    gap: 2rem;
+}
+
+.hero .statItems {
+    display: flex;
+    gap: 2rem;
+}
+
+.hero .heroImgContainer {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-image: url(./../../../public/assets/imgs/Hero/building.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: right bottom;
+}
+
+.hero .abstractImgContainer {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-image: url(./../../../public/assets/imgs/Hero/AbstractDesign.png);
+    background-size: 100% 100%;
+    background-color: var(--grey-10);
+    background-position: right bottom;
+}
+
+
+@media screen and (max-width: 1440px) and (min-width: 993px) {
+    .hero {
+        gap: 6rem;
+        height: calc(100vh - 77px);
+    }
+
+    .hero .container {
+        gap: 5rem;
+    }
+
+    .hero .container .textContainer h1 {
+        font-size: 4.6rem;
+    }
+
+    .hero .container .textContainer p {
+        font-size: 1.6rem;
+        padding-top: 2rem;
+    }
+
+    .hero .container .buttons {
+        gap: 1.6rem;
+    }
+
+    .hero .statItems {
+        gap: 1.6rem;
+    }
+
+    .hero .heroImgContainer {
+        max-width: 690px;
+    }
+
+    .hero .abstractImgContainer {
+        max-width: 690px;
+    }
+}
+
+
+@media screen and (max-width: 992px) {
+    .hero {
+        display: grid;
+        grid-template-rows: repeat(auto);
+        gap: 2.4rem;
+        height: 100%;
+        padding-top: 4rem;
+        padding-right: 1.6rem;
+    }
+
+    .hero .container {
+        gap: 4rem;
+    }
+
+    .hero .container .textContainer h1 {
+        font-size: 2.8rem;
+    }
+
+    .hero .container .textContainer p {
+        font-size: 1.4rem;
+        padding-top: 1.6rem;
+    }
+
+    .hero .container .buttons {
+        flex-direction: column;
+        gap: 1.6rem;
+    }
+
+    .hero .container button {
+        width: 100%;
+    }
+
+    .hero .statItems {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.2rem;
+    }
+
+    .hero .statItems>* {
+        width: 100%;
+    }
+
+    .hero .statItems> :last-child {
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+
+
+    .hero .heroImgContainer {
+        justify-self: center;
+        grid-row-start: 1;
+        border: 1px solid rgba(38, 38, 38, 1);
+        border-radius: 1.2rem;
+    }
+    
+    .hero .abstractImgContainer {
+        justify-self: center;
+        min-height: 302px;
+        border-radius: 1.2rem;
+    }
+}
