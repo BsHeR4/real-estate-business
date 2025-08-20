@@ -64,6 +64,42 @@
     text-decoration: none;
 }
 
+@media screen and (max-width: 1734px) and (min-width: 1441px) {
+    .baseContainer {
+        padding: 2rem;
+    }
+
+    .baseContainer button{
+        font-size: 1.6rem;
+    }
+
+    .baseContainer .properties {
+        gap: 5px;
+    }
+
+    .baseContainer .properties span {
+        font-size: 1.4rem;
+    }
+
+    .baseContainer .priceTitle {
+        font-size: 2rem;
+    }
+
+    .baseContainer .price {
+        font-size: 1.8rem;
+    }
+
+    .baseContainer h2 {
+        padding-bottom: 4px;
+        font-size: 1.6rem;
+    }
+
+    .baseContainer p {
+        padding-bottom: 24px;
+        font-size: 1.4rem;
+    }
+}
+
 /* ============================================================= */
 
 @media screen and (max-width: 1440px) and (min-width: 993px) {

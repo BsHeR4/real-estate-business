@@ -27,25 +27,23 @@ function PropertyCard({ itemVariant, img, title, subtitle, price, bedrooms, bath
             variants={itemVariant}
             whileHover={{ scale: 1.03, y: -5 }}
         >
-            <BaseCard>
-                <div className={styles.baseContainer}>
-                    <img src={img} alt="" className={styles.cardImage} />
-                    <h2>{title}</h2>
-                    <p>{subtitle}<span>Read More</span></p>
+            <BaseCard className={styles.baseContainer}>
+                <img src={img} alt="" className={styles.cardImage} />
+                <h2>{title}</h2>
+                <p>{subtitle}<span>Read More</span></p>
 
-                    <div className={styles.properties}>
-                        <PropertyFeature icon={<IoBed />}>{bedrooms}-BedRoom</PropertyFeature>
-                        <PropertyFeature icon={<Bathtub />}>{bathrooms}-Bathroom</PropertyFeature>
-                        <PropertyFeature icon={<HiMiniBuildingOffice />}>{buildType}</PropertyFeature>
-                    </div>
+                <div className={styles.properties}>
+                    <PropertyFeature icon={<IoBed />}>{bedrooms}-BedRoom</PropertyFeature>
+                    <PropertyFeature icon={<Bathtub />}>{bathrooms}-Bathroom</PropertyFeature>
+                    <PropertyFeature icon={<HiMiniBuildingOffice />}>{buildType}</PropertyFeature>
+                </div>
 
-                    <div className={styles.container}>
-                        <div className={styles.priceContainer}>
-                            <span className={styles.priceTitle}>Price</span>
-                            <span className={styles.price}>{price}</span>
-                        </div>
-                        <Button size={'small'} fullWidth={'true'}>View Property Details</Button>
+                <div className={styles.container}>
+                    <div className={styles.priceContainer}>
+                        <span className={styles.priceTitle}>Price</span>
+                        <span className={styles.price}>{price}</span>
                     </div>
+                    <Button size={'small'} fullWidth={'true'}>View Property Details</Button>
                 </div>
             </BaseCard>
         </motion.div>
