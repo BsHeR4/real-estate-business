@@ -136,7 +136,7 @@ ul {
         text-align: left !important;
         /* padding: 0 162px; */
         /* background-color: #141414; */
-        gap: 20px !important;
+        /* gap: 20px !important; */
         flex-direction: column !important;
     }
 

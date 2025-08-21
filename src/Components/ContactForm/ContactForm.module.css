@@ -30,6 +30,9 @@
     flex-wrap: wrap;
 
 }
+/* .agreeLabel pre{
+border-bottom: 1px solid white;
+} */
 
 @media screen and (max-width: 992px) {
     .formGrid {
