@@ -21,7 +21,7 @@
 
 @media screen and (max-width:1440px){
     .zs-smart-info{
-        max-width: 412px !important;
+        max-width: 100%;
     }
     .zs-smart-invest-wrapper {
     gap: 50px;
@@ -36,11 +36,18 @@
 @media screen and (max-width:992px){
     .zs-smart-invest-wrapper{
         flex-direction: column;
+        gap: 40px;
+    }
+    .zs-smart-info{
+        gap: 30px;
     }
     .zs-smart-cards{
         grid-template-columns:  1fr;
         .mk-card{
             width: 100%;
         }
+    }
+    .zs-smart-cards .mk-card{
+        padding: 24px;
     }
 }

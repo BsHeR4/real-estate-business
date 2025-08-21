@@ -6,7 +6,6 @@ import Slider, { slideNext, slidePrev } from "../Slider/Slider.jsx";
 import IconButton from "../IconButton/IconButton.jsx";
 import React, { useRef } from 'react'
 import { motion } from 'framer-motion';
-
 const containerVariants = {
     hidden: { opacity: 0 },
     visible: {
@@ -30,8 +29,8 @@ const itemVariants = {
 function FeaturedPropertiesSection() {
     const featuredPropertiesSwiper = useRef(null)
     const breakpoints = {
-        0: { slidesPerView: 1, spaceBetween: 0 },
-        768: { slidesPerView: 2, spaceBetween: 10 },
+        0: { slidesPerView: 1, spaceBetween: 20 },
+        768: { slidesPerView: 2, spaceBetween: 20 },
         993: { slidesPerView: 3, spaceBetween: 20 },
         1441: { slidesPerView: 3, spaceBetween: 30 },
     }

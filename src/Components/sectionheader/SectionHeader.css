@@ -1,12 +1,10 @@
 /*style for Desktop*/
 .section-header {
     text-align: left;
-    /* padding: 0 162px; */
-    /* background-color:  #141414; */
 }
 
 .section-title {
-    color: #FFFFFF;
+    color: var(--color-white);
     font-weight: 600;
     font-size: 48px;
     line-height: 150%;
@@ -14,7 +12,7 @@
 
 .section-subtitle {
     margin-top: 14px;
-    color: #999999;
+    color: var(--grey-60);
     font-weight: 500;
     font-size: 18px;
     line-height: 150%;

@@ -13,7 +13,7 @@ const FAQSection = () => {
     const faqSection = useRef(null)
     const breakpoints = {
         0: { slidesPerView: 1, spaceBetween: 30 },
-        768: { slidesPerView: 2, spaceBetween: 15 },
+        768: { slidesPerView: 2, spaceBetween: 21 },
         993: { slidesPerView: 3, spaceBetween: 20 },
         1441: { slidesPerView: 3, spaceBetween: 30 },
     }

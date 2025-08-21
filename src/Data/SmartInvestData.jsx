@@ -1,4 +1,4 @@
-const FeatureCardData = [
+const SmartInvestData = [
   {
     icon: <img src='assets\imgs\service-icon-5.svg' alt="Market Insight" />,
     title: "Market Insight",
@@ -21,4 +21,4 @@ const FeatureCardData = [
   },
 ];
 
-export default FeatureCardData;
+export default SmartInvestData;
