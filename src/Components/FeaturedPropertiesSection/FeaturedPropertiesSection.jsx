@@ -4,7 +4,7 @@ import PropertyCard from '../PropertyCard/PropertyCard'
 import styles from './FeaturedPropertiesSection.module.css'
 import Slider, { slideNext, slidePrev } from "../Slider/Slider.jsx";
 import IconButton from "../IconButton/IconButton.jsx";
-import React, { useRef } from 'react'
+import React, { useRef, useState } from 'react';
 import { motion } from 'framer-motion';
 
 const containerVariants = {
@@ -28,6 +28,8 @@ const itemVariants = {
  * * @returns {JSX.Element} The fully rendered 'Featured Properties' section
  */
 function FeaturedPropertiesSection({ properties }) {
+    const [isBeginning, setIsBeginning] = useState(true);
+    const [isEnd, setIsEnd] = useState(false);
     const featuredPropertiesSwiper = useRef(null)
     const breakpoints = {
         0: { slidesPerView: 1, spaceBetween: 0 },
@@ -35,6 +37,11 @@ function FeaturedPropertiesSection({ properties }) {
         993: { slidesPerView: 3, spaceBetween: 20 },
         1441: { slidesPerView: 3, spaceBetween: 30 },
     }
+
+    const handleSliderStateChange = (swiper) => {
+        setIsBeginning(swiper.isBeginning);
+        setIsEnd(swiper.isEnd);
+    };
 
     return (
         <Section>
@@ -53,6 +60,7 @@ function FeaturedPropertiesSection({ properties }) {
                         slidesPerView={1}
                         breakpoints={breakpoints}
                         swipe={featuredPropertiesSwiper}
+                        onStateChange={handleSliderStateChange}
                     >
 
                         {properties.map((property, index) => (
@@ -77,12 +85,14 @@ function FeaturedPropertiesSection({ properties }) {
                         variant="dark"
                         type="arrow"
                         onClick={() => slidePrev(featuredPropertiesSwiper)}
+                        disabled={isBeginning}
                     />
                     <IconButton
                         icon="arrow-right"
                         variant="dark"
                         type="arrow"
                         onClick={() => slideNext(featuredPropertiesSwiper)}
+                        disabled={isEnd}
                     />
                 </div>
 
