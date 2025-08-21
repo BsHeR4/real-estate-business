@@ -9,7 +9,8 @@ import TestimonialCard from '../../components/TestimonialCard/TestimonialCard';
 import FAQSection from '../../components/Faq/FAQSection';
 import ServiceNavigationBar from './../../Components/ServiceNavigationBar/ServiceNavigationBar.jsx'
 import { serviceCards } from './../../Data/servicesPageData'
-import { properties } from '../../Data/propertyDetailsData.jsx';
+import { properties } from '../../Data/homeData.jsx';
+import { testimonialsSectionData } from '../../Data/homeData.jsx';
 
 const HomePage = () => {
   const heroDataForHomePage = {
@@ -74,44 +75,10 @@ const HomePage = () => {
       <ServiceNavigationBar items={serviceCards} className={styles.serviceNavigationBar} baseCardClassName={styles.baseCard} />
 
       <FeaturedPropertiesSection properties={properties} />
-      <TestimonialsSection
-        title={'What Our Clients Say'}
-        subtitle={'Read the success stories and heartfelt testimonials from our valued clients. Discover why they chose Estatein for their real estate needs.'}
-      >
-
-        <TestimonialCard
-          rating={5}
-          title="Exceptional Service!"
-          description="Our experience with Estatein was outstanding. Their team's dedication and professionalism made finding our dream home a breeze. Highly recommended!"
-          client={{
-            name: "Wade Warren",
-            location: "USA, California",
-            photo: "/assets/imgs/Profile.png"
-          }}
-        />
-        <TestimonialCard
-          rating={3}
-          title="Efficient and Reliable"
-          description="Estatein provided us with top-notch service. They helped us sell our property quickly and at a great price. We couldn't be happier with the results."
-          client={{
-            name: "Wade Warren",
-            location: "USA, California",
-            photo: "/assets/imgs/Profile.png"
-          }}
-        />
-        <TestimonialCard
-          rating={2}
-          title="Trusted Advisors"
-          description="The Estatein team guided us through the entire buying process. Their knowledge and commitment to our needs were impressive. Thank you for your support!"
-          client={{
-            name: "Wade Warren",
-            location: "USA, California",
-            photo: "/assets/imgs/Profile.png"
-          }}
-        />
-
-      </TestimonialsSection>
-
+      <TestimonialsSection items={testimonialsSectionData.data}
+        title={testimonialsSectionData.title}
+        subtitle={testimonialsSectionData.subtitle}
+      />
       <FAQSection />
 
     </div >
