@@ -6,7 +6,7 @@ export const useItems = () => {
     return useContext(ItemsContext);
 }
 
-export const ItemsProvider = ({ children, initialItems = [] }) => {
+export const ItemsProvider = ({ children, initialItems = []}) => {
     const [items, setItems] = useState(() => {
         const storedItems = localStorage.getItem('items');
         if (storedItems) {

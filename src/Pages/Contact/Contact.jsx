@@ -13,7 +13,7 @@ function Contact() {
   return (
     <div>
       <PageIntro />
-      <ServiceNavigationBar items={contactCards} />
+      <ServiceNavigationBar />
       <Section>
         <ContactForm />
       </Section>

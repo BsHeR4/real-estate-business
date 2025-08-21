@@ -11,7 +11,7 @@ function Services() {
   return (
     <div>
       <PageIntro />
-      <ServiceNavigationBar items={serviceCards} />
+      <ServiceNavigationBar />
       <ServiceCategorySection
         title={propertyValue.section_header.title}
         subtitle={propertyValue.section_header.subtitle}
