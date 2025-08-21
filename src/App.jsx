@@ -4,7 +4,6 @@ import Home from './Pages/Home/Home'
 import PropertyDetails from './Pages/PropertyDetails/PropertyDetails'
 import Services from './Pages/Services/Services'
 import Contact from './Pages/Contact/Contact'
-import AchievementsSection from './Components/AchievementsSection/AchievementsSection'
 import {ItemsProvider} from "./context/ItemsContext.jsx";
 import {serviceCards} from "./Data/servicesPageData.jsx";
 import Dashboard from "./Components/Dashboard/Dashboard.jsx";
