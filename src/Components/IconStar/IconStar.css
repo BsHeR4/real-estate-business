@@ -1,8 +1,5 @@
 .MS-icon-star-container {
-    display: flex;
-    justify-content: left;
-    align-items: start;
-    width: 100%;
+    width: fit-content;
     background-color: #141414;
     margin-left: -20px;
 }
