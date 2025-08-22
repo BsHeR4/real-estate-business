@@ -21,14 +21,14 @@ export default function VillaDetails() {
                         </div>
                         <div className="zs-stat-item">
                             <div className="zs-stats-info">
-                                <img src='public\assets\imgs\Property\bathtub.png' alt="Bathrooms" className="icon" />
+                                <img src='assets\imgs\Property\bathtub.png' alt="Bathrooms" className="icon" />
                                 <p className='zs-stats-info-text'>Bathrooms</p>
                             </div>
                             <p className="zs-stat-value">03</p>
                         </div>
                         <div className="zs-stat-item">
                             <div className="zs-stats-info">
-                                <img src='public\assets\imgs\Property\area.png' alt="Area" className="icon" />
+                                <img src='assets\imgs\Property\area.png' alt="Area" className="icon" />
                                 <p className='zs-stats-info-text'>Area</p>
                             </div>
                             <p className="zs-stat-value">2,500 Square Feet</p>

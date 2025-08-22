@@ -13,19 +13,19 @@ const CommonCard = ({
   isArrow,
   iconType,
 }) => {
-  // اختيار الأيقونة من public
+
   const getIcon = () => {
     switch (iconType) {
       case "icon1":
-        return "./../../../public/assets/imgs/service-icon-1.svg";
+        return "assets/imgs/service-icon-1.svg";
       case "icon2":
-        return "./../../../public/assets/imgs/service-icon-2.svg";
+        return "assets/imgs/service-icon-2.svg";
       case "icon3":
-        return "./../../../public/assets/imgs/service-icon-3.svg";
+        return "assets/imgs/service-icon-3.svg";
       case "icon4":
-        return "./../../../public/assets/imgs/service-icon-4.svg";
+        return "assets/imgs/service-icon-4.svg";
       default:
-        return "./../../../public/assets/imgs/service-icon-5.svg";
+        return "assets/imgs/service-icon-5.svg";
     }
   };
 
@@ -33,7 +33,7 @@ const CommonCard = ({
     <motion.div className={`ms-common-card ${cardStyle}`}>
       {isArrow && (
         <img
-          src="./../../../public/assets/imgs/arrow-icon.svg"
+          src="assets/imgs/arrow-icon.svg"
           className="ms-arrow-icon"
           alt="arrow icon"
         />

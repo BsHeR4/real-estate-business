@@ -55,7 +55,7 @@ function FeaturedPropertiesSection() {
                     >
                         <PropertyCard
                             itemVariant={itemVariants}
-                            img={'./../../../public/assets/imgs/FeatiredProperties/SeasideSerenityVilla.png'}
+                            img={'assets/imgs/FeatiredProperties/SeasideSerenityVilla.png'}
                             title={'Seaside Serenity Villa'}
                             subtitle={'A stunning 4-bedroom, 3-bathroom villa in a peaceful suburban neighborhood... '}
                             price={'$550,000'}
@@ -64,7 +64,7 @@ function FeaturedPropertiesSection() {
 
                         <PropertyCard
                             itemVariant={itemVariants}
-                            img={'./../../../public/assets/imgs/FeatiredProperties/MetropolitanHaven.png'}
+                            img={'assets/imgs/FeatiredProperties/MetropolitanHaven.png'}
                             title={'Metropolitan Haven'}
                             subtitle={'A chic and fully-furnished 2-bedroom apartment with panoramic city views... '}
                             price={'$550,000'}
@@ -73,7 +73,7 @@ function FeaturedPropertiesSection() {
 
                         <PropertyCard
                             itemVariant={itemVariants}
-                            img={'./../../../public/assets/imgs/FeatiredProperties/RusticRetreatCottage.png'}
+                            img={'assets/imgs/FeatiredProperties/RusticRetreatCottage.png'}
                             title={'Rustic Retreat Cottage'}
                             subtitle={'An elegant 3-bedroom, 2.5-bathroom townhouse in a gated community... '}
                             price={'$550,000'}
@@ -81,7 +81,7 @@ function FeaturedPropertiesSection() {
                         />
                         <PropertyCard
                             itemVariant={itemVariants}
-                            img={'./../../../public/assets/imgs/FeatiredProperties/RusticRetreatCottage.png'}
+                            img={'assets/imgs/FeatiredProperties/RusticRetreatCottage.png'}
                             title={'Rustic Retreat Cottage'}
                             subtitle={'An elegant 3-bedroom, 2.5-bathroom townhouse in a gated community... '}
                             price={'$550,000'}
@@ -89,7 +89,7 @@ function FeaturedPropertiesSection() {
                         />
                         <PropertyCard
                             itemVariant={itemVariants}
-                            img={'./../../../public/assets/imgs/FeatiredProperties/RusticRetreatCottage.png'}
+                            img={'assets/imgs/FeatiredProperties/RusticRetreatCottage.png'}
                             title={'Rustic Retreat Cottage'}
                             subtitle={'An elegant 3-bedroom, 2.5-bathroom townhouse in a gated community... '}
                             price={'$550,000'}
