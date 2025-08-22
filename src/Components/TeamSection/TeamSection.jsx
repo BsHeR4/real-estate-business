@@ -6,7 +6,7 @@ import './TeamSection.css'
 const TeamSection = ({title, subtitle, children}) => {
     return (
         <Section>
-            <section className='mk-team-section'>
+            <section>
                 <SectionHeader title={title} subtitle={subtitle} />
                 <div className='mk-team-card-container'>
                     {children}

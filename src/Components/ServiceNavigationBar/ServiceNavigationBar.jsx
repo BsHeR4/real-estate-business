@@ -5,8 +5,9 @@ import styles from './ServiceNavigationBar.module.css'
 import Section from '../Section/Section'
 import { useItems } from './../../context/ItemsContext.jsx';
 
-function ServiceNavigationBar() {
-    const { items } = useItems();
+function ServiceNavigationBar({ staticItems = null }) {
+    const { items: dashboardItems } = useItems();
+    const items = staticItems || dashboardItems;
 
     return (
         <Section className={`${styles.ServiceNavigationBar}`}>
