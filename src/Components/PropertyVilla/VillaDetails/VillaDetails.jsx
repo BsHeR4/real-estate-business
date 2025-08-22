@@ -1,5 +1,5 @@
 import { IoBed } from "react-icons/io5";
-import KeyFeatureData from './KeyFeatureData';
+import VillaKeyFeatureData from '../../../Data/VillaKeyFeatureData';
 import './VillaDetails.css'
 
 export default function VillaDetails() {
@@ -38,7 +38,7 @@ export default function VillaDetails() {
                 <div className="zs-villa-feature">
                     <h2 className='zs-feature-title'>Key Features and Amenities</h2>
                     <ul className="zs-features-list">
-                        {KeyFeatureData.map((feature, index) => (
+                        {VillaKeyFeatureData.map((feature, index) => (
                             <li key={index} className="zs-feature-item">
                                 <img src='assets\imgs\Property\thunder.png' alt="" className="icon" />
                                 <span>{feature}</span>
