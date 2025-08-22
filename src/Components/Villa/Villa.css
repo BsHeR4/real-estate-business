@@ -1,3 +1,13 @@
 .zs-villa-wrapper{
     padding-top: 9.5rem;
 }
+@media screen and (max-width: 1440px) {
+    .zs-villa-wrapper {
+        padding-top: 6.5rem;
+    }
+}
+@media screen and (max-width: 992px) {
+    .zs-villa-wrapper {
+        padding-top: 4.2rem;
+    }
+}
