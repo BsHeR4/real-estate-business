@@ -6,7 +6,7 @@
     cursor: pointer;
     color: var(--color-white);
     border: 1px solid var(--grey-15);
-    margin-right: 10px;
+    margin-right: 1rem;
 }
 .zs-icon-button.dark {
     background-color: var(--grey-08);
@@ -23,42 +23,42 @@
 }
 
 .zs-icon-button.arrow {
-    width: 58px;
-    height: 58px;
-    font-size:18px;
+    width: 5.8rem;
+    height: 5.8rem;
+    font-size:1.8rem;
 }
 
 .zs-icon-button.social {
-    width: 52px;
-    height: 52px;
-    font-size: 22px;
+    width: 5.2rem;
+    height: 5.2rem;
+    font-size: 2.2rem;
 }
 
 
 @media screen and (max-width: 1440px) {
     .zs-icon-button.social {
-        width: 40px;
-        height: 40px;
-        font-size: 18px;
+        width: 4rem;
+        height: 4rem;
+        font-size: 1.8rem;
     }
 
     .zs-icon-button.arrow {
-        width: 44px;
-        height: 44px;
-        font-size: 14px;
+        width: 4.4rem;
+        height: 4.4rem;
+        font-size: 1.4rem;
     }
 }
 
 @media screen and  (max-width: 992px) {
     .zs-icon-button.social {
-        width: 60px;
-        height: 60px;
-        font-size: 18px;
+        width: 6rem;
+        height: 6rem;
+        font-size: 1.8rem;
     }
 
     .zs-icon-button.arrow {
-        width: 44px;
-        height: 44px;
-        font-size: 14px;
+        width: 4.4rem;
+        height: 4.4rem;
+        font-size: 1.4rem;
     }
 }

@@ -5,7 +5,7 @@
 }
 .zs-card-step-wrapper {
     border-left: 1px solid var(--purple-60);
-    padding: 16px 20px;
+    padding: 1.6rem 2rem;
     position: relative;
 }
 /*Top border Linear Gradient Effect*/
@@ -23,14 +23,14 @@
             #262626 100%)
 }
 .zs-card-step {
-    font-size: 20px;
+    font-size: 2rem;
     font-weight: 500;
     line-height: 150%;
     color: var(--color-white);
 }
 
 .zs-exp-card {
-    border-radius: 12px;
+    border-radius: 1.2rem;
     border-left: 0;
     border-top: 0;
     border-top-left-radius: 0;
@@ -71,14 +71,14 @@
             #262626 100%)
 }
 .zs-exp-card-title {
-    font-size: 26px;
+    font-size: 2.6rem;
     font-weight: 600;
     line-height: 150%;
     color: var(--color-white);
     margin-bottom: 20px;
 }
 .zs-exp-card-desc {
-    font-size: 18px;
+    font-size: 1.8rem;
     font-weight: 500;
     line-height: 150%;
     color: var(--grey-60);
@@ -87,18 +87,18 @@
 @media screen and (max-width:1440px) {
     .zs-card-step,
     .zs-exp-card-desc {
-        font-size: 16px;
+        font-size: 1.6rem;
     }
     .zs-exp-card-title {
-        font-size: 20px;
+        font-size: 2rem;
     }
 }
 
 @media screen and (max-width:992px) {
     .zs-exp-card-desc {
-        font-size: 14px;
+        font-size: 1.4rem;
     }
     .zs-exp-card-title {
-        font-size: 18px;
+        font-size: 1.8rem;
     }
 }
