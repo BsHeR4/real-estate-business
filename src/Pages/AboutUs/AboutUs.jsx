@@ -7,6 +7,7 @@ import TeamSection from '../../components/TeamSection/TeamSection';
 import ClientsSection from '../../components/ClientsSection/ClientsSection';
 import TeamMemberCard from '../../components/TeamMemberCard/TeamMemberCard';
 import AchievementsSection from '../../components/AchievementsSection/AchievementsSection';
+import { clients } from './../../Data/AboutUsData'
 import { FaTwitter } from "react-icons/fa";
 
 const AboutUsPage = () => {
@@ -57,7 +58,7 @@ const AboutUsPage = () => {
         />
       </TeamSection>
 
-      <ClientsSection />
+      <ClientsSection clients={clients} />
     </div>
   );
 };

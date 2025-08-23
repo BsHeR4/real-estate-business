@@ -45,3 +45,10 @@
         margin-top: 3rem;
     }
 }
+
+@media screen and (max-width:576px) {
+
+    .navigation {
+        justify-content: space-between;
+    }
+}
