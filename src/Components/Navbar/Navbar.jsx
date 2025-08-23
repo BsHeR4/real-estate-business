@@ -40,13 +40,24 @@ function Navbar() {
                 <motion.li variants={itemVariants}><NavLink to={'/PropertyDetails'}>Properties</NavLink></motion.li>
                 <motion.li variants={itemVariants}><NavLink to={'/Services'}>Services</NavLink></motion.li>
             </motion.ul>
-            <RouterNavLink to={'/Contact'}>
-                {
-                    ({ isActive }) => (
-                        <Button size={'small'} variant={isActive ? 'primary' : 'secondary'} className={'py-16'}>Contact Us</Button>
-                    )
-                }
-            </RouterNavLink>
+            <div className={styles.navButtons}>
+                <RouterNavLink to={'/Contact'}>
+                    {
+                        ({ isActive }) => (
+                            <Button size={'small'} variant={isActive ? 'primary' : 'secondary'} className={'py-16'}>Contact Us</Button>
+                        )
+                    }
+                </RouterNavLink>
+                <RouterNavLink to={'/dashboard'}>
+                    {
+                        ({ isActive }) => (
+                            <Button size={'small'} variant={isActive ? 'primary' : 'secondary'} className={'py-16'}>
+                                Dashboard
+                            </Button>
+                        )
+                    }
+                </RouterNavLink>
+            </div>
             <DrawerMobileNavigation navLinks={navigationLinks} className={styles.drawer} />
         </motion.nav>
     )

@@ -14,6 +14,7 @@ import Typography from '@mui/joy/Typography';
 import ModalClose from '@mui/joy/ModalClose';
 import { HiOutlineMenuAlt3 } from "react-icons/hi";
 import { NavLink as Link } from 'react-router-dom';
+import { AiOutlineDashboard } from "react-icons/ai";
 
 export default function DrawerMobileNavigation({ navLinks, className }) {
     const [open, setOpen] = React.useState(false);
@@ -50,28 +51,33 @@ export default function DrawerMobileNavigation({ navLinks, className }) {
                     <AccordionGroup sx={{ width: '100%' }}>
                         <List
                             sx={{
-                                'justifyContent': 'flex-start', 'width': '100%'
+                                'justifyContent': 'space-between', 'width': '100%'
                             }}
                         >
-                            {navLinks.map((link) => (
-                                <ListItem sx={{ width: '100%', justifyContent: 'space-between' }} key={link.title}>
-                                    <Accordion sx={{ width: '100%', }}>
-                                        <AccordionSummary>{link.title}</AccordionSummary>
-                                        <AccordionDetails>
-                                            <List>
-                                                {link.sections.map((section) => (
-                                                    <ListItem key={section.name}>
-                                                        <ListItemButton sx={{fontSize: '1.6rem'}} component={Link} to={section.to} onClick={() => setOpen(false)}>
-                                                            {section.name}
-                                                        </ListItemButton>
-                                                    </ListItem>
-                                                ))}
-                                            </List>
-                                        </AccordionDetails>
-                                    </Accordion>
+                            <div>
+                                {navLinks.map((link) => (
+                                    <ListItem sx={{ width: '100%', justifyContent: 'space-between' }} key={link.title}>
+                                        <Accordion sx={{ width: '100%', }}>
+                                            <AccordionSummary>{link.title}</AccordionSummary>
+                                            <AccordionDetails>
+                                                <List>
+                                                    {link.sections.map((section) => (
+                                                        <ListItem key={section.name}>
+                                                            <ListItemButton sx={{ fontSize: '1.6rem' }} component={Link} to={section.to} onClick={() => setOpen(false)}>
+                                                                {section.name}
+                                                            </ListItemButton>
+                                                        </ListItem>
+                                                    ))}
+                                                </List>
+                                            </AccordionDetails>
+                                        </Accordion>
 
-                                </ListItem>
-                            ))}
+                                    </ListItem>
+                                ))}
+                            </div>
+                            <ListItemButton sx={{ fontSize: '1.8rem', alignSelf: 'flex-end', marginBottom: '1.6rem', marginRight: '0.75rem' }} component={Link} to={'/dashboard'} onClick={() => setOpen(false)}>
+                                <AiOutlineDashboard />  Dashboard
+                            </ListItemButton>
                         </List>
                     </AccordionGroup>
                 </Drawer>

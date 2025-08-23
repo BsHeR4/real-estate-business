@@ -12,6 +12,11 @@ nav>ul {
     gap: 3rem;
 }
 
+nav .navButtons {
+    display: flex;
+    gap: 1rem;
+}
+
 .drawer {
     display: none !important;
 }
