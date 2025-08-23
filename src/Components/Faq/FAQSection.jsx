@@ -3,13 +3,14 @@ import SectionHeader from './../sectionheader/SectionHeader';
 import FAQItem from './FAQItem';
 import faqData from '../../Data/FaqData'
 import IconButton from '../IconButton/IconButton';
-import { useRef } from 'react'
+import React, { useRef, useState } from 'react';
 import Slider from "../Slider/Slider.jsx";
 import { Swiper, SwiperSlide } from 'swiper/react';
 import './FAQSection.css';
 
 const FAQSection = () => {
-
+    const [isBeginning, setIsBeginning] = useState(true);
+    const [isEnd, setIsEnd] = useState(false);
     const faqSection = useRef(null)
     const breakpoints = {
         0: { slidesPerView: 1, spaceBetween: 30 },
@@ -17,6 +18,11 @@ const FAQSection = () => {
         993: { slidesPerView: 3, spaceBetween: 20 },
         1441: { slidesPerView: 3, spaceBetween: 30 },
     }
+
+    const handleSliderStateChange = (swiper) => {
+        setIsBeginning(swiper.isBeginning);
+        setIsEnd(swiper.isEnd);
+    };
 
     return (
         <Section id={'faq'}>
@@ -30,6 +36,7 @@ const FAQSection = () => {
                         slidesPerView={1}
                         breakpoints={breakpoints}
                         swipe={faqSection}
+                        onStateChange={handleSliderStateChange}
                     >
                         {faqData.map((faq, index) => (
                             <SwiperSlide>
@@ -49,12 +56,14 @@ const FAQSection = () => {
                         variant='dark'
                         // disabled 
                         onClick={() => faqSection.current?.slidePrev()}
+                        disabled={isBeginning}
                     />
                     <IconButton
                         icon="arrow-right"
                         type="arrow"
                         variant='dark'
                         onClick={() => faqSection.current?.slideNext()}
+                        disabled={isEnd}
                     />
                 </div>
             </div>

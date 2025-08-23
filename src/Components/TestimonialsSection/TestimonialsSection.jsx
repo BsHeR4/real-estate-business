@@ -1,4 +1,4 @@
-import React, { useRef } from 'react'
+import React, { useRef, useState } from 'react';
 import SectionHeader from "../sectionheader/SectionHeader.jsx";
 import TestimonialCard from "../TestimonialCard/TestimonialCard.jsx";
 import Section from "../Section/Section.jsx";
@@ -45,6 +45,8 @@ const itemVariants = {
  * - TestimonialsSection.css: Styling module
  */
 const TestimonialsSection = ({ title, subtitle, items }) => {
+    const [isBeginning, setIsBeginning] = useState(true);
+    const [isEnd, setIsEnd] = useState(false);
     const testimonialsSwiper = useRef(null)
     const breakpoints = {
         0: { slidesPerView: 1, spaceBetween: 20 },
@@ -52,6 +54,11 @@ const TestimonialsSection = ({ title, subtitle, items }) => {
         993: { slidesPerView: 3, spaceBetween: 20 },
         1441: { slidesPerView: 3, spaceBetween: 30 },
     }
+
+    const handleSliderStateChange = (swiper) => {
+        setIsBeginning(swiper.isBeginning);
+        setIsEnd(swiper.isEnd);
+    };
 
     return (
         <Section id={'testimonials'}>
@@ -66,6 +73,7 @@ const TestimonialsSection = ({ title, subtitle, items }) => {
                     slidesPerView={1}
                     breakpoints={breakpoints}
                     swipe={testimonialsSwiper}
+                    onStateChange={handleSliderStateChange}
                 >
                     {items.map((item, index) => (
                         <TestimonialCard
@@ -85,12 +93,14 @@ const TestimonialsSection = ({ title, subtitle, items }) => {
                     variant="dark"
                     type="arrow"
                     onClick={() => slidePrev(testimonialsSwiper)}
+                    disabled={isBeginning}
                 />
                 <IconButton
                     icon="arrow-right"
                     variant="dark"
                     type="arrow"
                     onClick={() => slideNext(testimonialsSwiper)}
+                    disabled={isEnd}
                 />
             </div>
         </Section>
