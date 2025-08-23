@@ -16,6 +16,8 @@
 .cardImage {
     padding-bottom: 30px;
     width: 100%;
+    border-radius: 1rem;
+    min-height: 282.77px;
 }
 
 .baseContainer h2 {
@@ -69,7 +71,7 @@
         padding: 2rem;
     }
 
-    .baseContainer button{
+    .baseContainer button {
         font-size: 1.6rem;
     }
 
@@ -149,5 +151,9 @@
     .baseContainer p {
         padding-bottom: 20px;
         font-size: 1.4rem;
+    }
+
+    .cardImage {
+        min-height: 210px;
     }
 }

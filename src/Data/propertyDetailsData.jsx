@@ -1,4 +1,3 @@
-
 export const feeCardsData = [
     {
         title: "Additional Fees",

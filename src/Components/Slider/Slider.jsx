@@ -2,13 +2,19 @@ import React from 'react';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
-import {Swiper} from "swiper/react";
-import {Navigation, A11y, Autoplay} from "swiper/modules";
-import {SwiperSlide} from "swiper/react";
+import { Swiper } from "swiper/react";
+import { Navigation, A11y, Autoplay } from "swiper/modules";
+import { SwiperSlide } from "swiper/react";
 import './Slider.css'
 
 
-const Slider = ({children, slidesPerView, breakpoints, swipe}) => {
+const Slider = ({ children, slidesPerView, breakpoints, swipe, onStateChange }) => {
+    const handleSliderUpdate = (swiper) => {
+        if (onStateChange) {
+            onStateChange(swiper);
+        }
+    };
+
     const hundleSlider = (slider) => {
         if (swipe) {
             swipe.current = slider;
@@ -16,15 +22,17 @@ const Slider = ({children, slidesPerView, breakpoints, swipe}) => {
     }
     return (
         <Swiper
-            modules= {[Navigation, A11y, Autoplay]}
+            modules={[Navigation, A11y, Autoplay]}
             onSwiper={hundleSlider}
-            slidesPerView= {slidesPerView}
-            breakpoints= {breakpoints}
+            slidesPerView={slidesPerView}
+            breakpoints={breakpoints}
             speed={800}
             autoplay={{
                 delay: 4000,
                 disableOnInteraction: false
             }}
+            onInit={handleSliderUpdate}
+            onSlideChange={handleSliderUpdate}
         >
             {React.Children.map(children, (child, index) => (
                 <SwiperSlide key={index}>{child}</SwiperSlide>

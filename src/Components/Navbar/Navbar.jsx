@@ -4,8 +4,9 @@ import Logo from '../../Components/Logo/Logo'
 import NavLink from '../NavLink/NavLink'
 import Button from '../Button/Button'
 import { NavLink as RouterNavLink } from 'react-router-dom';
-import { HiOutlineMenuAlt3 } from "react-icons/hi";
 import { motion } from 'framer-motion'
+import DrawerMobileNavigation from '../DrawerMobileNavigation/DrawerMobileNavigation'
+import { navLinks } from './../../Data/homeData'
 
 const listVariants = {
     hidden: { opacity: 0 },
@@ -35,8 +36,8 @@ function Navbar() {
                 animate="visible"
             >
                 <motion.li variants={itemVariants}><NavLink to={'/'}>Home</NavLink></motion.li>
-                <motion.li variants={itemVariants}><NavLink to={'/PropertyDetails'}>Properties</NavLink></motion.li>
                 <motion.li variants={itemVariants}><NavLink to={'/AboutUs'}>About Us</NavLink></motion.li>
+                <motion.li variants={itemVariants}><NavLink to={'/PropertyDetails'}>Properties</NavLink></motion.li>
                 <motion.li variants={itemVariants}><NavLink to={'/Services'}>Services</NavLink></motion.li>
             </motion.ul>
             <RouterNavLink to={'/Contact'}>
@@ -46,7 +47,7 @@ function Navbar() {
                     )
                 }
             </RouterNavLink>
-            <HiOutlineMenuAlt3 />
+            <DrawerMobileNavigation navLinks={navLinks} className={styles.drawer} />
         </motion.nav>
     )
 }

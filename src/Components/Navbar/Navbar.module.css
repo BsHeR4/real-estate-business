@@ -7,16 +7,13 @@ nav {
     background-color: var(--grey-10);
 }
 
-ul {
+nav>ul {
     display: flex;
     gap: 3rem;
 }
 
-nav svg {
-    display: none;
-    width: 28px;
-    height: 28px;
-    color: var(--color-white);
+.drawer {
+    display: none !important;
 }
 
 @media screen and (max-width: 1440px) and (min-width: 993px) {
@@ -52,12 +49,12 @@ nav svg {
         End General Section Styling
     */
 
-    ul {
+    nav>ul {
         display: none;
     }
 
-    nav svg {
-        display: inline-block;
+    .drawer {
+        display: inline-block !important;
     }
 
     nav a button {
