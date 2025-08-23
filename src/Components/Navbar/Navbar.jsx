@@ -4,8 +4,8 @@ import Logo from '../../Components/Logo/Logo'
 import NavLink from '../NavLink/NavLink'
 import Button from '../Button/Button'
 import { NavLink as RouterNavLink } from 'react-router-dom';
-import { HiOutlineMenuAlt3 } from "react-icons/hi";
 import { motion } from 'framer-motion'
+import DrawerMobileNavigation from '../DrawerMobileNavigation/DrawerMobileNavigation'
 
 const listVariants = {
     hidden: { opacity: 0 },
@@ -46,7 +46,7 @@ function Navbar() {
                     )
                 }
             </RouterNavLink>
-            <HiOutlineMenuAlt3 />
+            <DrawerMobileNavigation className={styles.drawer}/>
         </motion.nav>
     )
 }
