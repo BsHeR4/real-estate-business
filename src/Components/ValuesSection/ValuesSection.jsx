@@ -33,7 +33,7 @@ function ValuesSection() {
     ];
 
     return (
-        <Section>
+        <Section id={'ourWorks'}>
             <div className="ms-values-container">
                 <div className="ms-values-left">
                     <SectionHeader

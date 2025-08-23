@@ -5,12 +5,12 @@ import styles from './ServiceNavigationBar.module.css'
 import Section from '../Section/Section'
 import { useItems } from './../../context/ItemsContext.jsx';
 
-function ServiceNavigationBar({ staticItems = null }) {
+function ServiceNavigationBar({ staticItems = null, sectionId }) {
     const { items: dashboardItems } = useItems();
     const items = staticItems || dashboardItems;
 
     return (
-        <Section className={`${styles.ServiceNavigationBar}`}>
+        <Section id={sectionId}  className={`${styles.ServiceNavigationBar}`}>
             <BaseCard className={styles.cards}>
                 {items.map((item) => (
                     <ServiceNavItem

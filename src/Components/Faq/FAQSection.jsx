@@ -19,7 +19,7 @@ const FAQSection = () => {
     }
 
     return (
-        <Section>
+        <Section id={'faq'}>
             <SectionHeader
                 title="Frequently Asked Questions"
                 subtitle="Find answers to common questions about Estatein's services, property listings, and the real estate process. We're here to provide clarity and assist you every step of the way."

@@ -7,7 +7,7 @@ import VillaContent from './../PropertyVilla/VillaDetails/VillaDetails.jsx'
 const Villa = () => {
     return (
         <>
-            <Section>
+            <Section id={'portfolio'}>
                 <div className="zs-villa-wrapper">
                     <VillaHeader />
                     <VillaImage />

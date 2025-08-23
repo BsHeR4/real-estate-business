@@ -13,7 +13,7 @@ import styles from './Section.module.css';
  *
  * @returns {JSX.Element} A styled <section> element containing the children
  */
-function Section({ children, className }) {
+function Section({ children, id, className }) {
 
     const sectionClasses = clsx(
         styles.section,
@@ -21,7 +21,7 @@ function Section({ children, className }) {
     );
 
     return (
-        <section className={sectionClasses}>
+        <section className={sectionClasses} id={id}>
             {children}
         </section>
     )

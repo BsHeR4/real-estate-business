@@ -10,16 +10,16 @@ function Services() {
   const propertyManag = servicePageSections.effortless_property_management
   return (
     <div>
-      <PageIntro title={"Elevate Your Real Estate Experience"} subtitle={"Welcome to Estatein, where your real estate aspirations meet expert guidance. Explore our comprehensive range of services, each designed to cater to your unique needs and dreams."} />
-      <ServiceNavigationBar items={serviceCards} directAnimation={true} />
-      <ServiceCategorySection
+      <PageIntro sectionId={'valuationMastery'} title={"Elevate Your Real Estate Experience"} subtitle={"Welcome to Estatein, where your real estate aspirations meet expert guidance. Explore our comprehensive range of services, each designed to cater to your unique needs and dreams."} />
+      <ServiceNavigationBar sectionId={'strategicMarketing'} items={serviceCards} directAnimation={true} />
+      <ServiceCategorySection sectionId={'negotiationWizardry'}
         title={propertyValue.section_header.title}
         subtitle={propertyValue.section_header.subtitle}
         features={propertyValue.features_data}
         ctaData={propertyValue.cta_data}
       />
 
-      <ServiceCategorySection
+      <ServiceCategorySection sectionId={'closingSuccess'}
         title={propertyManag.section_header.title}
         subtitle={propertyManag.section_header.subtitle}
         features={propertyManag.features_data}

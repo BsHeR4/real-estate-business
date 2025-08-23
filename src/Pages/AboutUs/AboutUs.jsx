@@ -32,7 +32,7 @@ const AboutUsPage = () => {
 
   return (
     <div>
-      <Section className="AU-hero-section">
+      <Section id={'ourStory'} className="AU-hero-section">
         <HeroSection data={heroDataForAboutUsPage} variant="about" />
       </Section>
 

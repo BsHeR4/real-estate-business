@@ -6,7 +6,7 @@ import Button from '../Button/Button'
 import { NavLink as RouterNavLink } from 'react-router-dom';
 import { motion } from 'framer-motion'
 import DrawerMobileNavigation from '../DrawerMobileNavigation/DrawerMobileNavigation'
-import { navLinks } from './../../Data/homeData'
+import { navigationLinks } from './../../Data/NavigationData'
 
 const listVariants = {
     hidden: { opacity: 0 },
@@ -47,7 +47,7 @@ function Navbar() {
                     )
                 }
             </RouterNavLink>
-            <DrawerMobileNavigation navLinks={navLinks} className={styles.drawer} />
+            <DrawerMobileNavigation navLinks={navigationLinks} className={styles.drawer} />
         </motion.nav>
     )
 }

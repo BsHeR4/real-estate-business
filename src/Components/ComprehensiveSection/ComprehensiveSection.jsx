@@ -5,7 +5,7 @@ import './ComprehensiveSection.css'
 
 const ComprehensiveSection = ({title, subtitle, children}) => {
     return (
-        <Section>
+        <Section id={'categories'}>
             <section>
                 <SectionHeader title={title} subtitle={subtitle} />
                     <div className="mk-note-container">

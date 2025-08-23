@@ -43,7 +43,7 @@ function FeaturedPropertiesSection({ properties }) {
     };
 
     return (
-        <Section>
+        <Section id= {'properties'}>
             <motion.div
                 variants={containerVariants}
                 initial="hidden"

@@ -6,7 +6,7 @@ import AchievementCard from '../AchievementCard/AchievementCard'
 
 const AchievementsSection = () => {
     return (
-    <Section>
+    <Section id={'howItWorks'}>
         <SectionHeader
         title="Our Achievements"
         subtitle="Our story is one of continuous growth and evolution. We started as a small team with big dreams, determined to create a real estate platform that transcended the ordinary."

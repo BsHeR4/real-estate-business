@@ -4,6 +4,7 @@ import HeroSection from '../../components/HeroSection/HeroSection';
 import FeaturedPropertiesSection from '../../components/FeaturedPropertiesSection/FeaturedPropertiesSection';
 import TestimonialsSection from '../../components/TestimonialsSection/TestimonialsSection';
 import TestimonialCard from '../../components/TestimonialCard/TestimonialCard';
+import Hero from '../../components/Hero/Hero';
 import FAQSection from '../../components/Faq/FAQSection';
 import ServiceNavigationBar from './../../Components/ServiceNavigationBar/ServiceNavigationBar.jsx'
 import { serviceCards } from './../../Data/servicesPageData'
@@ -66,11 +67,13 @@ const HomePage = () => {
   return (
     <div>
 
-      <Section className="AS-hero-section py-0">
+      {/* <Section className="AS-hero-section py-0">
         <HeroSection data={heroDataForHomePage} />
-      </Section>
+      </Section> */}
 
-      <ServiceNavigationBar />
+      <Hero />
+
+      <ServiceNavigationBar sectionId={'features'} />
 
       <FeaturedPropertiesSection properties={properties} />
       <TestimonialsSection items={testimonialsSectionData.data}

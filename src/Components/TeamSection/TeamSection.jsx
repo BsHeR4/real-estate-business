@@ -3,9 +3,9 @@ import Section from "../Section/Section.jsx";
 import SectionHeader from "../sectionheader/SectionHeader.jsx";
 import './TeamSection.css'
 
-const TeamSection = ({title, subtitle, children}) => {
+const TeamSection = ({ title, subtitle, children }) => {
     return (
-        <Section>
+        <Section id={'ourTeam'}>
             <section>
                 <SectionHeader title={title} subtitle={subtitle} />
                 <div className='mk-team-card-container'>

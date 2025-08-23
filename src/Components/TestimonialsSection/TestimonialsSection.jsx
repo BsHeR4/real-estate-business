@@ -47,14 +47,14 @@ const itemVariants = {
 const TestimonialsSection = ({ title, subtitle, items }) => {
     const testimonialsSwiper = useRef(null)
     const breakpoints = {
-        0:    { slidesPerView: 1, spaceBetween: 20},
-        768:  { slidesPerView: 2, spaceBetween: 20},
-        993:  { slidesPerView: 3, spaceBetween: 20},
-        1441: { slidesPerView: 3, spaceBetween: 30},
+        0: { slidesPerView: 1, spaceBetween: 20 },
+        768: { slidesPerView: 2, spaceBetween: 20 },
+        993: { slidesPerView: 3, spaceBetween: 20 },
+        1441: { slidesPerView: 3, spaceBetween: 30 },
     }
 
     return (
-        <Section>
+        <Section id={'testimonials'}>
             <SectionHeader title={title} subtitle={subtitle} />
             <motion.div
                 variants={containerVariants}

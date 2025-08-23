@@ -7,7 +7,7 @@ import ServiceFeatureCard from '../ServiceFeatureCard/ServiceFeatureCard.jsx'
 export default function SmartInvest() {
     return (
         <>
-            <Section>
+            <Section id={'propertyManagement'}>
                 <div className="zs-smart-invest-wrapper">
                     <div className="zs-smart-info">
                         <SectionHeader

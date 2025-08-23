@@ -5,9 +5,9 @@ import SectionHeader from './../sectionheader/SectionHeader'
 import Section from './../Section/Section'
 import styles from './ServiceCategorySection.module.css'
 
-function ServiceCategorySection({ title, subtitle, features, ctaData }) {
+function ServiceCategorySection({ title, subtitle, features, ctaData, sectionId }) {
     return (
-        <Section>
+        <Section id={sectionId}>
             <SectionHeader title={title} subtitle={subtitle} />
 
             <div className={styles.serviceCategorySection}>

@@ -22,7 +22,7 @@ function ClientsSection() {
         1441: { slidesPerView: 2, spaceBetween: 50 },
     }
     return (
-        <Section>
+        <Section id={'ourClients'}>
             <SectionHeader title={'Our Valued Clients'}
                 subtitle={`At Estatein, we have had the privilege of working with a diverse range of clients across various industries. Here are some of the clients we've had the pleasure of serving`}
                 className={'p-b-80'}

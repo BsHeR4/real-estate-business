@@ -4,9 +4,9 @@ import Section from './../Section/Section'
 import SectionHeader from './../SectionHeader/SectionHeader'
 import ServiceNavigationBar from './../ServiceNavigationBar/ServiceNavigationBar'
 
-function PageIntro({ title, subtitle }) {
+function PageIntro({ title, subtitle, sectionId }) {
     return (
-        <Section className={styles.PageIntro}>
+        <Section id={sectionId} className={styles.PageIntro}>
             <SectionHeader
                 title={title}
                 subtitle={subtitle}
