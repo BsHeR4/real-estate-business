@@ -7,15 +7,15 @@
 }
 .zs-question{
     color: var(--color-white);
-    font-size: 24px;
+    font-size: 2.4rem;
     font-weight: 600;
-    margin-bottom: 30px;
+    margin-bottom: 3rem;
 }
 .zs-answer{
-    font-size: 18px;
+    font-size: 1.8rem;
     font-weight: 500;
     color: var(--grey-60);
-    margin-bottom: 30px;
+    margin-bottom: 3rem;
 }
 .zs-card-button{
     width: fit-content;
@@ -23,23 +23,23 @@
 
 @media screen and (max-width:1440px){
     .zs-question{
-        font-size: 20px;
-        margin-bottom: 24px;
+        font-size: 2rem;
+        margin-bottom: 2.4rem;
     }
     .zs-answer{
-        font-size: 16px;
-        margin-bottom: 24px;
+        font-size: 1.6rem;
+        margin-bottom: 2.4rem;
     }
 }
 
 @media screen and (max-width:992px){
     .zs-question{
-        font-size: 18px;
-        margin-bottom: 20px;
+        font-size: 1.8rem;
+        margin-bottom: 2rem;
     }
     .zs-answer{
-        font-size: 14px;
-        margin-bottom: 20px;
+        font-size: 1.4rem;
+        margin-bottom: 2rem;
     }
     .zs-card-button{
         width: 100%;

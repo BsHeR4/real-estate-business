@@ -1,6 +1,6 @@
 import SectionHeader from './../sectionheader/SectionHeader'
 import Section from './../Section/Section'
-import ExploreImages from './ExploreImages'
+import ExploreImages from './../../Data/ExploreImages'
 import './Explore.css'
 export default function Explore() {
     return (

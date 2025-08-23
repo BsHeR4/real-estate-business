@@ -3,7 +3,7 @@ import Section from './../Section/Section.jsx'
 import SectionHeader from './../SectionHeader/SectionHeader';
 import ExperienceCard from './ExperienceCard.jsx'
 import './Experience.css';
-import { ExperienceData } from './ExperienceData.jsx';
+import { ExperienceData } from './../../Data/ExperienceData.jsx';
 
 const ExperienceSection = () => {
   return (

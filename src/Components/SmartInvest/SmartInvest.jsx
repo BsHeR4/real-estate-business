@@ -2,7 +2,7 @@ import './SmartInvest.css'
 import Section from '../Section/Section.jsx'
 import ServiceCTA from '../ServiceCTA/ServiceCTA'
 import SectionHeader from '../SectionHeader/SectionHeader.jsx'
-import FeatureCardData from './FeatureCardData .jsx'
+import SmartInvestData from '../../Data/SmartInvestData.jsx'
 import ServiceFeatureCard from '../ServiceFeatureCard/ServiceFeatureCard.jsx'
 export default function SmartInvest() {
     return (
@@ -25,7 +25,7 @@ export default function SmartInvest() {
 
                     </div>
                     <div className="zs-smart-cards">
-                        {FeatureCardData.map((item, index) => (
+                        {SmartInvestData.map((item, index) => (
                             <ServiceFeatureCard
                                 key={index}
                                 icon={item.icon}

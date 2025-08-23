@@ -1,16 +1,16 @@
 .zs-exp-cards-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 30px;
-    row-gap: 50px;
-    margin-top: 80px; 
+    gap: 3rem;
+    row-gap: 5rem;
+    margin-top: 8rem; 
 }
 
 @media screen and (max-width:1440px){
   .zs-exp-cards-grid{
-    margin-top: 60px; 
-    gap:20px;
-    row-gap:40px;
+    margin-top: 6rem; 
+    gap:2rem;
+    row-gap:4rem;
   }
 }
 
@@ -21,8 +21,8 @@
   }
     .zs-exp-cards-grid {
         grid-template-columns: repeat(2, 1fr);
-        margin-top: 40px; 
-        gap:30px;
+        margin-top: 4rem; 
+        gap: 3rem;
     }
 }
 

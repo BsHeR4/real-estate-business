@@ -21,18 +21,18 @@ export const contactCards =
     [
         {
             title: "info@estatein.com",
-            icon: "./../../../public/assets/imgs/contactIcon1.svg",
+            icon: "assets/imgs/contactIcon1.svg",
         },
         {
             title: "+1 (123) 456-7890",
-            icon: "./../../../public/assets/imgs/contactIcon2.svg",
+            icon: "assets/imgs/contactIcon2.svg",
         },
         {
             title: "Main Headquarters",
-            icon: "./../../../public/assets/imgs/contactIcon3.svg",
+            icon: "assets/imgs/contactIcon3.svg",
         },
         {
             title: "Instagram   LinkedIn    Facebook",
-            icon: "./../../../public/assets/imgs/contactIcon4.svg",
+            icon: "assets/imgs/contactIcon4.svg",
         },
     ]

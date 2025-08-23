@@ -16,10 +16,10 @@ import React, { useRef } from 'react'
 function ClientsSection() {
     const clientsSectionSwiper = useRef(null)
     const breakpoints = {
-        0: { slidesPerView: 1, spaceBetween: 0 },
-        768: { slidesPerView: 1, spaceBetween: 10 },
-        993: { slidesPerView: 1, spaceBetween: 20 },
-        1441: { slidesPerView: 2, spaceBetween: 30 },
+        0: { slidesPerView: 1, spaceBetween: 30 },
+        768: { slidesPerView: 1, spaceBetween: 30 },
+        993: { slidesPerView: 2, spaceBetween: 20 },
+        1441: { slidesPerView: 2, spaceBetween: 50 },
     }
     return (
         <Section>

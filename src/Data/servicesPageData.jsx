@@ -86,18 +86,18 @@ export const serviceCards =
     [
         {
             title: "Find Your Dream Home",
-            icon: "./../../../public/assets/imgs/service-icon-1.svg",
+            icon: "assets/imgs/service-icon-1.svg",
         },
         {
             title: "Unlock Property Value",
-            icon: "./../../../public/assets/imgs/service-icon-2.svg",
+            icon: "assets/imgs/service-icon-2.svg",
         },
         {
             title: "Effortless Property Management",
-            icon: "./../../../public/assets/imgs/service-icon-3.svg",
+            icon: "assets/imgs/service-icon-3.svg",
         },
         {
             title: "Smart Investments, Informed Decisions",
-            icon: "./../../../public/assets/imgs/service-icon-4.svg",
+            icon: "assets/imgs/service-icon-4.svg",
         },
     ]

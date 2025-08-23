@@ -1,5 +1,5 @@
 import { IoBed } from "react-icons/io5";
-import KeyFeatureData from './KeyFeatureData';
+import VillaKeyFeatureData from '../../../Data/VillaKeyFeatureData';
 import './VillaDetails.css'
 
 export default function VillaDetails() {
@@ -21,14 +21,14 @@ export default function VillaDetails() {
                         </div>
                         <div className="zs-stat-item">
                             <div className="zs-stats-info">
-                                <img src='public\assets\imgs\Property\bathtub.png' alt="Bathrooms" className="icon" />
+                                <img src='assets\imgs\Property\bathtub.png' alt="Bathrooms" className="icon" />
                                 <p className='zs-stats-info-text'>Bathrooms</p>
                             </div>
                             <p className="zs-stat-value">03</p>
                         </div>
                         <div className="zs-stat-item">
                             <div className="zs-stats-info">
-                                <img src='public\assets\imgs\Property\area.png' alt="Area" className="icon" />
+                                <img src='assets\imgs\Property\area.png' alt="Area" className="icon" />
                                 <p className='zs-stats-info-text'>Area</p>
                             </div>
                             <p className="zs-stat-value">2,500 Square Feet</p>
@@ -38,7 +38,7 @@ export default function VillaDetails() {
                 <div className="zs-villa-feature">
                     <h2 className='zs-feature-title'>Key Features and Amenities</h2>
                     <ul className="zs-features-list">
-                        {KeyFeatureData.map((feature, index) => (
+                        {VillaKeyFeatureData.map((feature, index) => (
                             <li key={index} className="zs-feature-item">
                                 <img src='assets\imgs\Property\thunder.png' alt="" className="icon" />
                                 <span>{feature}</span>

@@ -1,46 +1,53 @@
 .zs-smart-invest-wrapper {
     display: flex;
-    gap: 60px;
+    gap: 6rem;
 }
 
 .zs-smart-info {
     max-width:519px;
     display: flex;
     flex-direction: column;
-    gap: 50px;
+    gap: 5rem;
 }
 
 .zs-smart-cards {
     background-color: var(--grey-10);
-    padding: 10px;
+    padding: 1rem;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 10px;
+    gap: 1rem;
     border-radius: 12px;
 }
 
 @media screen and (max-width:1440px){
     .zs-smart-info{
-        max-width: 412px !important;
+        max-width: 100%;
     }
     .zs-smart-invest-wrapper {
-    gap: 50px;
+    gap: 5rem;
 }
     .zs-smart-cards img{
-        width: 62px;
+        width: 6.2rem;
     }
     .zs-smart-cards .mk-card{
-        padding: 40px;
+        padding: 4rem;
     }
 }
 @media screen and (max-width:992px){
     .zs-smart-invest-wrapper{
         flex-direction: column;
+        gap: 4rem;
+    }
+    .zs-smart-info{
+        gap: 3rem;
     }
     .zs-smart-cards{
         grid-template-columns:  1fr;
         .mk-card{
             width: 100%;
         }
+    }
+    .zs-smart-cards .mk-card{
+        padding: 2.4rem;
     }
 }

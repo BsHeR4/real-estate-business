@@ -6,7 +6,7 @@
 .zs-banner {
     position: relative;
     background-color: var(--gery-10);
-    height: 63px;
+    height: 6.3rem;
     background-image: url("/assets/imgs/banner-bg.svg");
     background-color:var(--gery-12) ;
     background-repeat: no-repeat;
@@ -18,9 +18,9 @@
         top: 50%;
         transform: translateY(-50%);
         border-radius: 50%;
-        width: 32px;
-        height: 32px;
-        font-size: 24px;
+        width: 3.2rem;
+        height: 3.2rem;
+        font-size: 2.4rem;
         border: none;
         background-color: #3030308c;
         color: var(--color-white);
@@ -30,39 +30,39 @@
     .zs-banner-desc {
         height: 100%;
         color: var(--color-white);
-        font-size: 18px;
+        font-size: 1.8rem;
         font-weight: 500;
 
         a {
             color: var(--color-white);
             text-decoration: underline;
-            margin-left: 10px;
+            margin-left: 1rem;
         }
     }
 }
 
 @media screen and (max-width:1440px){
     .zs-banner{
-        height: 49px;
+        height: 4.9rem;
 
         .zs-banner-desc{
-            font-size: 14px;
+            font-size: 1.4rem;
 
             a{
-                margin-left: 6px;
+                margin-left: 0.6rem;
             }
         }
         .zs-close-button{
-            width: 26px;
-            height: 26px;
-            font-size: 18px;
+            width: 2.6rem;
+            height: 2.6rem;
+            font-size: 1.8rem;
         }
     }
 }
 @media screen and (max-width:992px){
         .zs-banner{
-        height: 78px;
-        padding-inline: 8px 48px;
+        height: 7.8rem;
+        padding-inline: 0.8rem 4.8rem;
 
         .zs-banner-desc{
             font-size: 3.0769vw;

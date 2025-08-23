@@ -1,6 +1,6 @@
 .zs-img-mansion {
     margin: 0 auto;
-    padding: 50px;
+    padding: 5rem;
 }
 
 .zs-img-mansion img {
@@ -10,11 +10,11 @@
 @media screen and (max-width:1440px){
     .zs-img-mansion{
         width: fit-content;
-        padding: 40px;
+        padding: 4rem;
     }
 }
 @media screen and (max-width:576px){
         .zs-img-mansion{
-            padding: 20px;
+            padding: 2rem;
         }
 }

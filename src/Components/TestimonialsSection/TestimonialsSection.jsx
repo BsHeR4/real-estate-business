@@ -31,8 +31,8 @@ import Slider, {slideNext, slidePrev} from "../Slider/Slider.jsx";
 const TestimonialsSection = ({title, subtitle, children}) => {
     const testimonialsSwiper = useRef(null)
     const breakpoints = {
-        0:    { slidesPerView: 1, spaceBetween: 0},
-        768:  { slidesPerView: 2, spaceBetween: 10},
+        0:    { slidesPerView: 1, spaceBetween: 20},
+        768:  { slidesPerView: 2, spaceBetween: 20},
         993:  { slidesPerView: 3, spaceBetween: 20},
         1441: { slidesPerView: 3, spaceBetween: 30},
     }

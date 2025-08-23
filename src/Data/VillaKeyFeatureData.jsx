@@ -1,4 +1,4 @@
-const keyFeatureData = [
+const VillakeyFeatureData = [
   "Expansive oceanfront terrace for outdoor entertaining",
   "Gourmet kitchen with top-of-the-line appliances",
   "Private beach access for morning strolls and sunset views",
@@ -6,4 +6,4 @@ const keyFeatureData = [
   "Private garage and ample storage space"
 ];
 
-export default keyFeatureData;
+export default VillakeyFeatureData;
