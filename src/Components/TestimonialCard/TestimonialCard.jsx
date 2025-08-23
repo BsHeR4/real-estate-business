@@ -36,7 +36,7 @@ import './TestimonialCard.css';
 const TestimonialCard = ({rating, title, description, client}) => {
     const {name, location, photo} = client
     return (
-        <BaseCard padding='large'>
+        <BaseCard padding='large' className={'mk-testimonial-card'}>
             <StarRating rating={rating}/>
             <div className={'mk-text-container'}>
                 <h2 className={'mk-testimonial-title'}>{title}</h2>

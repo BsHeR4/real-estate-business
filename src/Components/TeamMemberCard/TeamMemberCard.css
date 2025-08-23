@@ -1,4 +1,10 @@
+.mk-team-member-card {
+    display: flex;
+    flex-direction: column;
+}
+
 .mk-member-info-container{
+    flex-grow: 1;
     text-align: center;
     margin-bottom: 24px;
 }

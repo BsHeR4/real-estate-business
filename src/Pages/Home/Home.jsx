@@ -1,14 +1,11 @@
 import React from 'react';
-import styles from './Home.module.css';
 import Section from '../../Components/Section/Section';
 import HeroSection from '../../components/HeroSection/HeroSection';
-import Hero from '../../Components/Hero/Hero';
 import FeaturedPropertiesSection from '../../components/FeaturedPropertiesSection/FeaturedPropertiesSection';
 import TestimonialsSection from '../../components/TestimonialsSection/TestimonialsSection';
 import TestimonialCard from '../../components/TestimonialCard/TestimonialCard';
 import FAQSection from '../../components/Faq/FAQSection';
 import ServiceNavigationBar from './../../Components/ServiceNavigationBar/ServiceNavigationBar.jsx'
-import { serviceCards } from './../../Data/servicesPageData'
 
 const HomePage = () => {
   const heroDataForHomePage = {
@@ -65,12 +62,12 @@ const HomePage = () => {
 
   return (
     <div>
-      <Hero className={styles.hero} />
-      {/* <Section className="AS-hero-section py-0">
-        <HeroSection data={heroDataForHomePage} />
-      </Section> */}
 
-      <ServiceNavigationBar items={serviceCards} className={styles.serviceNavigationBar} baseCardClassName={styles.baseCard} />
+      <Section className="AS-hero-section py-0">
+        <HeroSection data={heroDataForHomePage} />
+      </Section>
+
+      <ServiceNavigationBar />
 
       <FeaturedPropertiesSection />
       <TestimonialsSection

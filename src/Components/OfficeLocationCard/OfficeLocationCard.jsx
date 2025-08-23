@@ -10,8 +10,8 @@ import Button from "../Button/Button.jsx";
 const OfficeLocationCard = ({details}) => {
     return (
         <div className="mk-location-card-container">
-            {details.map((detail, index) => (
-                <BaseCard key={index} padding='large'>
+            {details.map((detail) => (
+                <BaseCard key={detail.id} padding='large'>
                     <div className="mk-location-content">
                         <div className="mk-location-title">{detail.title}</div>
                         <div className="mk-location-address">{detail.location}</div>

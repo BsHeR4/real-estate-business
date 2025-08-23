@@ -8,9 +8,20 @@
 }
 
 
-@media screen and (max-width: 1440px) and (min-width: 993px){
+@media screen and (max-width: 1440px) and (min-width: 1301px){
     .mk-team-card-container{
         gap: 20px;
+        margin-top: 60px;
+    }
+}
+
+@media screen and (max-width: 1300px) and (min-width: 993px){
+    .mk-small-padding{
+        padding: 1.2rem !important;
+    }
+
+    .mk-team-card-container{
+        gap: 0.8rem;
         margin-top: 60px;
     }
 }

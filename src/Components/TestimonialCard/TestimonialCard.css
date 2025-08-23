@@ -1,5 +1,11 @@
+.mk-testimonial-card {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
 .mk-text-container{
-    min-height: 158px;
+    flex-grow: 1;
 }
 
 .mk-testimonial-title{
@@ -30,7 +36,6 @@
 @media screen and (max-width: 992px) and (min-width: 300px) {
     .mk-text-container{
         max-width: 455.30px;
-        min-height: 84px;
     }
 
     .mk-testimonial-title{

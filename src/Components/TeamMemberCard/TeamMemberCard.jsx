@@ -7,7 +7,7 @@ import './TeamMemberCard.css'
 const TeamMemberCard = ({ photo, icon, member }) => {
     const { name, position } = member;
     return (
-        <BaseCard className={'mk-small-padding'}>
+        <BaseCard className={'mk-small-padding mk-team-member-card'}>
             <Avatar photo={photo} icon={icon} />
             <div className='mk-member-info-container'>
                 <p className='mk-member-name'>{name}</p>
