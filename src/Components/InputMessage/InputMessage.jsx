@@ -6,7 +6,7 @@ const InputMessage = () => {
         <div className={'mk-input-container'}>
             <input className={'mk-input-style'} placeholder={'Say Hello 👋'}/>
             <div className={'mk-send-icon'}>
-                <img className={'mk-icon-width'} src={'assets/imgs/Icon1.svg'}  alt={'send-icon'}/>
+                <img className={'mk-icon-width'} src={'/assets/imgs/Icon1.svg'}  alt={'send-icon'}/>
             </div>
         </div>
     );
