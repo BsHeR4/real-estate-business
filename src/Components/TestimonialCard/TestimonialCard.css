@@ -1,3 +1,7 @@
+.testimonial-motion-wrapper{
+    height: 100%;
+}
+
 .mk-testimonial-card {
     height: 100%;
     display: flex;
