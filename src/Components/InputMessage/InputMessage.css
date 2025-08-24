@@ -53,7 +53,7 @@
     }
 }
 
-@media screen and (max-width: 992px) and (min-width: 390px){
+@media screen and (max-width: 992px) and (min-width: 300px){
     .mk-input-container{
         padding: 8px 8px 8px 24px;
     }
