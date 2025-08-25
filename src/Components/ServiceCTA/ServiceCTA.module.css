@@ -15,7 +15,7 @@
 }
 
 .serviceCTA.background {
-    background-image: url(assets/imgs/ServicesPage/AbstractDesignDesktop.png);
+    background-image: url(/assets/imgs/ServicesPage/AbstractDesignDesktop.png);
     background-color: var(--grey-10);
 }
 
@@ -81,7 +81,7 @@
     }
 
     .serviceCTA.background {
-        background-image: url(assets/imgs/ServicesPage/AbstractDesignMobile.png);
+        background-image: url(/assets/imgs/ServicesPage/AbstractDesignMobile.png);
     }
 
     .wide h3 {
