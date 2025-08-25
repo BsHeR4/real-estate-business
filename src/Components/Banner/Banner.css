@@ -25,6 +25,12 @@
         background-color: #3030308c;
         color: var(--color-white);
         cursor: pointer;
+        transition: .1s ease-in-out;
+
+        &:hover{
+            color: var(--gery-12);
+            background-color: var(--color-white);
+        }
     }
 
     .zs-banner-desc {

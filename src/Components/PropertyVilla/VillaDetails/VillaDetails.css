@@ -94,6 +94,7 @@
 
 .zs-feature-item {
     padding: 1.8rem 2.4rem;
+    margin-bottom: 3rem;
     font-size: 1.8rem;
     font-weight: 500;
     color: var(--grey-60);
@@ -106,7 +107,7 @@
         margin-right: 1rem;
     }
 }
-@media screen and (max-width:1440px){
+@media screen and (max-width:1440px) and (min-width:992px){
     .zs-stats-info .icon{
         width: 2rem;
     }
@@ -120,6 +121,9 @@
         padding: 4rem;
         .zs-feature-title{
             margin-bottom: 4rem;
+        }
+        .zs-feature-item{
+            margin-bottom: 2rem;
         }
     }
 }
@@ -163,8 +167,12 @@
     }
     .zs-feature-item{
         padding: 1rem 1.2rem;
+        margin-bottom: 1.8rem;
         span{
             font-size: 1.4rem;
         }
+    }
+    .zs-feature-item:last-child{
+        margin-bottom: 2rem;
     }
 }

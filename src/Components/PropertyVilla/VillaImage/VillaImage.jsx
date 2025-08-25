@@ -7,9 +7,9 @@ export default function VillaImage() {
         <>
             <BaseCard className='zs-img-mansion'>
                 <picture>
-                    <source media="(min-width: 1440px)" srcSet="assets\imgs\Property\mansion.png" />
-                    <source media="(max-width: 576px)" srcSet="assets\imgs\Property\mansion-small.png" />
-                    <img src="assets\imgs\Property\mansion.png" alt="villa " />
+                    <source media="(min-width: 1440px)" srcSet="/assets/imgs/Property/mansion.png" />
+                    <source media="(max-width: 576px)" srcSet="/assets/imgs/Property/mansion-small.png" />
+                    <img src="/assets/imgs/Property/mansion.png" alt="villa " />
                 </picture>
             </BaseCard>
         </>

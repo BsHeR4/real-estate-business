@@ -44,16 +44,16 @@ const AboutUsPage = () => {
       <Experience />
 
       <TeamSection title={'Meet the Estatein Team'} subtitle={'At Estatein, our success is driven by the dedication and expertise of our team. Get to know the people behind our mission to make your real estate dreams a reality.'}>
-        <TeamMemberCard icon={'twitter'} photo={'assets/imgs/teamMember1.png'}
+        <TeamMemberCard icon={'twitter'} photo={'/assets/imgs/teamMember1.png'}
           member={{ name: "Max Mitchell", position: "Founder" }}
         />
-        <TeamMemberCard icon={'twitter'} photo={'assets/imgs/teamMember2.png'}
+        <TeamMemberCard icon={'twitter'} photo={'/assets/imgs/teamMember2.png'}
           member={{ name: "Sarah Johnson", position: "Chief Real Estate Officer" }}
         />
-        <TeamMemberCard icon={'twitter'} photo={'assets/imgs/teamMember3.png'}
+        <TeamMemberCard icon={'twitter'} photo={'/assets/imgs/teamMember3.png'}
           member={{ name: "David Brown", position: "Head of Property Management" }}
         />
-        <TeamMemberCard icon={'twitter'} photo={'assets/imgs/teamMember4.png'}
+        <TeamMemberCard icon={'twitter'} photo={'/assets/imgs/teamMember4.png'}
           member={{ name: "Michael Turner", position: "Legal Counsel" }}
         />
       </TeamSection>
