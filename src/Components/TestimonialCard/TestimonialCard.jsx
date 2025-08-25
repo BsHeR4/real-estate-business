@@ -39,10 +39,11 @@ const TestimonialCard = ({ itemVariant, rating, title, description, client }) =>
     const { name, location, photo } = client
     return (
         <motion.div
+            className="testimonial-motion-wrapper"
             variants={itemVariant}
             whileHover={{ scale: 1.03, y: -5 }}
         >
-            <BaseCard padding='large'>
+            <BaseCard padding='large' className='mk-testimonial-card'>
                 <StarRating rating={rating} />
                 <div className={'mk-text-container'}>
                     <h2 className={'mk-testimonial-title'}>{title}</h2>
