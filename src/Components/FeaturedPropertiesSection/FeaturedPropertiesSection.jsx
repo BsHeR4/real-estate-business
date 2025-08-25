@@ -1,11 +1,11 @@
 import SectionHeader from './../sectionheader/SectionHeader'
 import Section from './../Section/Section'
 import PropertyCard from '../PropertyCard/PropertyCard'
-import styles from './FeaturedPropertiesSection.module.css'
 import Slider, { slideNext, slidePrev } from "../Slider/Slider.jsx";
 import IconButton from "../IconButton/IconButton.jsx";
 import React, { useRef, useState } from 'react';
 import { motion } from 'framer-motion';
+import styles from './FeaturedPropertiesSection.module.css'
 const containerVariants = {
     hidden: { opacity: 0 },
     visible: {
@@ -43,7 +43,7 @@ function FeaturedPropertiesSection({ properties }) {
     };
 
     return (
-        <Section id= {'properties'}>
+        <Section id={'properties'}>
             <motion.div
                 variants={containerVariants}
                 initial="hidden"
@@ -60,6 +60,7 @@ function FeaturedPropertiesSection({ properties }) {
                         breakpoints={breakpoints}
                         swipe={featuredPropertiesSwiper}
                         onStateChange={handleSliderStateChange}
+                        className={'swiper-slide'}
                     >
 
                         {properties.map((property, index) => (

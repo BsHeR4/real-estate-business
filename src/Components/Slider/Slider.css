@@ -6,6 +6,10 @@
     height: auto;
 }
 
+#properties .swiper-slide {
+    display: flex;
+}
+
 
 @media screen and (max-width: 992px) and (min-width: 300px) {
     .swiper-slide {

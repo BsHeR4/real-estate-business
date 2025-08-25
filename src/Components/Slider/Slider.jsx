@@ -8,7 +8,7 @@ import { SwiperSlide } from "swiper/react";
 import './Slider.css'
 
 
-const Slider = ({ children, slidesPerView, breakpoints, swipe, onStateChange }) => {
+const Slider = ({ children, slidesPerView, breakpoints, swipe, onStateChange, className }) => {
     const handleSliderUpdate = (swiper) => {
         if (onStateChange) {
             onStateChange(swiper);
@@ -33,6 +33,7 @@ const Slider = ({ children, slidesPerView, breakpoints, swipe, onStateChange }) 
             }}
             onInit={handleSliderUpdate}
             onSlideChange={handleSliderUpdate}
+            className={className}
         >
             {React.Children.map(children, (child, index) => (
                 <SwiperSlide key={index}>{child}</SwiperSlide>
