@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import Section from '../../Components/Section/Section';
 import HeroSection from '../../components/HeroSection/HeroSection';
 import FeaturedPropertiesSection from '../../components/FeaturedPropertiesSection/FeaturedPropertiesSection';
@@ -8,10 +8,17 @@ import Hero from '../../components/Hero/Hero';
 import FAQSection from '../../components/Faq/FAQSection';
 import ServiceNavigationBar from './../../Components/ServiceNavigationBar/ServiceNavigationBar.jsx'
 import { serviceCards } from './../../Data/servicesPageData'
-import { properties } from '../../Data/homeData.jsx';
+// import { properties } from '../../Data/homeData.jsx';
 import { testimonialsSectionData } from '../../Data/homeData.jsx';
+import { getPropertiesFromStorage } from '../../Services/storageService';
 
 const HomePage = () => {
+  const [properties, setProperties] = useState([]);
+  useEffect(() => {
+    const data = getPropertiesFromStorage();
+    setProperties(data);
+  }, []);
+
   const heroDataForHomePage = {
     title: "Discover Your Dream Property with Estatein",
     titleClassName: "AS-hero-title",
@@ -75,7 +82,9 @@ const HomePage = () => {
 
       <ServiceNavigationBar sectionId={'features'} />
 
-      <FeaturedPropertiesSection properties={properties} />
+      {properties.length > 0 && (
+        <FeaturedPropertiesSection properties={properties} />
+      )}
       <TestimonialsSection items={testimonialsSectionData.data}
         title={testimonialsSectionData.title}
         subtitle={testimonialsSectionData.subtitle}
