@@ -7,6 +7,7 @@ import { IoBed } from 'react-icons/io5';
 import Bathtub from './../../assets/icons/bathtub.svg?react';
 import { HiMiniBuildingOffice } from "react-icons/hi2";
 import { motion } from 'framer-motion';
+import { Link } from 'react-router-dom';
 /**
  * @component PropertyCard
  * @description A card component to display a summary of a single property listing
@@ -43,7 +44,9 @@ function PropertyCard({ itemVariant, img, title, subtitle, price, bedrooms, bath
                         <span className={styles.priceTitle}>Price</span>
                         <span className={styles.price}>{price}</span>
                     </div>
+                    <Link to={`/PropertyDetails/#portfolio`} className={styles.buttonLink}>
                     <Button size={'small'} fullWidth={'true'}>View Property Details</Button>
+                    </Link>
                 </div>
             </BaseCard>
         </motion.div>
