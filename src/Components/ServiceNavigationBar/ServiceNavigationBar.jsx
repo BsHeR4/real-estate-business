@@ -46,8 +46,8 @@ function ServiceNavigationBar({ staticItems = null, sectionId, directAnimation =
                 {...animationProps}
             >
                 <BaseCard className={styles.cards}>
-                    {items.map((item) => (
-                        <motion.div variants={itemVariants}
+                    {items.map((item, index) => (
+                        <motion.div key={index} variants={itemVariants}
                             whileHover={{ scale: 1.05, y: 0 }}>
                             <ServiceNavItem
                                 title={item.title}

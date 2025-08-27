@@ -1,18 +1,16 @@
 import styles from './FooterLinkColumn.module.css'
 import { navigationLinks } from './../../Data/NavigationData'
-import SubscriptionForm from '../SubscriptionForm/SubscriptionForm'
 import { Link } from 'react-router-dom'
-import { div, ul } from 'framer-motion/client'
 
 const FooterLinkColumn = ({ items }) => {
     return (
         <div className={styles.footerColumns}>
             {navigationLinks.map((navigationLink, index) => (
-                <div className={styles.footerColumn}>
+                <div key={index} className={styles.footerColumn}>
                     <h3>{navigationLink.title}</h3>
                     <ul>
-                        {(navigationLink.sections).map((section) => (
-                            <li>
+                        {(navigationLink.sections).map((section, index) => (
+                            <li key={index}>
                                 <Link to={section.to}>{section.name}</Link>
                             </li>
                         ))}
