@@ -1,0 +1,45 @@
+.mk-card{
+    background-color: var(--grey-08);
+    border: 1px solid var(--grey-15);
+    border-radius: 12px;
+}
+
+.mk-small-padding{
+    padding: 3rem !important;
+}
+
+.mk-medium-padding{
+    padding: 4rem;
+}
+
+.mk-large-padding{
+    padding: 5rem;
+}
+
+@media screen and (max-width: 1440px) and (min-width: 993px){
+    .mk-small-padding{
+        padding: 24px !important;
+    }
+
+    .mk-medium-padding{
+        padding: 3rem;
+    }
+
+    .mk-large-padding{
+        padding: 4rem;
+    }
+}
+
+@media screen and (max-width: 992px) and (min-width: 300px){
+    .mk-small-padding{
+        padding: 2rem !important;
+    }
+
+    .mk-medium-padding{
+        padding: 2.4rem;
+    }
+
+    .mk-large-padding{
+        padding: 3rem;
+    }
+}
