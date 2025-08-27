@@ -10,6 +10,8 @@
     border-top: 1px solid var(--grey-15);
     padding-top: 2rem;
     margin-top: 3rem;
+    width: calc(100% - 4rem);
+    margin-inline: auto;
 }
 
 .zs-faq-card .swiper-slide {

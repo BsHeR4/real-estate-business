@@ -20,7 +20,7 @@ function ClientsSection({ clients }) {
     const breakpoints = {
         0: { slidesPerView: 1, spaceBetween: 30 },
         768: { slidesPerView: 1, spaceBetween: 30 },
-        993: { slidesPerView: 2, spaceBetween: 20 },
+        993: { slidesPerView: 2, spaceBetween: 40 },
         1441: { slidesPerView: 2, spaceBetween: 50 },
     }
 
