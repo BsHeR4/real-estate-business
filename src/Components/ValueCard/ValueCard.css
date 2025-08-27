@@ -114,4 +114,14 @@
         /* border-right: 1px solid var(--grey-15); */
 
     }
+
+    .mobile-before-last::after {
+        position: absolute;
+        top: 105%;
+        right: 1%;
+        content: '';
+        height: 1px;
+        width: 100%;
+        background-color: var(--grey-15);
+    }
 }

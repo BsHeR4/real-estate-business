@@ -5,8 +5,8 @@ import BaseCard from "../BaseCard/BaseCard";
 import ValueCard from "../ValueCard/ValueCard";
 import { FaStar } from "react-icons/fa6";
 import "./ValuesSection.css";
-import  Excellence  from './../../assets/icons/excellence.svg?react'
-import  Client  from './../../assets/icons/clients.svg?react'
+import Excellence from './../../assets/icons/excellence.svg?react'
+import Client from './../../assets/icons/clients.svg?react'
 
 function ValuesSection() {
     const values = [
@@ -50,6 +50,7 @@ function ValuesSection() {
                             description={value.description}
                             addRightBorder={index === 0 || index === 2}
                             addBottomBorder={index < 2}
+                            isMobileBeforeLast={index === values.length - 2}
                         />
                     ))}
                 </BaseCard>

@@ -1,10 +1,17 @@
 import React from "react";
 import "./ValueCard.css";
+import clsx from "clsx";
 
-function ValueCard({ icon, title, description, addRightBorder, addBottomBorder }) {
+function ValueCard({ icon, title, description, addRightBorder, addBottomBorder, isMobileBeforeLast }) {
+    const classes = clsx(
+        'ms-value-card',
+        { 'ms-right-border': addRightBorder },
+        { 'ms-bottom-border': addBottomBorder },
+        { 'mobile-before-last': isMobileBeforeLast }
+    )
     return (
         <div
-            className={`ms-value-card ${addRightBorder ? "ms-right-border" : ""} ${addBottomBorder ? "ms-bottom-border" : ""}`}
+            className={classes}
         >
             <div className="ms-value-card-header">
                 <div className="bm-icon-border">
