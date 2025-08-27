@@ -1,10 +1,19 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react';
 import Villa from './../../Components/Villa/Villa'
 import ComprehensiveSection from './../../Components/ComprehensiveSection/ComprehensiveSection'
 import FeeCard from './../../Components/FeeCard/FeeCard'
 import { feeCardsData } from './../../Data/propertyDetailsData'
+import { getPropertiesFromStorage } from '../../Services/storageService';
+import FeaturedPropertiesSection from '../../components/FeaturedPropertiesSection/FeaturedPropertiesSection';
 
 function PropertyDetails() {
+  const [properties, setProperties] = useState([]);
+  useEffect(() => {
+    const data = getPropertiesFromStorage();
+    setProperties(data);
+  }, []);
+
+
   return (
     <div>
       <Villa />
@@ -18,6 +27,11 @@ function PropertyDetails() {
         <FeeCard details={feeCardsData[2].details} title={feeCardsData[2].title} />
         <FeeCard details={feeCardsData[3].details} title={feeCardsData[3].title} />
       </ComprehensiveSection>
+
+      {properties.length > 0 && (
+        <FeaturedPropertiesSection properties={properties} />
+      )}
+
     </div>
   )
 }

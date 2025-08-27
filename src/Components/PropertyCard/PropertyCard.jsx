@@ -21,7 +21,7 @@ import { Link } from 'react-router-dom';
  * @param {string} [props.buildType='Villa'] - The type of the property (e.g., Villa, Apartment)
  * * @returns {JSX.Element} A styled card displaying the property information
  */
-function PropertyCard({ itemVariant, img, title, subtitle, price, bedrooms, bathrooms, buildType = 'Villa' }) {
+function PropertyCard({ itemVariant, img, title, subtitle, price, bedrooms, bathrooms, buildType = 'Villa', details, withIcon = true }) {
 
     return (
         <motion.div
@@ -30,14 +30,26 @@ function PropertyCard({ itemVariant, img, title, subtitle, price, bedrooms, bath
         >
             <BaseCard className={styles.baseContainer}>
                 <img src={img} alt="" className={styles.cardImage} />
-                <h2>{title}</h2>
-                <p>{subtitle}<span>Read More</span></p>
 
-                <div className={styles.properties}>
-                    <PropertyFeature icon={<IoBed />}>{bedrooms}-BedRoom</PropertyFeature>
-                    <PropertyFeature icon={<Bathtub />}>{bathrooms}-Bathroom</PropertyFeature>
-                    <PropertyFeature icon={<HiMiniBuildingOffice />}>{buildType}</PropertyFeature>
-                </div>
+                {withIcon ?
+                    (
+                        <>
+                            <h2>{title}</h2>
+                            <p>{subtitle}<span>Read More</span></p>
+                            <div className={styles.properties}>
+                                <PropertyFeature icon={<IoBed />}>{bedrooms}-BedRoom</PropertyFeature>
+                                <PropertyFeature icon={<Bathtub />}>{bathrooms}-Bathroom</PropertyFeature>
+                                <PropertyFeature icon={<HiMiniBuildingOffice />}>{buildType}</PropertyFeature>
+                            </div>
+                        </>
+                    ) : (
+                        <>
+                            <PropertyFeature withIcon={false} className={styles.withoutIcon}>{details}</PropertyFeature>
+                            <h2>{title}</h2>
+                            <p>{subtitle}<span>Read More</span></p>
+                        </>
+                    )
+                }
 
                 <div className={styles.container}>
                     <div className={styles.priceContainer}>
@@ -45,7 +57,7 @@ function PropertyCard({ itemVariant, img, title, subtitle, price, bedrooms, bath
                         <span className={styles.price}>{price}</span>
                     </div>
                     <Link to={`/PropertyDetails/#portfolio`} className={styles.buttonLink}>
-                    <Button size={'small'} fullWidth={'true'}>View Property Details</Button>
+                        <Button size={'small'} fullWidth={'true'}>View Property Details</Button>
                     </Link>
                 </div>
             </BaseCard>

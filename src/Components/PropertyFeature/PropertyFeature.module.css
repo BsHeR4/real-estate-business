@@ -26,6 +26,12 @@
     font-size: 1.8rem;
 }
 
+@media screen and (max-width: 1734px) and (min-width: 1441px) {
+    .propertyFeature .paragraph {
+        font-size: 1.4rem;
+    }
+}
+
 /* ============================================================= */
 
 @media screen and (max-width: 1440px) and (min-width: 993px) {

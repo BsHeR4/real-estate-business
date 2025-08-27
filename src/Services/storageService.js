@@ -7,7 +7,8 @@ const properties = [
         price: '$550,000',
         bedrooms: '4',
         bathrooms: '3',
-        buildType: 'Villa'
+        buildType: 'Villa',
+        details: 'Coastal Escapes - Where Waves Beckon'
     },
     {
         id: '2',
@@ -17,7 +18,8 @@ const properties = [
         price: '$550,000',
         bedrooms: '2',
         bathrooms: '2',
-        buildType: 'villa'
+        buildType: 'villa',
+        details: 'Urban Oasis - Life in the Heart of the City'
     },
     {
         id: '3',
@@ -27,7 +29,8 @@ const properties = [
         price: '$550,000',
         bedrooms: '3',
         bathrooms: '3',
-        buildType: 'villa'
+        buildType: 'villa',
+        details: "Countryside Charm - Escape to Nature's Embrace"
     },
     {
         id: '4',
@@ -37,7 +40,8 @@ const properties = [
         price: '$550,000',
         bedrooms: '3',
         bathrooms: '3',
-        buildType: 'villa'
+        buildType: 'villa',
+        details: "Countryside Charm - Escape to Nature's Embrace"
     },
     {
         id: '5',
@@ -47,7 +51,8 @@ const properties = [
         price: '$550,000',
         bedrooms: '3',
         bathrooms: '3',
-        buildType: 'villa'
+        buildType: 'villa',
+        details: "Countryside Charm - Escape to Nature's Embrace"
     },
 ];
 

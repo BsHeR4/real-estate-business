@@ -2,7 +2,10 @@
     display: flex;
     justify-content: space-between;
     gap: 3rem;
-    padding-top: 8rem;
+}
+
+.pBottom {
+    padding-bottom: 8rem;
 }
 
 .container>* {
@@ -24,25 +27,29 @@
 @media screen and (max-width: 1440px) and (min-width: 993px) {
     .container {
         gap: 2rem;
-        padding-top: 6rem;
     }
 
     .navigation {
         padding-top: 1.6rem;
         margin-top: 4rem;
     }
+
+    .pBottom {
+        padding-bottom: 6rem;
+    }
 }
 
 /* ============================================================= */
 
 @media screen and (max-width: 992px) {
-    .container {
-        padding-top: 4rem;
-    }
 
     .navigation {
         padding-top: 1.6rem;
         margin-top: 3rem;
+    }
+
+    .pBottom {
+        padding-bottom: 4rem;
     }
 }
 

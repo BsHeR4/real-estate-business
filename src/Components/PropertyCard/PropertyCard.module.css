@@ -66,6 +66,10 @@
     text-decoration: none;
 }
 
+.withoutIcon {
+    margin-bottom: 2rem;
+}
+
 @media screen and (max-width: 1734px) and (min-width: 1441px) {
     .baseContainer {
         padding: 2rem;
@@ -126,6 +130,10 @@
         padding-bottom: 24px;
         font-size: 1.6rem;
     }
+
+    .withoutIcon {
+        margin-bottom: 1.6rem;
+    }
 }
 
 /* ============================================================= */
@@ -155,5 +163,9 @@
 
     .cardImage {
         min-height: 210px;
+    }
+
+    .withoutIcon {
+        margin-bottom: 1.4rem;
     }
 }

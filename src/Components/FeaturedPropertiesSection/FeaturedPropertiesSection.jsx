@@ -6,6 +6,7 @@ import IconButton from "../IconButton/IconButton.jsx";
 import React, { useRef, useState } from 'react';
 import { motion } from 'framer-motion';
 import styles from './FeaturedPropertiesSection.module.css'
+import { useLocation } from 'react-router-dom';
 const containerVariants = {
     hidden: { opacity: 0 },
     visible: {
@@ -27,6 +28,8 @@ const itemVariants = {
  * * @returns {JSX.Element} The fully rendered 'Featured Properties' section
  */
 function FeaturedPropertiesSection({ properties }) {
+    const location = useLocation();
+
     const [isBeginning, setIsBeginning] = useState(true);
     const [isEnd, setIsEnd] = useState(false);
     const featuredPropertiesSwiper = useRef(null)
@@ -50,9 +53,15 @@ function FeaturedPropertiesSection({ properties }) {
                 whileInView="visible"
                 viewport={{ once: true, amount: 0.3 }}
             >
-                <SectionHeader
-                    title={'Featured Properties'}
-                    subtitle={'Explore our handpicked selection of featured properties. Each listing offers a glimpse into exceptional homes and investments available through Estatein. Click "View Details" for more information.'} />
+                {
+                    location.pathname == '/' ? (
+                        <SectionHeader
+                        title={'Featured Properties'}
+                        subtitle={'Explore our handpicked selection of featured properties. Each listing offers a glimpse into exceptional homes and investments available through Estatein. Click "View Details" for more information.'}
+                        className={styles.pBottom}
+                        />
+                    ) : ''
+                }
 
                 <div className={styles.container}>
                     <Slider
@@ -63,19 +72,34 @@ function FeaturedPropertiesSection({ properties }) {
                         className={'swiper-slide'}
                     >
 
-                        {properties.map((property, index) => (
-                            <PropertyCard
-                                itemVariant={itemVariants}
-                                title={property.title}
-                                subtitle={property.subtitle}
-                                price={property.price}
-                                bedrooms={property.bedrooms}
-                                bathrooms={property.bathrooms}
-                                img={property.img}
-                                buildType={property.buildType}
-                                key={index}
-                            />
-                        ))}
+                        {location.pathname == '/' ?
+                            properties.map((property, index) => (
+                                <PropertyCard
+                                    itemVariant={itemVariants}
+                                    title={property.title}
+                                    subtitle={property.subtitle}
+                                    price={property.price}
+                                    bedrooms={property.bedrooms}
+                                    bathrooms={property.bathrooms}
+                                    img={property.img}
+                                    buildType={property.buildType}
+                                    key={index}
+                                />
+                            ))
+                            :
+                            properties.map((property, index) => (
+                                <PropertyCard
+                                    itemVariant={itemVariants}
+                                    title={property.title}
+                                    subtitle={property.subtitle}
+                                    price={property.price}
+                                    img={property.img}
+                                    withIcon={false}
+                                    details={property.details}
+                                    key={index}
+                                />
+                            ))
+                        }
 
                     </Slider>
                 </div>
