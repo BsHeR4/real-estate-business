@@ -20,6 +20,7 @@
 .hero .container .textContainer {
     max-width: 758px;
 }
+
 .hero .container .textContainer h1 {
     font-weight: 600;
     font-size: 6rem;
@@ -67,7 +68,7 @@
 }
 
 
-@media screen and (max-width: 1440px) and (min-width: 993px) {
+@media screen and (min-width: 993px) and (max-width: 1919px) {
     .hero {
         gap: 6rem;
         height: calc(100vh - 77px);
@@ -158,7 +159,7 @@
         border: 1px solid rgba(38, 38, 38, 1);
         border-radius: 1.2rem;
     }
-    
+
     .hero .abstractImgContainer {
         justify-self: center;
         min-height: 302px;

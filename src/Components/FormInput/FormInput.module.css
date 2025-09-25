@@ -36,7 +36,7 @@
     border-color: #703BF7;
 }
 
-@media screen and (max-width: 1440px) and (min-width: 993px) {
+@media screen and (min-width: 993px) and (max-width: 1919px) {
     .inputGroup {
         margin-top: 30px;
     }

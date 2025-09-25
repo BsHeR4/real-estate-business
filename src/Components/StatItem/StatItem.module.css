@@ -43,7 +43,7 @@
 /* =================================================================== */
 /* 2. Laptop & Tablet Styles (max-width: 1440px) */
 /* =================================================================== */
-@media screen and (max-width: 1440px) and (min-width: 993px) {
+@media screen and (min-width: 993px) and (max-width: 1919px) {
     .statItem {
         width: 13.3769vw;
         opacity: 1;

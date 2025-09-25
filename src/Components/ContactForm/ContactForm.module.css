@@ -30,6 +30,7 @@
     flex-wrap: wrap;
 
 }
+
 /* .agreeLabel pre{
 border-bottom: 1px solid white;
 } */
@@ -62,7 +63,7 @@ border-bottom: 1px solid white;
 }
 
 
-@media screen and (max-width: 1440px) and (min-width: 993px) {
+@media screen and (min-width: 993px) and (max-width: 1919px) {
 
 
     .contactForm {

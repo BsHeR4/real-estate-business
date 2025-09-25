@@ -63,7 +63,7 @@
     background-color: var(--grey-15);
 }
 
-@media screen and (max-width: 1440px) and (min-width: 993px) {
+@media screen and (min-width: 993px) and (max-width: 1919px) {
     .bm-icon-border {
         padding: 1.6rem;
         max-width: 6rem;

@@ -43,7 +43,7 @@
 }
 
 
-@media screen and (max-width: 1440px) and (min-width: 993px) {
+@media screen and (min-width: 993px) and (max-width: 1919px) {
     .selectGroup {
         margin-top: 30px;
     }

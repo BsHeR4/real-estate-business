@@ -90,7 +90,7 @@ ul {
     /* margin-top: -90px !important; */
 }
 
-@media screen and (max-width: 1440px) and (min-width: 993px) {
+@media screen and (min-width: 993px) and (max-width: 1919px) {
     .AS-hero-title {
         max-width: 610px !important;
         font-size: 46px !important;

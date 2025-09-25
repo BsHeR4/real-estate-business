@@ -10,7 +10,7 @@
 /* 2. Laptop / Medium Screen Styles (993px - 1440px) */
 /* =================================================================== */
 
-@media screen and (max-width: 1440px) and (min-width: 993px) {
+@media screen and (min-width: 993px) and (max-width: 1919px) {
 
     .some-class {
         /* font-size: 3.5rem; */

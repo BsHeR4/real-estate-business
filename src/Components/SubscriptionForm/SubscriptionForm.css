@@ -5,7 +5,7 @@
     width: fit-content;
 }
 
-@media screen and (max-width: 1440px) and (min-width: 993px) {
+@media screen and (min-width: 993px) and (max-width: 1919px) {
     .SubscriptionForm {
         gap: 2.4rem;
     }
