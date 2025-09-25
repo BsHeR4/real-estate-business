@@ -12,7 +12,7 @@ import { CssVarsProvider } from '@mui/joy/styles';
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <HashRouter basename='/real-estate-business/'>
+    <HashRouter>
       <CssVarsProvider theme={theme}>
         <Banner />
         <Navbar />
