@@ -2,7 +2,7 @@ import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import './index.css'
 import App from './App.jsx'
-import { BrowserRouter } from 'react-router-dom'
+import { HashRouter } from 'react-router-dom'
 import Banner from './Components/Banner/Banner.jsx'
 import Navbar from './Components/Navbar/Navbar.jsx'
 import Footer from './Components/Footer/Footer';
@@ -12,7 +12,7 @@ import { CssVarsProvider } from '@mui/joy/styles';
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <BrowserRouter basename='/real-estate-business/'>
+    <HashRouter basename='/real-estate-business/'>
       <CssVarsProvider theme={theme}>
         <Banner />
         <Navbar />
@@ -20,7 +20,7 @@ createRoot(document.getElementById('root')).render(
         <CTASection />
         <Footer />
       </CssVarsProvider>
-    </BrowserRouter>
+    </HashRouter>
   </StrictMode>,
 )
 
