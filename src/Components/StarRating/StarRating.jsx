@@ -24,7 +24,7 @@ const StarRating = ({ rating = 0, maxStars = 5 }) => {
         return (
             <div key={index} className="mk-star-wrapper">
                 <img
-                    src="/assets/imgs/Shape.png"
+                    src="assets/imgs/Shape.png"
                     alt="Star"
                     className={`mk-star ${isFilled ? 'mk-star-filled' : 'mk-star-empty'}`}
                 />

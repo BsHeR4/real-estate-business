@@ -58,7 +58,7 @@ export const testimonialsSectionData = {
             client: {
                 name: "Wade Warren",
                 location: "USA, California",
-                photo: "/assets/imgs/Profile.png"
+                photo: "assets/imgs/Profile.png"
             }
         },
         {
@@ -68,7 +68,7 @@ export const testimonialsSectionData = {
             client: {
                 name: "Emelie Thomson",
                 location: "USA, Florida",
-                photo: "/assets/imgs/Profile2.png"
+                photo: "assets/imgs/Profile2.png"
             }
         },
         {
@@ -78,7 +78,7 @@ export const testimonialsSectionData = {
             client: {
                 name: "John Mans",
                 location: "USA, Nevada",
-                photo: "/assets/imgs/Profile3.png"
+                photo: "assets/imgs/Profile3.png"
             }
         },
         {
@@ -88,7 +88,7 @@ export const testimonialsSectionData = {
             client: {
                 name: "Wade Warren",
                 location: "USA, California",
-                photo: "/assets/imgs/Profile.png"
+                photo: "assets/imgs/Profile.png"
             }
         },
         {
@@ -98,9 +98,28 @@ export const testimonialsSectionData = {
             client: {
                 name: "Emelie Thomson",
                 location: "USA, Florida",
-                photo: "/assets/imgs/Profile2.png"
+                photo: "assets/imgs/Profile2.png"
             }
         },
     ]
 
 }
+
+export const serviceNavigationBar = [
+    {
+        title: "Find Your Dream Home",
+        icon: "assets/imgs/service-icon-1.svg",
+    },
+    {
+        title: "Unlock Property Value",
+        icon: "assets/imgs/service-icon-2.svg",
+    },
+    {
+        title: "Effortless Property Management",
+        icon: "assets/imgs/service-icon-3.svg",
+    },
+    {
+        title: "Smart Investments, Informed Decisions",
+        icon: "assets/imgs/service-icon-4.svg",
+    },
+]

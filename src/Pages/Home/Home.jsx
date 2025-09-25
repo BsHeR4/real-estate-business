@@ -9,7 +9,7 @@ import FAQSection from '../../components/Faq/FAQSection';
 import ServiceNavigationBar from './../../Components/ServiceNavigationBar/ServiceNavigationBar.jsx'
 import { serviceCards } from './../../Data/servicesPageData'
 // import { properties } from '../../Data/homeData.jsx';
-import { testimonialsSectionData } from '../../Data/homeData.jsx';
+import { testimonialsSectionData, serviceNavigationBar } from '../../Data/homeData.jsx';
 import { getPropertiesFromStorage } from '../../Services/storageService';
 
 const HomePage = () => {
@@ -44,33 +44,6 @@ const HomePage = () => {
     showStar: false
   };
 
-  const featuresData = [
-    {
-      HeadingTag: "h5",
-      titleLink: "/dream-home",
-      cardTitle: "Find Your Dream Home",
-      iconType: "icon1",
-    },
-    {
-      HeadingTag: "h5",
-      titleLink: "/property-value",
-      cardTitle: "Unlock Property Value",
-      iconType: "icon2",
-    },
-    {
-      HeadingTag: "h5",
-      titleLink: "/management",
-      cardTitle: "Effortless Property Management",
-      iconType: "icon3",
-    },
-    {
-      HeadingTag: "h5",
-      titleLink: "/investments",
-      cardTitle: "Smart Investments, Informed Decisions",
-      iconType: "icon4",
-    },
-  ];
-
   return (
     <div>
 
@@ -80,7 +53,7 @@ const HomePage = () => {
 
       <Hero />
 
-      <ServiceNavigationBar sectionId={'features'} />
+      <ServiceNavigationBar staticItems={serviceNavigationBar} sectionId={'features'} />
 
       {properties.length > 0 && (
         <FeaturedPropertiesSection properties={properties} />
